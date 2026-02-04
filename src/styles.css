@@ -1,0 +1,125 @@
+/*Global styles*/
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/*Style for the overall layout*/
+.layout {
+  display: flex;
+  max-width: 1080px;
+  margin-left: 0;
+  margin-right: auto; 
+  min-height: 100vh;
+}
+
+/*Style links in the sidebar*/
+a {
+  text-decoration:none;
+  color: #888888;
+  padding: 2px 5px;
+  transition-duration: 1000ms;
+}
+
+/*Highlight the link on hover*/
+a:hover {
+  background: #e0e0e0;
+  border-radius: 5px;
+}
+
+/*Style for the sidebar*/
+aside {
+  width: 200px;
+  padding: 3rem;
+  border-right: 1px solid #ddd;
+  box-shadow: inset -5px 0px 10px rgba(143, 143, 143, 0.1);
+}
+
+aside ul {
+  list-style-type: '- ';
+  line-height: 1.5;
+  padding-left: 1rem;
+}
+
+/*Style for the main content area*/
+main {
+  flex: 1;
+  padding: 2rem;
+}
+
+/*Style for blog post titles*/
+.meta {
+  color: #888888;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+/*Style for post navigation links*/
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+
+/*Style for active link in the sidebar*/
+aside li.active a {
+  font-weight: bold;
+  text-decoration: none;
+  background: #888888;
+  padding: 2px 5px;
+  border-radius: 3px;
+  color: #FFFFFF;
+}
+
+.hero-image {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+}
+
+/*style of work gallery*/
+.work {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.work-header {
+  margin-bottom: 2rem;
+}
+
+.work-title {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.work-meta {
+  font-size: 0.9rem;
+  color: #666;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.work-type {
+  padding: 0.15rem 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.75rem;
+}
+
+.work-divider {
+  margin: 2.5rem 0;
+  border: none;
+  border-top: 1px solid #e0e0e0;
+}
+
+.work-content {
+  line-height: 1.8;
+}
+
+.work-nav {
+  font-size: 0.9rem;
+}

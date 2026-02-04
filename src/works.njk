@@ -1,0 +1,29 @@
+---
+title: works
+---
+
+{% extends "base.njk" %}
+
+{% block content %}
+<h1>作品集</h1>
+<p>這裡是我的音樂作品集。</p>
+
+<ul class="works-list">
+  {% for work in collections.works %}
+  <li class="work-item">
+    <h2><a href="{{ work.url }}">{{ work.data.title }}</a></h2>
+    <p class="work-meta">
+      {% if work.data.workType %}
+        <span class="work-type">{{ work.data.workType | capitalize }}</span>
+      {% endif %}
+      {% if work.data.date %}
+        <time datetime="{{ work.data.date | readableDate }}">{{ work.data.date | readableDate }}</time>
+      {% endif %}
+    </p>
+    {% if work.data.description %}
+      <p>{{ work.data.description }}</p>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

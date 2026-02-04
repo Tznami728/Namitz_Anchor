@@ -1,0 +1,35 @@
+{% extends "base.njk" %}
+
+{% block content %}
+<article class="work">
+
+  <header class="work-header">
+    <h1 class="work-title">
+      {{ title }}
+    </h1>
+
+    <div class="work-meta">
+      {% if workType %}
+        <span class="work-type">
+          {{ workType | capitalize }}
+        </span>
+      {% endif %}
+
+
+    </div>
+  </header>
+
+  <hr class="work-divider" />
+
+  <section class="work-content">
+    {{ content | safe }}
+  </section>
+
+  <hr class="work-divider" />
+
+  <nav class="work-nav">
+    <a href="/works/">返回作品列表</a>
+  </nav>
+
+</article>
+{% endblock %}
