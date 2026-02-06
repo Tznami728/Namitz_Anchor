@@ -20,12 +20,13 @@ a {
   text-decoration:none;
   color: #888888;
   padding: 2px 5px;
-  transition-duration: 1000ms;
+  transition-duration: 300ms;
 }
 
 /*Highlight the link on hover*/
 a:hover {
-  background: #e0e0e0;
+  background: #eeeeee;
+  color: #000;
   border-radius: 5px;
 }
 
@@ -52,6 +53,7 @@ main {
 /*Style for blog post titles*/
 .meta {
   color: #888888;
+   font-family: system-ui, sans-serif;
   font-size: 0.8rem;
   margin-bottom: 1rem;
 }
@@ -73,8 +75,8 @@ aside li.active a {
   color: #FFFFFF;
 }
 
-.hero-image {
-  max-width: 600px;
+.title-image {
+  max-width: 400px;
   width: 100%;
   height: auto;
 }

@@ -1,0 +1,25 @@
+{% extends "base.njk" %}
+
+{% block content %}
+<article>
+  <h1>{{ title }}</h1>
+
+  <div class="meta">
+    <time>最後更新：{{ page.date | readableDate }}</time>
+  </div>
+
+  <div class="content">
+    {{ content | safe }}
+  </div>
+
+  <nav class="post-nav">
+    {% if page.previous %}
+      <a href="{{ page.previous.url }}">← {{ page.previous.data.title }}</a>
+    {% endif %}
+
+    {% if page.next %}
+      <a href="{{ page.next.url }}">{{ page.next.data.title }} →</a>
+    {% endif %}
+  </nav>
+</article>
+{% endblock %}
