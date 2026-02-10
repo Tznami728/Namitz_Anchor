@@ -14,3 +14,6 @@
     <h2><a href="{{ (collections.posts | first).url }}">Blog</a></h2>
     
 2026-02-04 建立git版本管理
+
+2026-02-06 更換字體、個人簽名圖片、新增關於我頁面
+    font-family: "Noto Serif TC", PMingLiU, "LiSong Pro","Times New Roman", serif;

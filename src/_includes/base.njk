@@ -8,6 +8,7 @@
 
 <body>
   <div class="layout">
+    <!--
     <aside>
     <h2><a href="/">Home</a></h2>
     <h2><a href="/about">About</a></h2>
@@ -22,10 +23,20 @@
       {% endfor %}
     </ul>
     </aside>
-
+     -->
     <main>
       {% block content %}{% endblock %}
     </main>
   </div>
+
+  <!-- 底部導覽列 -->
+  <footer class="bottom-nav">
+    <nav class="bottom-nav-content">
+      <a href="/" class="{% if page.url == '/' %}active{% endif %}">Home</a>
+      <a href="/about" class="{% if page.url == '/about/' %}active{% endif %}">About</a>
+      <a href="/works" class="{% if page.url == '/works/' %}active{% endif %}">Pieces</a>
+      <a href="{{ (collections.posts | first).url }}" class="{% if page.url.startsWith('/posts/') %}active{% endif %}">Blog</a>
+    </nav>
+  </footer>
 </body>
 </html>
