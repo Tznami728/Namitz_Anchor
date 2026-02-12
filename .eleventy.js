@@ -1,6 +1,7 @@
 module.exports = function (eleventyConfig) {
 eleventyConfig.addPassthroughCopy("src/styles.css");
 eleventyConfig.addPassthroughCopy("src/images");
+eleventyConfig.addPassthroughCopy("src/gallery");
 
 eleventyConfig.addFilter("readableDate", (dateObj) => {
   const d = new Date(dateObj);

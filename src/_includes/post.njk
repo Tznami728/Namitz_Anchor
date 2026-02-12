@@ -1,8 +1,8 @@
 {% extends "base.njk" %}
 
 {% block content %}
+<div class="layout">
 <aside>
-    
     <h2>文章列表</h2>
     <ul>
       {% for post in collections.posts %}
@@ -37,4 +37,5 @@
     {% endif %}
   </nav>
 </article>
+</div>
 {% endblock %}

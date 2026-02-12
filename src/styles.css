@@ -1,5 +1,5 @@
 /*Global styles*/
-body {
+body {  
   margin: 0;
   font-family: "Noto Serif TC", PMingLiU, "LiSong Pro","Times New Roman", serif;
   line-height: 1.5;
@@ -9,21 +9,18 @@ body {
 
 main {
   flex: 1;
-  max-width: 540px;
+  max-width: 800px;
   padding: 2rem;
   margin: 0 auto;
 }
 
-/* .layout {
+.layout {
   display: flex;
-  max-width: 1080px;
-  margin-left: 0;
-  margin-right: auto; 
   min-height: 100vh;
-} */
+}
 
 
-/* 連結元素 */
+/* 超連結 */
 a {
   text-decoration:none;
   color: #888888;
@@ -37,12 +34,13 @@ a:hover {
   border-radius: 5px;
 }
 
-/* 側邊列 */
+/* 文章列表 */
 aside {
-  width: 200px;
+  font-family: system-ui, sans-serif;
+  width: 180px;
   flex-shrink: 0;
   flex-direction: row;
-  padding: 3rem;
+  padding-top: 10rem;
   border-right: 1px solid #ddd;
   box-shadow: inset -5px 0px 10px rgba(143, 143, 143, 0.1);
 }
@@ -56,10 +54,17 @@ aside ul {
 aside li.active a {
   font-weight: bold;
   text-decoration: none;
-  background: #888888;
+  background: #888;
   padding: 2px 5px;
   border-radius: 3px;
   color: #FFFFFF;
+}
+
+/* 響應式：當視窗寬度小於等於 800px 時隱藏側邊欄 */
+@media (max-width: 800px) {
+  aside {
+    display: none;
+  }
 }
 
 /*Blog的文章*/
@@ -70,47 +75,30 @@ aside li.active a {
   margin-bottom: 1rem;
 }
 
+article {
+  flex: 1;
+  max-width: 800px;
+  padding: 2rem;
+}
+
 .post-nav {
   display: flex;
   justify-content: space-between;
   margin-top: 5rem;
 }
 
+.content {
+  line-height: 1.6;
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
 
-/*Style for active link in the sidebar*/
-
-
+/*首頁的標題圖片*/
 .title-image {
   max-width: 400px;
   width: 100%;
   height: auto;
 }
-
-/* 響應式：當視窗寬度小於 768px 時，轉換為上排橫式 */
-/*
-@media (max-width: 768px) {
-  .layout {
-    flex-direction: column;
-  }
-
-  aside {
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    min-width: 100px;
-  }
-
-  .sidebar nav ul {
-    
-  }
-
-  .sidebar nav ul li {
-    
-  }
-}
-  */
-
 
 /*作品區的版面調整*/
 .work {
@@ -163,7 +151,7 @@ aside li.active a {
   bottom: 0;
   left: 0;
   right: 0;
-  background: #ffffff;
+  background: #fff;
   border-top: 1px solid #ddd;
   box-shadow: 0 -2px 10px rgba(143, 143, 143, 0.1);
   z-index: 100;
@@ -183,7 +171,7 @@ body 添加 70px 底部邊距，避免內容被導覽列遮擋 */
 }
 
 .bottom-nav a {
-  color: #888888;
+  color: #888;
   text-decoration: none;
   padding: 0.5rem 1rem;
   transition: all 300ms;
@@ -191,14 +179,14 @@ body 添加 70px 底部邊距，避免內容被導覽列遮擋 */
 }
 
 .bottom-nav a:hover {
-  background: #eeeeee;
+  background: #eee;
   color: #000;
   border-radius: 5px;
 }
 
 .bottom-nav a.active {
   font-weight: bold;
-  background: #888888;
-  color: #ffffff;
-  border-radius: 5px;
+  color: #000;
+  border-bottom:1px #000 solid;
+ 
 }
