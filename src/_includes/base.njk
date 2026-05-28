@@ -8,22 +8,6 @@
 
 <body>
   <div class="layout">
-    <!--
-    <aside>
-    <h2><a href="/">Home</a></h2>
-    <h2><a href="/about">About</a></h2>
-    <h2><a href="/works">Pieces</a></h2>
-    <h2><a href="{{ (collections.posts | first).url }}">Blog</a></h2>
-    <ul>
-      {% for post in collections.posts %}
-      {% set isCurrent = post.url == page.url %}
-      <li class="{% if isCurrent %}active{% endif %}">
-      <a href="{{ post.url }}">{{ post.data.title }}</a>
-      </li>
-      {% endfor %}
-    </ul>
-    </aside>
-     -->
     <main>
       {% block content %}{% endblock %}
     </main>
@@ -32,10 +16,12 @@
   <!-- 底部導覽列 -->
   <footer class="bottom-nav">
     <nav class="bottom-nav-content">
-      <a href="/" class="{% if page.url == '/' %}active{% endif %}">Home</a>
-      <a href="/about" class="{% if page.url == '/about/' %}active{% endif %}">About</a>
-      <a href="/works" class="{% if page.url == '/works/' %}active{% endif %}">Pieces</a>
-      <a href="{{ (collections.posts | first).url }}" class="{% if page.url.startsWith('/posts/') %}active{% endif %}">Blog</a>
+      <a href="/" class="{% if page.url == '/' %}active{% endif %}">錨點</a>
+      <a href="/about/" class="{% if page.url == '/about/' %}active{% endif %}">關於</a>
+      <a href="/works/" class="{% if page.url == '/works/' %}active{% endif %}">編曲</a>
+      <a href="/gallery/" class="{% if page.url == '/gallery/' %}active{% endif %}">寫真</a>
+      <a href="{{ (collections.posts | first).url }}" class="{% if page.url.startsWith('/posts/') %}active{% endif %}">雜談</a>
+      <a href="/links/" class="{% if page.url == '/links/' %}active{% endif %}">連結</a>
     </nav>
   </footer>
 </body>
