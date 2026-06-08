@@ -12,7 +12,7 @@ permalink: /works/{{ page.fileSlug }}/
 
 這首還沒有整理過，之後應該會以現有的聲部數量，直接改編成完整管樂團作品。畢竟來到8個聲部，應該也是該有的都有了。
 
-# 編制
+## 編制
 管樂混編重奏(八個聲部)  
 Wind Ensemble (8 Parts)  
 Instruments:  

@@ -12,7 +12,7 @@ permalink: /works/{{ page.fileSlug }}/
 
 編曲上因為現場演出的成員剛好各會長笛以及單簧管，所以在曲目中安排了這兩項樂器的替換。也因為如此，這首作品成為了僅限這次演出的一回作。日後有餘力的話，應該會擴充長度，收錄更多曲目進來，另外也該把聲部固定下來，不再有臨時切換樂器的安排。
 
-# 編制
+## 編制
 薩氏管四重奏  
 Saxophone Quartet with Clarinet and Flute parts  
 Instruments:  
