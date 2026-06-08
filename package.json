@@ -1,4 +1,3 @@
-
 {
   "name": "text-blog",
   "version": "1.0.0",
@@ -13,7 +12,7 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "@11ty/eleventy": "^3.1.2"
+    "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy-img": "^6.0.4"
   }
 }
-

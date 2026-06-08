@@ -14,13 +14,8 @@ title: 相片集
   <div class="gallery-grid">
     {% for photo in collections.photos %}
       <div class="gallery-item">
-        <img src="{{ photo.url }}" alt="{{ photo.name }}" loading="lazy">
+        {% responsiveImage photo.path, photo.name, "(max-width: 768px) 100vw, 200px" %}
       </div>
     {% endfor %}
   </div>
-
-<!-- 
-改用 gallery-grid 容器和循環遍歷所有圖片
-使用 loading="lazy" 優化效能
--->
 {% endblock %}

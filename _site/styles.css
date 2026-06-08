@@ -257,7 +257,7 @@ body 添加 70px 底部邊距，避免內容被導覽列遮擋 */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1rem;
+  gap: 0.3rem;
   margin-top: 2rem;
 }
 
@@ -267,7 +267,7 @@ body 添加 70px 底部邊距，避免內容被導覽列遮擋 */
   background: #f5f5f5;
   aspect-ratio: 1;
   /*box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);*/
-  transition: transform 5000ms ease;
+  transition: transform 200ms ease;
 }
 
 .gallery-item:hover {
@@ -278,8 +278,10 @@ body 添加 70px 底部邊距，避免內容被導覽列遮擋 */
 .gallery-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
   display: block;
+  background: #f5f5f5;
 }
 
 /* 平板設備相片牆調整 */

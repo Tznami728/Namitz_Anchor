@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const Image = require("@11ty/eleventy-img");
 
 module.exports = function (eleventyConfig) {
 eleventyConfig.addPassthroughCopy("src/styles.css");
@@ -61,6 +62,37 @@ eleventyConfig.addCollection("posts", function (collectionApi) {
   .sort((a, b) => b.date - a.date);
 });
 
+// 圖片處理 Shortcode
+eleventyConfig.addNunjucksAsyncShortcode("responsiveImage", async (src, alt, sizes = "100vw") => {
+  const imagePath = path.join(__dirname, "src", src);
+  
+  try {
+    const metadata = await Image(imagePath, {
+      widths: [300, 600, 1000],
+      formats: ["webp", "jpeg"],
+      outputDir: "./_site/img/",
+      urlPath: "/img/",
+      filenameFormat: function (id, src, width, format, options) {
+        let outputFilename = `${path.basename(src, path.extname(src))}-${width}w.${format}`;
+        return outputFilename;
+      }
+    });
+
+    const imageAttributes = {
+      alt,
+      sizes,
+      loading: "lazy",
+      decoding: "async",
+    };
+
+    return Image.generateHTML(metadata, imageAttributes);
+  } catch (error) {
+    console.error(`Error processing image: ${src}`, error.message);
+    // 如果圖片處理失敗，返回原始圖片
+    return `<img src="/photos/${path.basename(src)}" alt="${alt}" loading="lazy" decoding="async">`;
+  }
+});
+
 eleventyConfig.addCollection("works", function (collectionApi) {
   return collectionApi
   .getFilteredByGlob("./src/works/*.md")
@@ -75,7 +107,7 @@ eleventyConfig.addCollection("photos", function () {
   
   return photos.map(file => ({
     name: file,
-    url: `/photos/${file}`
+    path: `photos/${file}`
   }));
 });
 //photos collection，自動掃描 photos 目錄中的所有圖片
