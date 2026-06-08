@@ -9,11 +9,18 @@ title: 相片集
     <h1>
       {{ title }}
     </h1>
-
-    <p>
-    這邊預計會放我的作品相片牆，但還沒做好。<br>
-    可以先看看我的
-    <a href="https://www.instagram.com/tzna_snap?igsh=MXFobDBqb2Jkc3dlZA==">Instagram帳號</a>。<br>
-    </p>
   </header>
+
+  <div class="gallery-grid">
+    {% for photo in collections.photos %}
+      <div class="gallery-item">
+        <img src="{{ photo.url }}" alt="{{ photo.name }}" loading="lazy">
+      </div>
+    {% endfor %}
+  </div>
+
+<!-- 
+改用 gallery-grid 容器和循環遍歷所有圖片
+使用 loading="lazy" 優化效能
+-->
 {% endblock %}

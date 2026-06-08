@@ -5,6 +5,7 @@ module.exports = function (eleventyConfig) {
 eleventyConfig.addPassthroughCopy("src/styles.css");
 eleventyConfig.addPassthroughCopy("src/images");
 eleventyConfig.addPassthroughCopy("src/gallery");
+eleventyConfig.addPassthroughCopy("src/photos");
 
 eleventyConfig.addFilter("readableDate", (dateObj, inputPath) => {
   let d;
@@ -65,6 +66,21 @@ eleventyConfig.addCollection("works", function (collectionApi) {
   .getFilteredByGlob("./src/works/*.md")
   .sort((a, b) => b.date - a.date);
 });
+
+eleventyConfig.addCollection("photos", function () {
+  const photosDir = path.join(__dirname, "src/photos");
+  const photos = fs.readdirSync(photosDir)
+    .filter(file => /\.(webp|jpg|jpeg|png|gif)$/i.test(file))
+    .sort((a, b) => b.localeCompare(a)); // 倒序排列
+  
+  return photos.map(file => ({
+    name: file,
+    url: `/photos/${file}`
+  }));
+});
+//photos collection，自動掃描 photos 目錄中的所有圖片
+//按檔案名稱倒序排列（最新的圖片在前）
+//添加 photos 的 passthrough copy，確保圖片被複製到輸出目錄
 
   return {
     dir: {
