@@ -107,7 +107,8 @@ eleventyConfig.addCollection("photos", function () {
   
   return photos.map(file => ({
     name: file,
-    path: `photos/${file}`
+    path: `photos/${file}`,
+    nameWithoutExt: path.basename(file, path.extname(file))
   }));
 });
 //photos collection，自動掃描 photos 目錄中的所有圖片

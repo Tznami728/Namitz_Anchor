@@ -13,9 +13,72 @@ title: 相片集
 
   <div class="gallery-grid">
     {% for photo in collections.photos %}
-      <div class="gallery-item">
+      <div class="gallery-item" data-fullimage="/img/{{ photo.nameWithoutExt }}-1000w.webp" data-fullimage-jpg="/img/{{ photo.nameWithoutExt }}-1000w.jpeg">
         {% responsiveImage photo.path, photo.name, "(max-width: 768px) 100vw, 200px" %}
       </div>
     {% endfor %}
   </div>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox-modal" class="lightbox-modal">
+    <div class="lightbox-container">
+      <button id="close-btn" class="lightbox-close">點擊四周以離開</button>
+      <img id="lightbox-image" src="" alt="">
+    </div>
+  </div>
+
+  <script>
+    const modal = document.getElementById('lightbox-modal');
+    const lightboxImage = document.getElementById('lightbox-image');
+    const closeBtn = document.getElementById('close-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    // 打開 Lightbox 並載入高清圖片
+    galleryItems.forEach(item => {
+      item.addEventListener('click', function() {
+        // 先顯示縮圖
+        const img = this.querySelector('img');
+        lightboxImage.src = img.src;
+        lightboxImage.style.opacity = '0.5'; // 降低透明度表示載入中
+        modal.classList.add('active');
+        
+        // 然後嘗試載入高清圖片
+        const fullImageWebp = this.dataset.fullimage;
+        const fullImageJpg = this.dataset.fullimageJpg;
+        
+        // 先嘗試載入 WebP 版本
+        const highResImg = new Image();
+        highResImg.onload = function() {
+          lightboxImage.src = fullImageWebp;
+          lightboxImage.style.opacity = '1'; // 恢復透明度
+        };
+        highResImg.onerror = function() {
+          // 如果 WebP 失敗，嘗試 JPEG
+          const jpgImg = new Image();
+          jpgImg.onload = function() {
+            lightboxImage.src = fullImageJpg;
+            lightboxImage.style.opacity = '1';
+          };
+          jpgImg.onerror = function() {
+            // 如果都失敗，保持縮圖並恢復透明度
+            lightboxImage.style.opacity = '1';
+          };
+          jpgImg.src = fullImageJpg;
+        };
+        highResImg.src = fullImageWebp;
+      });
+    });
+
+    // 關閉 Lightbox
+    closeBtn.addEventListener('click', function() {
+      modal.classList.remove('active');
+    });
+
+    // 點擊背景也可以關閉
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        modal.classList.remove('active');
+      }
+    });
+  </script>
 {% endblock %}
