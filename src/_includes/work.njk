@@ -4,6 +4,9 @@
 <article class="work">
 
   <header class="work-header">
+    <nav class="work-nav">
+      <a href="/works/">返回作品列表</a>
+    </nav>
     <h1 class="work-title">
       {{ title }}
     </h1>
@@ -16,6 +19,7 @@
       {% endif %}
 
 <time datetime="{{ work.data.date | readableDate }}">{{ work.data.date | readableDate }}</time>
+
     </div>
   </header>
 

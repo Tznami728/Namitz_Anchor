@@ -9,12 +9,15 @@ title: 相片集
     <h1>
       {{ title }}
     </h1>
+    <p>
+    這邊目前放的是最近幾年的街頭攝影作品。關於這系列的想法可參考這篇文。
+    </p>
   </header>
 
   <div class="gallery-grid">
     {% for photo in collections.photos %}
       <div class="gallery-item" data-fullimage="/img/{{ photo.nameWithoutExt }}-1000w.webp" data-fullimage-jpg="/img/{{ photo.nameWithoutExt }}-1000w.jpeg">
-        {% responsiveImage photo.path, photo.name, "(max-width: 768px) 100vw, 200px" %}
+        {% responsiveImage photo.path, photo.name, "200px" %}
       </div>
     {% endfor %}
   </div>
