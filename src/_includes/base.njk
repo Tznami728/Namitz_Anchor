@@ -20,7 +20,7 @@
       <a href="/" class="{% if page.url == '/' %}active{% endif %}">錨點</a>
       <a href="/works/" class="{% if page.url == '/works/' %}active{% endif %}">編曲</a>
       <a href="/gallery/" class="{% if page.url == '/gallery/' %}active{% endif %}">寫真</a>
-      <a href="{{ (collections.posts | first).url }}" class="{% if page.url.startsWith('/posts/') %}active{% endif %}">雜談</a>
+      <a href="/posts/" class="{% if page.url == '/posts/' %}active{% endif %}">雜談</a>
       <a href="/links/" class="{% if page.url == '/links/' %}active{% endif %}">連結</a>
     </nav>
   </footer>

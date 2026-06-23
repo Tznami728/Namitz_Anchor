@@ -1,0 +1,66 @@
+---
+title: 部落格
+---
+
+{% extends "base.njk" %}
+
+{% block content %}
+<header>
+  <h1>
+    {{title}}
+  </h1>
+  <p>
+    就是一些廢文。
+  </p>
+</header>
+
+<body>
+  <!-- {% set sortedPosts = collections.posts | reverse %} -->
+  {% set currentYear = null %}
+  
+  {% for post in collections.posts %}
+    {% if post.data.date %}
+      {% set postYear = post.data.date | strftime("%Y") %}
+      
+      {% if postYear != currentYear %}
+        {% if currentYear != null %}</ul>{% endif %}
+        <h2>{{ postYear }}</h2>
+        <ul>
+        {% set currentYear = postYear %}
+      {% endif %}
+      
+      {% set isCurrent = post.url == page.url %}
+      <li class="{% if isCurrent %}active{% endif %}">
+        <span class="post-date">{{ post.data.date | strftime("%m-%d") }}</span>
+        <a href="{{ post.url }}">{{ post.data.title }}</a>
+      </li>
+      <br>
+    {% endif %}
+  {% endfor %}
+  
+  {% if currentYear != null %}
+    </ul>
+  {% endif %}
+</body>
+
+<!--
+<ul class="works-list">
+  {% for work in collections.works %}
+  <li class="work-item">
+    <h2><a href="{{ work.url }}">{{ work.data.title }}</a></h2>
+    <p class="work-meta">
+      {% if work.data.workType %}
+        <span class="work-type">{{ work.data.workType | capitalize }}</span>
+      {% endif %}
+      {% if work.data.date %}
+        <time datetime="{{ work.data.date | readableDate }}">{{ work.data.date | readableDate }}</time>
+      {% endif %}
+    </p>
+    {% if work.data.description %}
+      <p>{{ work.data.description }}</p>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+-->
+{% endblock %}

@@ -1,5 +1,6 @@
 ---
 title: 試試看自己建立一個md檔案
+date: 2025-06-22
 layout: post.njk
 ---
 

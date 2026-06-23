@@ -1,16 +1,20 @@
 ---
-title: works
+title: 作品集
 ---
 
 {% extends "base.njk" %}
 
 {% block content %}
-<h1>作品集</h1>
-<p>
-這邊是我的編曲作品。<br>
-也可以前往
-<a href="https://www.youtube.com/@NamitzMusic">YouTube頻道</a>看看。<br>
-</p>
+<header>
+  <h1>
+    {{title}}
+  </h1>
+  <p>
+    這邊是我的編曲作品。<br>
+    也可以前往
+    <a href="https://www.youtube.com/@NamitzMusic">YouTube頻道</a>看看。<br>
+  </p>
+</header>
 
 <ul class="works-list">
   {% for work in collections.works %}

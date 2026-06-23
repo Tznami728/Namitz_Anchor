@@ -16,7 +16,8 @@
       相片集
     </h1>
     <p>
-    這邊目前放的是最近幾年的街頭攝影作品。關於這系列的想法可參考這篇文。
+    這邊目前放的是最近幾年的街頭攝影作品。關於這系列的想法可參考<a href="/posts/AboutPhoto">這裡</a>。<br>
+    歡迎使用 <a href="mailto:namitzmusic@gmail.com">Email:</a>namitzmusic@gmail.com與我合作。
     </p>
   </header>
 
@@ -220,7 +221,7 @@
         // 先顯示縮圖
         const img = this.querySelector('img');
         lightboxImage.src = img.src;
-        lightboxImage.style.opacity = '0.5'; // 降低透明度表示載入中
+        lightboxImage.style.opacity = '1'; // 降低透明度表示載入中
         modal.classList.add('active');
         
         // 然後嘗試載入高清圖片
@@ -272,7 +273,7 @@
       <a href="/" class="">錨點</a>
       <a href="/works/" class="">編曲</a>
       <a href="/gallery/" class="active">寫真</a>
-      <a href="/posts/post5/" class="">雜談</a>
+      <a href="/posts/" class="">雜談</a>
       <a href="/links/" class="">連結</a>
     </nav>
   </footer>

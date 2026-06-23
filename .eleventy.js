@@ -56,6 +56,25 @@ eleventyConfig.addFilter("charCount", (content) => {
   return text.length;
 });
 
+eleventyConfig.addFilter("strftime", (date, format) => {
+  if (!(date instanceof Date)) {
+    return "";
+  }
+  
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+  
+  // 根據 format 返回對應的值
+  if (format === "%Y") return year.toString();
+  if (format === "%m") return month;
+  if (format === "%d") return day;
+  if (format === "%m-%d") return `${month}-${day}`;
+  
+  // 默認返回 YYYY-MM-DD
+  return `${year}-${month}-${day}`;
+});
+
 eleventyConfig.addCollection("posts", function (collectionApi) {
   return collectionApi
   .getFilteredByGlob("src/posts/*.md")
