@@ -10,11 +10,20 @@ eleventyConfig.addPassthroughCopy("src/photos");
 
 eleventyConfig.addFilter("readableDate", (dateObj, inputPath) => {
   let d;
-  
+
   // 如果有指定 date，優先使用指定的 date
-  if (dateObj && dateObj instanceof Date) {
-    d = dateObj;
-  } else if (inputPath) {
+  if (dateObj) {
+    if (dateObj instanceof Date) {
+      d = dateObj;
+    } else if (typeof dateObj === "string" || typeof dateObj === "number") {
+      const parsed = new Date(dateObj);
+      if (!Number.isNaN(parsed.getTime())) {
+        d = parsed;
+      }
+    }
+  }
+
+  if (!d && inputPath) {
     // 否則讀取文件的最後修改時間
     try {
       const filePath = path.join(__dirname, inputPath);
@@ -24,11 +33,13 @@ eleventyConfig.addFilter("readableDate", (dateObj, inputPath) => {
       // 如果無法讀取文件，使用當前日期
       d = new Date();
     }
-  } else {
+  }
+
+  if (!d) {
     // 如果既沒有 dateObj 也沒有 inputPath，使用當前日期
     d = new Date();
   }
-  
+
   const year = d.getFullYear();
   const month = String(d.getMonth() + 1).padStart(2, "0");
   const day = String(d.getDate()).padStart(2, "0");

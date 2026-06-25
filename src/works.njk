@@ -14,13 +14,14 @@ title: 作品集
     也可以前往
     <a href="https://www.youtube.com/@NamitzMusic">YouTube頻道</a>看看。<br>
   </p>
+  <hr>
 </header>
 
 <ul class="works-list">
   {% for work in collections.works %}
   <li class="work-item">
     <h2><a href="{{ work.url }}">{{ work.data.title }}</a></h2>
-    <p class="work-meta">
+    <p class="meta">
       {% if work.data.workType %}
         <span class="work-type">{{ work.data.workType | capitalize }}</span>
       {% endif %}

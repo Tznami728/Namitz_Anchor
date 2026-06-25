@@ -17,7 +17,10 @@
   -->
 
 <article>
+  <div class="meta">
   <a href="/posts/">返回文章列表</a>
+  </div>
+  
   <h1>{{ title }}</h1>
 
   <div class="meta">
@@ -25,7 +28,7 @@
     · {{ content | readingTime }} min read
     · {{ content | charCount }} count
   </div>
-
+  <hr>
   <div class="content">
     {{ content | safe }}
   </div>
@@ -39,7 +42,10 @@
       <a href="{{ page.next.url }}">{{ page.next.data.title }} →</a>
     {% endif %}
   </nav>
+  <hr>
+  <div class="meta">
   <a href="/posts/">返回文章列表</a>
+  </div>
 </article>
 </div>
 {% endblock %}

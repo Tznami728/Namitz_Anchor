@@ -4,22 +4,21 @@
 <article class="work">
 
   <header class="work-header">
-    <nav class="work-nav">
+    <nav class="meta">
       <a href="/works/">返回作品列表</a>
     </nav>
     <h1 class="work-title">
       {{ title }}
     </h1>
-
-    <div class="work-meta">
+    
+    <div class="meta">
       {% if workType %}
         <span class="work-type">
           {{ workType | capitalize }}
         </span>
       {% endif %}
-
-<time datetime="{{ work.data.date | readableDate }}">{{ work.data.date | readableDate }}</time>
-
+    &nbsp; <!--插一個空白-->
+    <time datetime="{{ page.date | readableDate }}">{{ page.date | readableDate }}</time>
     </div>
   </header>
 
@@ -31,7 +30,7 @@
 
   <hr class="work-divider" />
 
-  <nav class="work-nav">
+  <nav class="meta">
     <a href="/works/">返回作品列表</a>
   </nav>
 
