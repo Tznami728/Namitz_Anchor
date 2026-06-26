@@ -4,10 +4,11 @@ const Image = require("@11ty/eleventy-img");
 
 module.exports = function (eleventyConfig) {
 eleventyConfig.addPassthroughCopy("src/styles.css");
-eleventyConfig.addPassthroughCopy("src/images");
+eleventyConfig.addPassthroughCopy("src/signs");
 eleventyConfig.addPassthroughCopy("src/gallery");
 eleventyConfig.addPassthroughCopy("src/photos");
 
+// 文章發表時間的 filter
 eleventyConfig.addFilter("readableDate", (dateObj, inputPath) => {
   let d;
 
@@ -46,6 +47,7 @@ eleventyConfig.addFilter("readableDate", (dateObj, inputPath) => {
   return `${year}-${month}-${day}`;
 });
 
+// 計算閱讀時間的 filter
 eleventyConfig.addFilter("readingTime", (content) => {
   // 移除 HTML tag
   const text = content.replace(/<[^>]*>/g, "").trim();
@@ -53,12 +55,13 @@ eleventyConfig.addFilter("readingTime", (content) => {
   // 移除空白與換行，只算實際字元
   const charCount = text.replace(/\s+/g, "").length;
 
-  // 以每分鐘 350 字估算
-  const minutes = Math.max(1, Math.ceil(charCount / 350));
+  // 以每分鐘 250 字估算
+  const minutes = Math.max(1, Math.ceil(charCount / 250));
 
   return minutes;
 });
 
+// 計算字元數的 filter
 eleventyConfig.addFilter("charCount", (content) => {
   // 移除 HTML tag
   const text = content.replace(/<[^>]*>/g, "").trim();
@@ -67,6 +70,7 @@ eleventyConfig.addFilter("charCount", (content) => {
   return text.length;
 });
 
+// 自訂 strftime filter，支援 %Y, %m, %d, %m-%d 格式
 eleventyConfig.addFilter("strftime", (date, format) => {
   if (!(date instanceof Date)) {
     return "";
@@ -86,6 +90,7 @@ eleventyConfig.addFilter("strftime", (date, format) => {
   return `${year}-${month}-${day}`;
 });
 
+// 文章 collection，按日期倒序排列
 eleventyConfig.addCollection("posts", function (collectionApi) {
   return collectionApi
   .getFilteredByGlob("src/posts/*.md")
@@ -123,12 +128,14 @@ eleventyConfig.addNunjucksAsyncShortcode("responsiveImage", async (src, alt, siz
   }
 });
 
+// works collection，按日期倒序排列
 eleventyConfig.addCollection("works", function (collectionApi) {
   return collectionApi
   .getFilteredByGlob("./src/works/*.md")
   .sort((a, b) => b.date - a.date);
 });
 
+// photos collection，自動掃描 photos 目錄中的所有圖片
 eleventyConfig.addCollection("photos", function () {
   const photosDir = path.join(__dirname, "src/photos");
   const photos = fs.readdirSync(photosDir)
