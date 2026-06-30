@@ -1,5 +1,6 @@
 ---
 title: 第四篇測試
+date: 2026-01-28
 layout: post.njk
 ---
 
