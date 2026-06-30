@@ -2,20 +2,6 @@
 
 {% block content %}
 <div class="layout">
-  <!--
-  <aside>
-      <h2>文章列表</h2>
-      <ul>
-        {% for post in collections.posts %}
-        {% set isCurrent = post.url == page.url %}
-        <li class="{% if isCurrent %}active{% endif %}">
-        <a href="{{ post.url }}">{{ post.data.title }}</a>
-        </li>
-        {% endfor %}
-      </ul>
-  </aside>
-  -->
-
 <article>
   <div class="meta">
   <a href="/posts/">返回文章列表</a>
@@ -29,6 +15,7 @@
     · {{ content | charCount }} count
   </div>
   <hr>
+
   <div class="content">
     {{ content | safe }}
   </div>
@@ -42,10 +29,25 @@
       <a href="{{ page.next.url }}">{{ page.next.data.title }} →</a>
     {% endif %}
   </nav>
+  
   <hr>
   <div class="meta">
   <a href="/posts/">返回文章列表</a>
   </div>
+
+  <!--
+  <aside>
+  <h2>文章列表</h2>
+  <ul>
+    {% for post in collections.posts %}
+    {% set isCurrent = post.url == page.url %}
+    <li class="{% if isCurrent %}active{% endif %}">
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+  </aside>
+  -->
 </article>
 </div>
 {% endblock %}

@@ -104,7 +104,7 @@ eleventyConfig.addNunjucksAsyncShortcode("responsiveImage", async (src, alt, siz
   try {
     const metadata = await Image(imagePath, {
       widths: [300, 1000],
-      formats: ["webp", "jpeg"],
+      formats: ["webp"],
       outputDir: "./_site/img/",
       urlPath: "/img/",
       filenameFormat: function (id, src, width, format, options) {
