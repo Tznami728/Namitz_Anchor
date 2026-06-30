@@ -4,7 +4,7 @@ body {
   font-family: "Noto Serif TC", "Noto Serif JP", "LiSong Pro", "Times New Roman", serif;
   line-height: 1.5;
   min-height: 100vh;
-  padding-bottom: 70px;
+  padding-bottom: 40px;
 }
 
 main {
@@ -88,9 +88,66 @@ article {
 }
 
 .content {
-  line-height: 1.6;
+  line-height: 1.8;
   text-align: justify;
   text-justify: inter-ideograph;
+}
+
+.content p {
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.content ul, .content ol {
+  line-height: 2;
+  margin-left: 0;
+  margin-bottom: 40px;
+}
+
+.content table {
+  border-collapse: collapse;
+  border: 1px solid #999;
+  padding: 8px;
+}
+
+.content th, .content td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.content hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 2rem 0;
+}
+
+.content blockquote {
+  color: #888;
+  font-family: system-ui, sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  border-left: 1px solid #ddd;
+  padding-left: 1rem;
+  margin-left: 0;
+}
+
+/*.content code {
+  background-color: #888;
+  padding: 3px 6px;
+  border-radius: 3px;
+  font-family: 'Consolas', 'Monaco', monospace;
+  font-size: 0.9em;
+  color: #ddd;
+}*/
+
+.content pre {
+  background-color: #eee;
+  border-radius: 6px;
+  padding: 16px;
+  overflow-x: auto;
+  line-height: 1.8;
+  font-family: monospace;
+  color: #666;
 }
 
 /*首頁的標題圖片*/
@@ -105,10 +162,6 @@ article {
   max-width: 720px;
   margin: 0 auto;
   padding: 3rem 1.5rem;
-}
-
-.work-header {
-  margin-bottom: 2rem;
 }
 
 .work-title {
@@ -322,16 +375,16 @@ body 添加 70px 底部邊距，避免內容被導覽列遮擋 */
 
 .lightbox-container {
   position: relative;
-  max-width: 90vw;
-  max-height: 90vh;
+  max-width: 95vw;
+  max-height: 95vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 #lightbox-image {
-  max-width: 90vw;
-  max-height: 90vh;
+  max-width: 95vw;
+  max-height: 95vh;
   object-fit: contain;
   animation: zoomIn 0.3s ease;
   transition: opacity 0.4s ease;
