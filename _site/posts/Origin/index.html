@@ -22,7 +22,7 @@
   <div class="meta">
     <time>2026-06-08</time>
     · 13 min read
-    · 3368 count
+    · 3366 count
   </div>
   <hr>
 
@@ -42,18 +42,16 @@
 <h2>從何開始</h2>
 <p>這個網站是靠靜態網站產生引擎 11ty，並使用微軟的 VScode 編輯器編寫的。坦白說對於整個架站的觀念還是邊做邊學當中，這之中撞了不少牆。像是最近一次撞牆是要把整個專案丟上去 Github Pages。然後在自訂網域 DNS那邊繞了一陣子。那時候甚至想就這樣放下來，改用現成的部落格空間提供服務了。不過還好有撐過來，感謝 ChatGPT、Claude 的協助。</p>
 <p>這個網站是真的簡陋，完完全全就是個網頁菜鳥寫出來的。剛好我喜歡極簡風格，所以起初就不打算使用華麗的程式碼與動畫，這樣簡單的樣式也頗符合我的審美。現在網路上有數不清的服務，自動化的程度從純靠手工到包套空間都有。你完全不需要像我一樣自虐，但其實現在AI輔助程式碼已經相當成熟。主要用於撰寫網頁的編輯器 VS Code，甚至將 AI Agent 包含在內，有問題、想加功能，整行反白選起來問AI就好。當然AI怎麼寫還是得花點功夫了解。</p>
-<p>有興趣了解怎麼做的，這邊稍微名詞解釋(其實是寫給自己看)：</p>
-<ul>
-<li><em><strong>靜態網站</strong></em>（Static Website）是指網站中的每個頁面都是預先製作好的 HTML、CSS、JavaScript 檔案，使用者瀏覽時，伺服器直接傳送檔案，不需要即時從資料庫產生內容。它的優點是載入速度快、安全性高、成本低，適合公司形象網站、作品集、活動頁面或部落格等內容不常變動的網站。若需要會員登入、購物車、留言或即時更新等功能，通常會搭配外部服務，或改用動態網站。</li>
-<li><strong>Eleventy</strong>（11ty） 是一套開源的<em><strong>靜態網站產生器</strong></em>（Static Site Generator）。它可以把 Markdown、HTML 或其他模板檔案，自動轉換成靜態網站，不需要複雜的後端程式或資料庫。特色是簡單、速度快、彈性高，支援多種模板語言（如 Nunjucks、Liquid、Handlebars），常用於建立部落格、公司官網、文件網站和作品集。產生的網站可部署到 GitHub Pages、Netlify、Vercel 等平台，兼具高效能、安全性與低維護成本。</li>
-<li><strong>JavaScript</strong> 是一種事件驅動、物件導向的直譯式<em><strong>程式語言</strong></em>，為全球資訊網的核心技術之一。它主要用於為靜態網頁增添動態效果、控制多媒體與處理使用者互動，現今也廣泛應用於伺服器端（如 Node.js）等非瀏覽器環境。</li>
-<li><strong>Node.js</strong> 是一個基於 Chrome 引擎建構的開源、跨平台 JavaScript <em><strong>執行環境</strong></em>。它讓開發者能跳脫網頁瀏覽器的限制，直接在電腦或伺服器上執行 JavaScript，廣泛用於開發後端伺服器、API 與現代化網頁開發工具。傳統的 JS 只能在瀏覽器（如 Chrome, Edge）裡操作網頁元素，Node.js 則賦予了 JS 訪問作業系統的能力，例如讀寫硬碟檔案、連接資料庫、進行網路通訊等。</li>
-<li><strong>Nunjucks</strong> 是一套<em><strong>模板引擎</strong></em>，使用最通用的 JavaScript 語言為基底，功能豐富且強大、快速且輕量。</li>
-<li><strong>Markdown</strong> 是一種輕量級的<em><strong>標記語言</strong></em>。你只需透過鍵盤輸入幾個簡單的符號（如 # 或 *），就能快速標示文字的粗體、標題或清單，而它最終能自動轉換為漂亮的排版或網頁格式。</li>
-<li><strong>GitHub Pages</strong> 是由 GitHub 提供的免費<em><strong>靜態網站託管服務</strong></em>。只要將網頁的 HTML、CSS 和 JavaScript 檔案上傳到 GitHub 儲存庫（Repository），它就能自動幫你把網站發布到網路上，並提供免費的 github.io 網址。</li>
-<li><em><strong>自訂網域</strong></em> 能將平台預設的複雜網址或包含服務商名稱的子網址，轉換為專屬、簡短且具專業形象的個人化品牌網址。</li>
-<li><strong>VS Code</strong> （Visual Studio Code）是一款由微軟開發且跨平台的免費原始碼編輯器。</li>
-</ul>
+<p>有興趣了解怎麼做的，這邊稍微名詞解釋(其實是寫給自己看)：<br>
+<em><strong>靜態網站</strong></em>（Static Website）是指網站中的每個頁面都是預先製作好的 HTML、CSS、JavaScript 檔案，使用者瀏覽時，伺服器直接傳送檔案，不需要即時從資料庫產生內容。它的優點是載入速度快、安全性高、成本低，適合公司形象網站、作品集、活動頁面或部落格等內容不常變動的網站。若需要會員登入、購物車、留言或即時更新等功能，通常會搭配外部服務，或改用動態網站。</p>
+<p><strong>Eleventy</strong>（11ty） 是一套開源的<em><strong>靜態網站產生器</strong></em>（Static Site Generator）。它可以把 Markdown、HTML 或其他模板檔案，自動轉換成靜態網站，不需要複雜的後端程式或資料庫。特色是簡單、速度快、彈性高，支援多種模板語言（如 Nunjucks、Liquid、Handlebars），常用於建立部落格、公司官網、文件網站和作品集。產生的網站可部署到 GitHub Pages、Netlify、Vercel 等平台，兼具高效能、安全性與低維護成本。</p>
+<p><strong>JavaScript</strong> 是一種事件驅動、物件導向的直譯式<em><strong>程式語言</strong></em>，為全球資訊網的核心技術之一。它主要用於為靜態網頁增添動態效果、控制多媒體與處理使用者互動，現今也廣泛應用於伺服器端（如 Node.js）等非瀏覽器環境。</p>
+<p><strong>Node.js</strong> 是一個基於 Chrome 引擎建構的開源、跨平台 JavaScript <em><strong>執行環境</strong></em>。它讓開發者能跳脫網頁瀏覽器的限制，直接在電腦或伺服器上執行 JavaScript，廣泛用於開發後端伺服器、API 與現代化網頁開發工具。傳統的 JS 只能在瀏覽器（如 Chrome, Edge）裡操作網頁元素，Node.js 則賦予了 JS 訪問作業系統的能力，例如讀寫硬碟檔案、連接資料庫、進行網路通訊等。</p>
+<p><strong>Nunjucks</strong> 是一套<em><strong>模板引擎</strong></em>，使用最通用的 JavaScript 語言為基底，功能豐富且強大、快速且輕量。</p>
+<p><strong>Markdown</strong> 是一種輕量級的<em><strong>標記語言</strong></em>。你只需透過鍵盤輸入幾個簡單的符號（如 # 或 *），就能快速標示文字的粗體、標題或清單，而它最終能自動轉換為漂亮的排版或網頁格式。</p>
+<p><strong>GitHub Pages</strong> 是由 GitHub 提供的免費<em><strong>靜態網站託管服務</strong></em>。只要將網頁的 HTML、CSS 和 JavaScript 檔案上傳到 GitHub 儲存庫（Repository），它就能自動幫你把網站發布到網路上，並提供免費的 github.io 網址。</p>
+<p><em><strong>自訂網域</strong></em> 能將平台預設的複雜網址或包含服務商名稱的子網址，轉換為專屬、簡短且具專業形象的個人化品牌網址。</p>
+<p><strong>VS Code</strong> （Visual Studio Code）是一款由微軟開發且跨平台的免費<em><strong>原始碼編輯器</strong></em>。</p>
 <p>網站結構大概是這樣：</p>
 <pre><code>├_site # 11ty產生的成品，讀者看到的就是這裡面的HTML檔
 ├node_modules # node.js載入的模組都放這
