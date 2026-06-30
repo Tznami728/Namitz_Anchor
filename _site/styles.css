@@ -414,6 +414,6 @@ body 添加 70px 底部邊距，避免內容被導覽列遮擋 */
   }
   to {
     transform: scale(1);
-    opacity: 1;
+    opacity: 0.9;
   }
 }
