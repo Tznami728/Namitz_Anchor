@@ -19,19 +19,24 @@ main {
   min-height: 100vh;
 }
 
+hr {
+  border: none;
+  border-top: 1px solid #888;
+  margin: 2rem 0;
+}
 
 /* 超連結 */
 a {
-  text-decoration:none;
-  color: #888888;
-  padding: 2px 5px;
-  transition-duration: 2000ms;
+  text-decoration: none;
+  color: #888;
+  padding: 2px 3px;
+  transition-duration: 500ms;
 }
 
 a:hover {
-  background: #eeeeee;
+  background: #eee;
   color: #000;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 /* 文章列表 */
@@ -69,7 +74,7 @@ aside li.active a {
 
 /*Blog的文章*/
 .meta {
-  color: #888888;
+  color: #888;
   font-family: system-ui, sans-serif;
   font-size: 0.8rem;
   margin-bottom: 1rem;
@@ -150,6 +155,13 @@ article {
   color: #666;
 }
 
+.content img {
+  max-width: 90vw;
+  height: auto;
+  display: block;
+  position: center;
+}
+
 /*首頁的標題圖片*/
 .title-image {
   max-width: 400px;
@@ -187,7 +199,7 @@ article {
 .work-divider {
   margin: 2.5rem 0;
   border: none;
-  border-top: 1px solid #e0e0e0;
+  border-top: 1px solid #888;
 }
 
 .work-content {
@@ -227,7 +239,7 @@ body 添加 70px 底部邊距，避免內容被導覽列遮擋 */
   color: #888;
   text-decoration: none;
   padding: 0.5rem 1rem;
-  transition: all 2000ms;
+  transition: all 500ms;
   font-size: 0.95rem;
 }
 
@@ -393,7 +405,7 @@ body 添加 70px 底部邊距，避免內容被導覽列遮擋 */
   top: -20px;
   background: none;
   border: none;
-  color: #666;
+  color: #888;
   cursor: pointer;
   z-index: 1001;
 }

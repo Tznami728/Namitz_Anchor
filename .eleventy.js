@@ -7,6 +7,7 @@ eleventyConfig.addPassthroughCopy("src/styles.css");
 eleventyConfig.addPassthroughCopy("src/signs");
 eleventyConfig.addPassthroughCopy("src/gallery");
 eleventyConfig.addPassthroughCopy("src/photos");
+eleventyConfig.addPassthroughCopy("src/images");
 
 // 文章發表時間的 filter
 eleventyConfig.addFilter("readableDate", (dateObj, inputPath) => {
