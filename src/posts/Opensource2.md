@@ -1,5 +1,5 @@
 ---
-title: 開源軟體使用心得(未完)
+title: 作伙來用開源軟體 (下)
 date: 2026-06-30
 layout: post.njk
 ---
