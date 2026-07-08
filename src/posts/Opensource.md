@@ -20,6 +20,10 @@ layout: post.njk
 
 從軟體開發商的角度來看，這些機制確實能保障智財權。但越來越麻煩的驗證程序，搞到正版的使用者，實在有些本末倒置。
 
+[你「買」的東西](https://wiwi.blog/blog/you-bought-it)  
+<span class= "meta"> https://wiwi.blog/blog/you-bought-it </span>  
+wiwi官大為做了不少整理，不只軟體，還有書籍、電影、音樂...這些有版權的數位檔案一個都跑不掉。  
+  
 ---
 ## 想跑？門都沒有
 以下節錄自網路( [來源](https://vocus.cc/article/678a4fa7fd89780001dbe246) )：

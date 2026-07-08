@@ -21,11 +21,10 @@ title: 部落格
     {% set latestPost = collections.posts[0] %}
     <section>
       <article>
-        <b>最新文章：<a href="{{ latestPost.url }}">{{ latestPost.data.title }}</a></b>
-        <p class="post-excerpt">{{ latestPost.templateContent | striptags | truncate(125, true, '...') }}</p>
-        <p class="meta">
-        {{ latestPost.data.date | strftime("%Y-%m-%d") }}
-        <a href="{{ latestPost.url }}" class="meta">查看更多</a>
+        <b>最新文章- &nbsp;<a href="{{ latestPost.url }}">{{ latestPost.data.title }}</a></b>
+        <p>{{ latestPost.templateContent | striptags | truncate(125, true, '...') }}</p>
+        <p class="meta">{{ latestPost.data.date | strftime("%Y-%m-%d") }}
+        <a href="{{ latestPost.url }}">查看更多</a>
         </p>
       </article>
       <hr>

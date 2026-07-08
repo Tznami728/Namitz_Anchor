@@ -1,5 +1,5 @@
 ---
-title: 作伙來用開源軟體 (下)
+title: 作伙來用開源軟體 (下) 未完成
 date: 2026-06-30
 layout: post.njk
 ---

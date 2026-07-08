@@ -1,5 +1,5 @@
 ---
-title: 友站連結
+title: 情報屋
 ---
 
 {% extends "base.njk" %}
@@ -11,8 +11,33 @@ title: 友站連結
     </h1>
 
     <p>
-   放些朋友的站。
+      手牽手，一起讓部落(格)壯大！
     </p>
     <hr>
   </header>
+
+  <ul>
+
+    {% for link in collections.links %}
+    <li>
+      {% if link.url %}
+        <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{{ link.title }}</a><br>
+        <span class= "meta"> {{ link.url }} </span><br>
+      {% else %}
+        {{ link.title }}
+      {% endif %}
+
+      {% if link.description %}
+        <span>{{ link.description }}</span>
+      {% endif %}
+    </li>
+
+    {% else %}
+    <li>
+      <p>目前沒有連結資料。</p>
+    </li>
+    {% endfor %}
+
+  </ul>
+
 {% endblock %}

@@ -98,6 +98,77 @@ eleventyConfig.addCollection("posts", function (collectionApi) {
   .sort((a, b) => b.date - a.date);
 });
 
+// works collection，按日期倒序排列
+eleventyConfig.addCollection("works", function (collectionApi) {
+  return collectionApi
+  .getFilteredByGlob("./src/works/*.md")
+  .sort((a, b) => b.date - a.date);
+});
+
+// links collection，從 links.txt 解析成清單
+eleventyConfig.addCollection("links", function () {
+  const linksFile = path.join(__dirname, "src/links.txt");
+
+  if (!fs.existsSync(linksFile)) {
+    return [];
+  }
+
+  const content = fs.readFileSync(linksFile, "utf8");
+  const rawBlocks = content
+    .split(/\r?\n\s*\r?\n/)
+    .map((block) => block.trim())
+    .filter(Boolean);
+
+  return rawBlocks.map((block, index) => {
+    const lines = block
+      .split(/\r?\n/)
+      .map((line) => line.trim())
+      .filter(Boolean);
+
+    let title = "";
+    let url = "";
+    const descriptionLines = [];
+
+    lines.forEach((line) => {
+      if (!title) {
+        title = line;
+        return;
+      }
+
+      if (!url && /^https?:\/\//i.test(line)) {
+        url = line;
+        return;
+      }
+
+      descriptionLines.push(line);
+    });
+
+    return {
+      title,
+      url,
+      description: descriptionLines.join(" "),
+      key: `${index}-${title}`,
+    };
+  }).filter((item) => item.title && item.url);
+});
+
+// photos collection，自動掃描 photos 目錄中的所有圖片
+eleventyConfig.addCollection("photos", function () {
+  const photosDir = path.join(__dirname, "src/photos");
+  const photos = fs.readdirSync(photosDir)
+    .filter(file => /\.(webp|jpg|jpeg|png|gif)$/i.test(file))
+    .sort((a, b) => b.localeCompare(a)); // 倒序排列
+  
+  return photos.map(file => ({
+    name: file,
+    path: `photos/${file}`,
+    nameWithoutExt: path.basename(file, path.extname(file))
+  }));
+});
+//photos collection，自動掃描 photos 目錄中的所有圖片
+//按檔案名稱倒序排列（最新的圖片在前）
+//添加 photos 的 passthrough copy，確保圖片被複製到輸出目錄
+
 // 圖片處理 Shortcode
 eleventyConfig.addNunjucksAsyncShortcode("responsiveImage", async (src, alt, sizes = "100vw") => {
   const imagePath = path.join(__dirname, "src", src);
@@ -128,30 +199,6 @@ eleventyConfig.addNunjucksAsyncShortcode("responsiveImage", async (src, alt, siz
     return `<img src="/photos/${path.basename(src)}" alt="${alt}" loading="lazy" decoding="async">`;
   }
 });
-
-// works collection，按日期倒序排列
-eleventyConfig.addCollection("works", function (collectionApi) {
-  return collectionApi
-  .getFilteredByGlob("./src/works/*.md")
-  .sort((a, b) => b.date - a.date);
-});
-
-// photos collection，自動掃描 photos 目錄中的所有圖片
-eleventyConfig.addCollection("photos", function () {
-  const photosDir = path.join(__dirname, "src/photos");
-  const photos = fs.readdirSync(photosDir)
-    .filter(file => /\.(webp|jpg|jpeg|png|gif)$/i.test(file))
-    .sort((a, b) => b.localeCompare(a)); // 倒序排列
-  
-  return photos.map(file => ({
-    name: file,
-    path: `photos/${file}`,
-    nameWithoutExt: path.basename(file, path.extname(file))
-  }));
-});
-//photos collection，自動掃描 photos 目錄中的所有圖片
-//按檔案名稱倒序排列（最新的圖片在前）
-//添加 photos 的 passthrough copy，確保圖片被複製到輸出目錄
 
   return {
     dir: {
