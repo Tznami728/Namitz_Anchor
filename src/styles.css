@@ -31,7 +31,8 @@ ul {
 }
 
 li {
-  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 /* 超連結 */
@@ -167,10 +168,17 @@ article {
 }
 
 .content img {
-  max-width: 90vw;
+  max-width: 700px;
   height: auto;
   display: block;
-  position: center;
+  margin: 0 auto;
+}
+
+.after-content {
+  text-align: center;
+  font-size: 0.9rem;
+  font-family: system-ui, sans-serif;
+  color: #888;
 }
 
 /*首頁的標題圖片*/
@@ -223,19 +231,15 @@ article {
 
 /* 底部固定導覽列 */
 .bottom-nav {
-  position: fixed;
+  position: fixed; /*使導覽列固定在底部，不受頁面滾動影響*/
   bottom: 0;
   left: 0;
   right: 0;
   background: #fff;
   border-top: 1px solid #ddd;
   box-shadow: 0 -2px 10px rgba(143, 143, 143, 0.1);
-  z-index: 100;
+  z-index: 100; /*確保導覽列始終在最上層*/
 }
-/* 
-position: fixed使導覽列固定在底部，不受頁面滾動影響
-z-index: 100確保導覽列始終在最上層
-body 添加 70px 底部邊距，避免內容被導覽列遮擋 */
 
 .bottom-nav-content {
   display: flex;
