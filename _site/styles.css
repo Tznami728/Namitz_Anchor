@@ -1,7 +1,7 @@
 /*Global styles*/
 body {  
   margin: 0;
-  font-family: "Noto Serif TC", "Noto Serif JP", "LiSong Pro", "Times New Roman", serif;
+  font-family: "Yu Mincho", "Noto Serif TC", "Noto Serif JP", "LiSong", "Times New Roman", serif;
   line-height: 1.5;
   min-height: 100vh;
   padding-bottom: 40px;
@@ -35,6 +35,29 @@ li {
   margin-bottom: 0.5rem;
 }
 
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-family: "Yu Gothic", "Noto Sans TC", "Noto Sans JP", "PingFang", "Arial", sans-serif;
+  font-weight: 100;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 800;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+
 /* 超連結 */
 a {
   text-decoration: none;
@@ -51,7 +74,7 @@ a:hover {
 
 /* 文章列表 */
 aside {
-  font-family: system-ui, sans-serif;
+  font-family:  "Yu Gothic", "Noto Sans TC", "Noto Sans JP", "PingFang", "Arial", sans-serif;
   width: 180px;
   flex-shrink: 0;
   flex-direction: row;
@@ -85,7 +108,7 @@ aside li.active a {
 /*Blog的文章*/
 .meta {
   color: #888;
-  font-family: system-ui, sans-serif;
+  font-family:  "Yu Gothic", "Noto Sans TC", "Noto Sans JP", "PingFang", "Arial", sans-serif;
   font-size: 0.8rem;
   /*margin-bottom: 1rem;*/
 }
@@ -124,7 +147,7 @@ article {
   border: 1px solid #999;
   padding: 10px;
   font-size: 0.9rem;
-  font-family: system-ui, sans-serif;
+  font-family:  "Yu Gothic", "Noto Sans TC", "Noto Sans JP", "PingFang", "Arial", sans-serif;
 }
 
 .content th, .content td {
@@ -140,7 +163,7 @@ article {
 
 .content blockquote {
   color: #888;
-  font-family: system-ui, sans-serif;
+  font-family:  "Yu Gothic", "Noto Sans TC", "Noto Sans JP", "PingFang", "Arial", sans-serif;
   font-weight: 500;
   font-size: 0.9rem;
   border-left: 1px solid #ddd;
@@ -176,8 +199,8 @@ article {
 
 .after-content {
   text-align: center;
-  font-size: 0.9rem;
-  font-family: system-ui, sans-serif;
+  font-size: 0.8rem;
+  font-family:  "Yu Gothic", "Noto Sans TC", "Noto Sans JP", "PingFang", "Arial", sans-serif;
   color: #888;
 }
 
