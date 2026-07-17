@@ -9,9 +9,10 @@ body {
 
 main {
   flex: 1;
-  max-width: 800px;
+  max-width: 700px;
   padding: 2rem;
   margin: 0 auto;
+  /*writing-mode: vertical-rl;*/
 }
 
 .layout {
@@ -36,14 +37,14 @@ li {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 800;
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: "Yu Gothic", "Noto Sans TC", "Noto Sans JP", "PingFang", "Arial", sans-serif;
   font-weight: 100;
   margin-top: 1rem;
@@ -115,7 +116,7 @@ aside li.active a {
 
 article {
   flex: 1;
-  max-width: 800px;
+  max-width: 700px;
   padding: 2rem;
 }
 
@@ -182,7 +183,7 @@ article {
 
 .content pre {
   background-color: #eee;
-  border-radius: 6px;
+  border-radius: 3px;
   padding: 16px;
   overflow-x: auto;
   line-height: 1.8;
@@ -191,7 +192,7 @@ article {
 }
 
 .content img {
-  max-width: 700px;
+  max-width: 85%;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -218,24 +219,15 @@ article {
   padding: 3rem 1.5rem;
 }
 
-.work-title {
-  font-size: 2.2rem;
-  margin-bottom: 0.5rem;
+.work-item {
+  margin-bottom: 3rem;
 }
-/*
-.work-meta {
-  font-size: 0.9rem;
-  color: #666;
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-}
-*/
+
 .work-type {
   padding: 0.15rem 0.5rem;
   border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 0.75rem;
+  border-radius: 3px;
+  font-size: 0.8rem;
 }
 
 .work-divider {
@@ -249,7 +241,19 @@ article {
 }
 
 .work-nav {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+}
+
+.video-container {
+  max-width: 80vw;
+  border: solid 1px #ccc;
+  margin-top: 1rem;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 270px;
+  border: none;
 }
 
 /* 底部固定導覽列 */
@@ -278,13 +282,13 @@ article {
   text-decoration: none;
   padding: 0.5rem 1rem;
   transition: all 500ms;
-  font-size: 0.95rem;
+
 }
 
 .bottom-nav a:hover {
   background: #eee;
   color: #000;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .bottom-nav a.active {
@@ -301,7 +305,7 @@ article {
   }
 
   .bottom-nav-content {
-    gap: 1rem;
+    gap: 0.5rem;
     padding: 1rem;
   }
 
@@ -322,12 +326,11 @@ article {
   }
 
   .bottom-nav-content {
-    gap: 0.5rem;
+    gap: 0.2rem;
     padding: 0.8rem;
   }
 
   .bottom-nav a {
-    font-size: 1.1rem;
     padding: 0.7rem 0.6rem;
     flex: 1;
     text-align: center;
@@ -343,10 +346,6 @@ article {
 
   .work {
     padding: 2rem 1rem;
-  }
-
-  .work-title {
-    font-size: 1.5rem;
   }
 
   .post-nav {

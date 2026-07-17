@@ -1,10 +1,11 @@
 const fs = require("fs");
 const path = require("path");
 const Image = require("@11ty/eleventy-img");
+const { addVideoContainerClass } = require("./src/utils/addVideoContainerClass");
 
 module.exports = function (eleventyConfig) {
 eleventyConfig.addPassthroughCopy("src/styles.css");
-eleventyConfig.addPassthroughCopy("defer.js");
+eleventyConfig.addPassthroughCopy("src/utils");
 eleventyConfig.addPassthroughCopy("src/signs");
 eleventyConfig.addPassthroughCopy("src/gallery");
 eleventyConfig.addPassthroughCopy("src/photos");
@@ -108,7 +109,7 @@ eleventyConfig.addCollection("works", function (collectionApi) {
 
 // links collection，從 links.txt 解析成清單
 eleventyConfig.addCollection("links", function () {
-  const linksFile = path.join(__dirname, "src/links.txt");
+  const linksFile = path.join(__dirname, "src/utils/links.txt");
 
   if (!fs.existsSync(linksFile)) {
     return [];
@@ -169,6 +170,15 @@ eleventyConfig.addCollection("photos", function () {
 //photos collection，自動掃描 photos 目錄中的所有圖片
 //按檔案名稱倒序排列（最新的圖片在前）
 //添加 photos 的 passthrough copy，確保圖片被複製到輸出目錄
+
+// 對 Markdown 內容中的 YouTube iframe 自動加上樣式 class
+eleventyConfig.addTransform("addVideoContainerClass", (content, outputPath) => {
+  if (outputPath && outputPath.endsWith(".html")) {
+    return addVideoContainerClass(content);
+  }
+
+  return content;
+});
 
 // 圖片處理 Shortcode
 eleventyConfig.addNunjucksAsyncShortcode("responsiveImage", async (src, alt, sizes = "100vw") => {
