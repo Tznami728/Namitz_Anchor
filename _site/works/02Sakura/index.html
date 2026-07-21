@@ -17,9 +17,7 @@
     <nav class="meta">
       <a href="/works/">返回作品列表</a>
     </nav>
-    <h1 class="work-title">
-      カードキャプターさくら メドレー
-    </h1>
+    <h1>カードキャプターさくら メドレー</h1>
     
     <div class="meta">
       
@@ -32,7 +30,7 @@
     </div>
   </header>
 
-  <hr class="work-divider" />
+  <hr>
 
   <section class="work-content">
     <p>算是第二首作品，收錄了童年回憶庫洛魔法使中的歌曲。
@@ -52,7 +50,7 @@ Instruments:<br>
 <iframe class="video-container" width="560" height="315" src="https://www.youtube.com/embed/YqMjoT6jb0w?si=WEWzRI0lbLade2kB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </section>
 
-  <hr class="work-divider" />
+  <hr>
 
   <nav class="meta">
     &nbsp;喜歡這個作品嗎？歡迎傳Email與我聯繫！<br> 
@@ -74,7 +72,45 @@ Instruments:<br>
       <a href="/gallery/" class="">寫真</a>
       <a href="/posts/" class="">雜談</a>
       <a href="/links/" class="">連結</a>
+      <button class="theme-toggle" type="button" aria-label="切換夜間主題" aria-pressed="false" title="切換夜間主題">
+        <img src="/images/Dark_off.webp" alt="切換主題圖示">
+      </button>
     </nav>
   </footer>
+
+  <script>
+    (function () {
+      const body = document.body;
+      const toggleButton = document.querySelector('.theme-toggle');
+      const toggleIcon = document.querySelector('.theme-toggle img');
+
+      const savedTheme = localStorage.getItem('theme');
+      const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      const theme = savedTheme || systemTheme;
+
+      function applyTheme(nextTheme) {
+        body.setAttribute('data-theme', nextTheme);
+        localStorage.setItem('theme', nextTheme);
+
+        if (toggleButton) {
+          toggleButton.setAttribute('aria-pressed', String(nextTheme === 'dark'));
+          toggleButton.setAttribute('title', nextTheme === 'dark' ? '切換至淺色模式' : '切換至夜間模式');
+        }
+
+        if (toggleIcon) {
+          toggleIcon.src = nextTheme === 'dark' ? '/images/Dark_on.webp' : '/images/Dark_off.webp';
+        }
+      }
+
+      applyTheme(theme);
+
+      if (toggleButton) {
+        toggleButton.addEventListener('click', () => {
+          const nextTheme = body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+          applyTheme(nextTheme);
+        });
+      }
+    })();
+  </script>
 </body>
 </html>

@@ -244,7 +244,45 @@ wiwi官大為做了不少整理，不只軟體，還有書籍、電影、音樂.
       <a href="/gallery/" class="">寫真</a>
       <a href="/posts/" class="">雜談</a>
       <a href="/links/" class="">連結</a>
+      <button class="theme-toggle" type="button" aria-label="切換夜間主題" aria-pressed="false" title="切換夜間主題">
+        <img src="/images/Dark_off.webp" alt="切換主題圖示">
+      </button>
     </nav>
   </footer>
+
+  <script>
+    (function () {
+      const body = document.body;
+      const toggleButton = document.querySelector('.theme-toggle');
+      const toggleIcon = document.querySelector('.theme-toggle img');
+
+      const savedTheme = localStorage.getItem('theme');
+      const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      const theme = savedTheme || systemTheme;
+
+      function applyTheme(nextTheme) {
+        body.setAttribute('data-theme', nextTheme);
+        localStorage.setItem('theme', nextTheme);
+
+        if (toggleButton) {
+          toggleButton.setAttribute('aria-pressed', String(nextTheme === 'dark'));
+          toggleButton.setAttribute('title', nextTheme === 'dark' ? '切換至淺色模式' : '切換至夜間模式');
+        }
+
+        if (toggleIcon) {
+          toggleIcon.src = nextTheme === 'dark' ? '/images/Dark_on.webp' : '/images/Dark_off.webp';
+        }
+      }
+
+      applyTheme(theme);
+
+      if (toggleButton) {
+        toggleButton.addEventListener('click', () => {
+          const nextTheme = body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+          applyTheme(nextTheme);
+        });
+      }
+    })();
+  </script>
 </body>
 </html>

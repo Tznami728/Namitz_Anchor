@@ -17,9 +17,7 @@
     <nav class="meta">
       <a href="/works/">返回作品列表</a>
     </nav>
-    <h1 class="work-title">
-      回憶：蘇打綠
-    </h1>
+    <h1>回憶：蘇打綠</h1>
     
     <div class="meta">
       
@@ -32,7 +30,7 @@
     </div>
   </header>
 
-  <hr class="work-divider" />
+  <hr>
 
   <section class="work-content">
     <p>印象中這首是我第一次改編，並以完整的組曲形式發表。契機是當時管樂社成發的單簧管重奏演出。</p>
@@ -49,7 +47,7 @@ Instruments:<br>
 
   </section>
 
-  <hr class="work-divider" />
+  <hr>
 
   <nav class="meta">
     &nbsp;喜歡這個作品嗎？歡迎傳Email與我聯繫！<br> 
@@ -71,7 +69,45 @@ Instruments:<br>
       <a href="/gallery/" class="">寫真</a>
       <a href="/posts/" class="">雜談</a>
       <a href="/links/" class="">連結</a>
+      <button class="theme-toggle" type="button" aria-label="切換夜間主題" aria-pressed="false" title="切換夜間主題">
+        <img src="/images/Dark_off.webp" alt="切換主題圖示">
+      </button>
     </nav>
   </footer>
+
+  <script>
+    (function () {
+      const body = document.body;
+      const toggleButton = document.querySelector('.theme-toggle');
+      const toggleIcon = document.querySelector('.theme-toggle img');
+
+      const savedTheme = localStorage.getItem('theme');
+      const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      const theme = savedTheme || systemTheme;
+
+      function applyTheme(nextTheme) {
+        body.setAttribute('data-theme', nextTheme);
+        localStorage.setItem('theme', nextTheme);
+
+        if (toggleButton) {
+          toggleButton.setAttribute('aria-pressed', String(nextTheme === 'dark'));
+          toggleButton.setAttribute('title', nextTheme === 'dark' ? '切換至淺色模式' : '切換至夜間模式');
+        }
+
+        if (toggleIcon) {
+          toggleIcon.src = nextTheme === 'dark' ? '/images/Dark_on.webp' : '/images/Dark_off.webp';
+        }
+      }
+
+      applyTheme(theme);
+
+      if (toggleButton) {
+        toggleButton.addEventListener('click', () => {
+          const nextTheme = body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+          applyTheme(nextTheme);
+        });
+      }
+    })();
+  </script>
 </body>
 </html>

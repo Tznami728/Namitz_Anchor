@@ -17,9 +17,7 @@
     <nav class="meta">
       <a href="/works/">返回作品列表</a>
     </nav>
-    <h1 class="work-title">
-      Anytime Anywhere
-    </h1>
+    <h1>Anytime Anywhere</h1>
     
     <div class="meta">
       
@@ -32,7 +30,7 @@
     </div>
   </header>
 
-  <hr class="work-divider" />
+  <hr>
 
   <section class="work-content">
     <p>這次編了當紅動畫&quot;葬送的福利連&quot;，其中連用了28集的片尾曲&quot;Anytime Anywhere&quot;。對一部話題之作來說，像這樣沒有更換別首片尾曲的狀況其實不算多見，也可以知道動畫製作組對這首的重視，而它的意境也是在主題曲中，個人認為最能觸及到動畫的一首歌曲。</p>
@@ -48,7 +46,7 @@ Transpose to F major.</p>
 <iframe class="video-container" width="560" height="315" src="https://www.youtube.com/embed/P5nhdAOo9BY?si=5GNC9tYobL6AdYiP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </section>
 
-  <hr class="work-divider" />
+  <hr>
 
   <nav class="meta">
     &nbsp;喜歡這個作品嗎？歡迎傳Email與我聯繫！<br> 
@@ -70,7 +68,45 @@ Transpose to F major.</p>
       <a href="/gallery/" class="">寫真</a>
       <a href="/posts/" class="">雜談</a>
       <a href="/links/" class="">連結</a>
+      <button class="theme-toggle" type="button" aria-label="切換夜間主題" aria-pressed="false" title="切換夜間主題">
+        <img src="/images/Dark_off.webp" alt="切換主題圖示">
+      </button>
     </nav>
   </footer>
+
+  <script>
+    (function () {
+      const body = document.body;
+      const toggleButton = document.querySelector('.theme-toggle');
+      const toggleIcon = document.querySelector('.theme-toggle img');
+
+      const savedTheme = localStorage.getItem('theme');
+      const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      const theme = savedTheme || systemTheme;
+
+      function applyTheme(nextTheme) {
+        body.setAttribute('data-theme', nextTheme);
+        localStorage.setItem('theme', nextTheme);
+
+        if (toggleButton) {
+          toggleButton.setAttribute('aria-pressed', String(nextTheme === 'dark'));
+          toggleButton.setAttribute('title', nextTheme === 'dark' ? '切換至淺色模式' : '切換至夜間模式');
+        }
+
+        if (toggleIcon) {
+          toggleIcon.src = nextTheme === 'dark' ? '/images/Dark_on.webp' : '/images/Dark_off.webp';
+        }
+      }
+
+      applyTheme(theme);
+
+      if (toggleButton) {
+        toggleButton.addEventListener('click', () => {
+          const nextTheme = body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+          applyTheme(nextTheme);
+        });
+      }
+    })();
+  </script>
 </body>
 </html>
