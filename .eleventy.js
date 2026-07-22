@@ -2,6 +2,9 @@ const fs = require("fs");
 const path = require("path");
 const Image = require("@11ty/eleventy-img");
 const { addVideoContainerClass } = require("./src/utils/addVideoContainerClass");
+const markdownIt = require("markdown-it");
+const markdownItFootnote = require("markdown-it-footnote");
+
 
 module.exports = function (eleventyConfig) {
 eleventyConfig.addPassthroughCopy("src/styles.css");
@@ -210,6 +213,11 @@ eleventyConfig.addNunjucksAsyncShortcode("responsiveImage", async (src, alt, siz
     return `<img src="/photos/${path.basename(src)}" alt="${alt}" loading="lazy" decoding="async">`;
   }
 });
+
+// Markdown-it 設定，啟用腳註功能
+eleventyConfig.setLibrary("md", markdownIt().use(markdownItFootnote));
+
+
 
   return {
     dir: {

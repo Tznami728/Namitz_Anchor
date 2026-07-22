@@ -147,6 +147,12 @@ aside li.active a {
   /*margin-bottom: 1rem;*/
 }
 
+.footnotes, .footnote-item, .footnote-ref {
+  color: var(--muted-color);
+  font-family: "Yu Gothic", "Noto Sans TC", "Noto Sans JP", "PingFang", "Arial", sans-serif;
+  font-size: 0.8rem;
+}
+
 article {
   flex: 1;
   max-width: 700px;
