@@ -214,8 +214,8 @@ eleventyConfig.addNunjucksAsyncShortcode("responsiveImage", async (src, alt, siz
   }
 });
 
-// Markdown-it 設定，啟用腳註功能
-eleventyConfig.setLibrary("md", markdownIt().use(markdownItFootnote));
+// Markdown-it 設定，啟用 HTML 與腳註功能
+eleventyConfig.setLibrary("md", markdownIt({ html: true }).use(markdownItFootnote));
 
 
 
