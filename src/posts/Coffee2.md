@@ -1,5 +1,5 @@
 ---
-title: 我流手沖咖啡
+title: 食譜：我流手沖咖啡
 date: 2026-07-09
 layout: post.njk
 ---
