@@ -14,10 +14,26 @@
     · {{ content | readingTime }} min read
     · {{ content | charCount }} count
   </div>
-  <hr>
+
+  {% set postTags = [] %}
+  {% if hashtags %}
+    {% set postTags = hashtags %}
+  {% elseif tags %}
+    {% set postTags = tags %}
+  {% endif %}
+
+  {% if postTags.length > 0 %}
+    <div class="tag-list">
+      {% for tag in postTags %}
+        <a href="/tags/{{ tag | makeTagSlug }}/" class="hashtag">#{{ tag }}</a>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+<hr>
 
   <div class="content">
-    {{ content | safe }}
+    {{ content | hashtagLinks | safe }}
   </div>
 
   <nav class="post-nav">

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>標籤</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+  <div class="layout">
+    <main>
+      
+
+<header>
+  <h2>#12/09</h2>
+  <p>這個 hashtag 的相關文章。</p>
+    <div class="meta">
+  <a href="/posts/">←返回文章列表</a>
+  </div>
+  <hr>
+</header>
+
+
+  <ul>
+    
+      <li>
+        <span class="meta">2024-01-02</span>
+        <a href="/posts/Rewind2023/">年度總結：2023</a>
+      </li>
+    
+  </ul>
+
+
+
+    </main>
+  </div>
+
+  <!-- 底部導覽列 -->
+  <footer class="bottom-nav">
+    <nav class="bottom-nav-content">
+      <a href="/" class="">錨點</a>
+      <a href="/works/" class="">編曲</a>
+      <a href="/gallery/" class="">寫真</a>
+      <a href="/posts/" class="">雜談</a>
+      <a href="/links/" class="">連結</a>
+      <button class="theme-toggle" type="button" aria-label="切換夜間主題" aria-pressed="false" title="切換夜間主題">
+        <img src="/images/Dark_off.webp" alt="切換主題圖示">
+      </button>
+    </nav>
+  </footer>
+
+  <script>
+    (function () {
+      const body = document.body;
+      const toggleButton = document.querySelector('.theme-toggle');
+      const toggleIcon = document.querySelector('.theme-toggle img');
+
+      const savedTheme = localStorage.getItem('theme');
+      const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      const theme = savedTheme || systemTheme;
+
+      function applyTheme(nextTheme) {
+        body.setAttribute('data-theme', nextTheme);
+        localStorage.setItem('theme', nextTheme);
+
+        if (toggleButton) {
+          toggleButton.setAttribute('aria-pressed', String(nextTheme === 'dark'));
+          toggleButton.setAttribute('title', nextTheme === 'dark' ? '切換至淺色模式' : '切換至夜間模式');
+        }
+
+        if (toggleIcon) {
+          toggleIcon.src = nextTheme === 'dark' ? '/images/Dark_on.webp' : '/images/Dark_off.webp';
+        }
+      }
+
+      applyTheme(theme);
+
+      if (toggleButton) {
+        toggleButton.addEventListener('click', () => {
+          const nextTheme = body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+          applyTheme(nextTheme);
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

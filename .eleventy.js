@@ -4,7 +4,32 @@ const Image = require("@11ty/eleventy-img");
 const { addVideoContainerClass } = require("./src/utils/addVideoContainerClass");
 const markdownIt = require("markdown-it");
 const markdownItFootnote = require("markdown-it-footnote");
+const { normalizeTags, makeTagSlug } = require("./src/utils/tagUtils");
 
+function extractPostTags(post) {
+  const tagsFromData = [
+    ...normalizeTags(post.data?.hashtags),
+    ...normalizeTags(post.data?.tags),
+  ];
+
+  let body = "";
+
+  if (post.inputPath) {
+    try {
+      const sourcePath = path.join(__dirname, post.inputPath);
+      const source = fs.readFileSync(sourcePath, "utf8");
+      const frontMatterMatch = source.match(/^---\s*[\s\S]*?---\s*/);
+      body = frontMatterMatch ? source.slice(frontMatterMatch[0].length) : source;
+    } catch (error) {
+      body = "";
+    }
+  }
+
+  const bodyTags = Array.from(body.matchAll(/(^|[\s(])#([^\s#<>()]+)/g), (match) => match[2].trim());
+  const allTags = [...tagsFromData, ...bodyTags].map((tag) => tag.trim()).filter(Boolean);
+
+  return [...new Set(allTags)];
+}
 
 module.exports = function (eleventyConfig) {
 eleventyConfig.addPassthroughCopy("src/styles.css");
@@ -96,11 +121,46 @@ eleventyConfig.addFilter("strftime", (date, format) => {
   return `${year}-${month}-${day}`;
 });
 
+// 自訂 filter：將 hashtag 內容轉成可點擊連結
+eleventyConfig.addFilter("hashtagLinks", (content) => {
+  if (!content) {
+    return "";
+  }
+
+  return String(content).replace(/(^|[\s(])#([^\s#<>()]+)/g, (match, prefix, tag) => {
+    const slug = makeTagSlug(tag);
+    return `${prefix}<a href="/tags/${slug}/" class="hashtag">#${tag}</a>`;
+  });
+});
+
+// 自訂 filter：把 tag 字串轉為 slug
+eleventyConfig.addFilter("makeTagSlug", (tag) => makeTagSlug(tag));
+
 // 文章 collection，按日期倒序排列
 eleventyConfig.addCollection("posts", function (collectionApi) {
   return collectionApi
   .getFilteredByGlob("src/posts/*.md")
   .sort((a, b) => b.date - a.date);
+});
+
+eleventyConfig.addCollection("tagList", function (collectionApi) {
+  const posts = collectionApi.getFilteredByGlob("src/posts/*.md");
+  const map = new Map();
+
+  posts.forEach((post) => {
+    const tags = extractPostTags(post);
+
+    tags.forEach((tag) => {
+      const slug = makeTagSlug(tag);
+      if (!map.has(slug)) {
+        map.set(slug, { slug, label: tag, posts: [] });
+      }
+
+      map.get(slug).posts.push(post);
+    });
+  });
+
+  return Array.from(map.values()).sort((a, b) => a.label.localeCompare(b.label, "zh-Hant"));
 });
 
 // works collection，按日期倒序排列

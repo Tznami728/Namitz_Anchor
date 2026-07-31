@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>倉頡輸入法：你受夠新注音了嗎？</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+  <div class="layout">
+    <main>
+      
+<div class="layout">
+<article>
+  <div class="meta">
+  <a href="/posts/">←返回文章列表</a>
+  </div>
+  
+  <h1>倉頡輸入法：你受夠新注音了嗎？</h1>
+
+  <div class="meta">
+    <time>2026-07-29</time>
+    · 8 min read
+    · 1793 count
+  </div>
+
+  
+  
+    
+  
+
+  
+    <div class="tag-list">
+      
+        <a href="/tags/輸入法/" class="hashtag">#輸入法</a>
+      
+        <a href="/tags/電腦/" class="hashtag">#電腦</a>
+      
+    </div>
+  
+
+<hr>
+
+  <div class="content">
+    <p>這篇文描述了我學習新的中文輸入法的過往。
+幾年前吃飽沒事幹，覺得 Windows 內建的新注音輸入法實在太容易打錯字，第三方的自然輸入法、超注音等，又在相容性等遇到一些障礙。於是決定來學習不同的輸入法，看能不能改善注音輸入法的問題。</p>
+<p>結果意外也解決了台文輸入的困擾。</p>
+<hr>
+<h2>注音輸入的難點</h2>
+<p>先說明為何用<strong>難點</strong>這個字。我並非要否定注音這套系統，事實上我自己在使用電腦輸入法也還是以注音輸入為主。只是對 Windows 上不太智慧的輸入法來，注音輸入在效率方面略顯不足。</p>
+<h3>重碼率高</h3>
+<p>中文輸入法主要有兩大思維：字音、字形。前者有注音、拼音，後者包括倉頡、速成、大易、筆畫等，另外也有既依賴字形、又參考字音的輸入法：嘸蝦米。</p>
+<p>字音輸入的最大優勢在於，它的<strong>學習成本</strong>相對低很多。在台灣，學中文的人都是從注音系統開始學習的。因此我們早就知道每一個字的注音怎麼寫，在輸入法上，我們只需要記憶注音符號在鍵盤上的相對位置，不需要再另外背額外內容，很快就能上手。而對其他地區的中文使用者來說，拼音系統也是如此。</p>
+<p>但中文是一個<strong>同音率</strong>很高的語言。如果你在手機上打了「ㄕㄕ」兩個字元，下面的建議詞會有：事實、事事、世事、逝世、試試、誓師、時事、史詩、史實、適時、失事、師事....我還沒列舉完。也因此，在輸入法上我們很常會需要<strong>選字</strong>。手機上的注音輸入，會依上下文以及個人使用詞彙的頻率來微調建議詞的順序，但偶而也是會出現預測失誤的尷尬狀況。更不用說電腦上的注音輸入了，微軟官方的新注音輸入法被大家嘲笑多年，但看起來也沒有太多改進<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>。</p>
+<p>這個現象在輸入法上有個專有名詞，叫做<strong>重碼率</strong>。意思是在按下同一組案件編碼時，會出現兩個以上的構詞，該現象發生機率稱為重碼率。而純字音輸入中文同音率高的特點，也會同步造就重碼率高。相對來說，從字形特徵出發取碼的一眾字形輸入法，便具有重碼率低的優勢<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>。</p>
+<h3>佔用按鍵多</h3>
+<p>注音系統的另一個特點是<strong>字母數量多</strong>，加上聲調符號 (二聲、三聲、四聲、輕聲) 總數來到41個。因此注音鍵盤最上排的數字區也全部都要拿來輸入注音。你問這會影響嗎？如果你是用108鍵的全尺寸鍵盤、有一整塊獨立出來的數字鍵區，影響是還好。而對用TKL、甚至是60%等精簡布局的人來說，主鍵區上排不能直接輸入數字就是一件麻煩。其實就算有獨立數字鍵，主鍵區上排的數字離手指擺放的距離也是更近的，還可以用FJ定位點來盲打，我個人很推薦把主鍵區的數字鍵習慣起來。</p>
+<p>那麼，注音有辦法減少使用鍵數嗎？其實是有的，像<strong>許氏鍵盤</strong>、<strong>倚天26鍵</strong>，就藉由將單個字內不會重複的符號整合起來，達到在鍵盤上佔用到的按鍵，都在英文的26鍵內。這樣的好處是主鍵區上排的數字得以解放出來，不需要再切換中英文；主鍵區右邊的符號區也是，完全和英文相同邏輯。不過因為中文的標點符號是全形，與英文不同，所以在輸入逗號、句號時，還是得加按 Ctrl 鍵<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>。</p>
+<p>許氏鍵盤或倚天26鍵的另一個好處是，它們的排列參考了英文鍵盤。很多符號的位置都能跟該處的英文字母相互連想，如
+A對應到ㄚ、B對應到ㄅ、K對應到ㄎ等等。另外重複對應的部份，如N對應到做為聲母的ㄋ及做為韻母的ㄣ，真的滿有創意的。這樣互相連想的好處是，練習26鍵排列，同時也綑綁練習了英打，或是你本來已很熟練英打，能反過來加快這類佈局的上手速度。</p>
+<p>許氏鍵盤或倚天26鍵設計原理相同，但滿多鍵位設計是不一樣的，建議要學的話挑其中一個學。我自己是決定學習倉頡，因此這兩種都沒學過，但在撰文當下比較，我會比較偏好學習許氏鍵盤。若你想加強中文的輸入效率，又不想學倉頡或嘸蝦米這類需要另外記憶字碼的輸入法，學習這類較少鍵數的佈局不失為一種選擇。</p>
+<hr>
+<h2>小結</h2>
+<h3>下集待續</h3>
+<p>看來篇幅可以拉到兩篇，在下篇文章中，我將回顧我為何選擇倉頡，以及接下來的後續。</p>
+<p><em>(不覺得這樣寫很酷嗎)</em></p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>其實還是有改進的。另外在大量建置自定義的造詞之後，這種亂選字的狀況改善非常多。所以如果你還在使用微軟新注音，卻還未使用過使用者造詞的功能，推薦你現在開始建立！ <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p>事實上重碼率低，不代表完全不用選字。還是有些字有重碼現象，只是發生機率少得多。像是倉頡碼的「女戈木」碼，在常用漢字集就對應到<strong>槳</strong>和<strong>樂</strong>兩字，需要在鍵入碼後另外選字。 <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn3" class="footnote-item"><p>一些第三方輸入法，可以設定在中文模式下，按符號會直接出全形標點符號。但佔用了41鍵的注音通常就無法享有這功能。 <a href="#fnref3" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+
+  </div>
+
+  <nav class="post-nav">
+    
+
+    
+  </nav>
+  
+  <div class="after-content">
+  <hr>
+  感謝你看完了這篇文章，歡迎傳Email與我交流！不用害羞，哪怕是個「已讀、閱」也沒問題。<br> 
+  namitzmusic@gmail.com
+  <br>
+  <a href="/posts/">←返回文章列表</a> | 
+  <a href="#" id="load-comments-link">↓用GitHub帳號留言↓</a> | 
+  <a href="mailto:namitzmusic@gmail.com">寄Email給我→</a><br>
+  </div>
+
+
+  <div id="comments-container"></div>
+  <script src="/defer.js"></script>
+
+  <!--
+  <aside>
+  <h2>文章列表</h2>
+  <ul>
+    
+    
+    <li class="active">
+    <a href="/posts/2026_0729_CangjieTaigi/">倉頡輸入法：你受夠新注音了嗎？</a>
+    </li>
+    
+    
+    <li class="">
+    <a href="/posts/2026_0728_IchigoIchie/">一期一會</a>
+    </li>
+    
+    
+    <li class="">
+    <a href="/posts/2026_0727_Misoshiru/">食譜：鮭魚舞菇味噌湯</a>
+    </li>
+    
+    
+    <li class="">
+    <a href="/posts/2026_0721_Mousespeed/">嘗試把滑鼠的速度調慢</a>
+    </li>
+    
+    
+    <li class="">
+    <a href="/posts/Coffee3/">我的咖啡器具</a>
+    </li>
+    
+    
+    <li class="">
+    <a href="/posts/Coffee2/">食譜：我流手沖咖啡</a>
+    </li>
+    
+    
+    <li class="">
+    <a href="/posts/ALilTip/">有趣的小知識：台灣專屬</a>
+    </li>
+    
+    
+    <li class="">
+    <a href="/posts/Opensource2/">作伙來用開源軟體 (下) 未完成</a>
+    </li>
+    
+    
+    <li class="">
+    <a href="/posts/Opensource/">作伙來用開源軟體 (上)</a>
+    </li>
+    
+    
+    <li class="">
+    <a href="/posts/Hobby/">興趣愛好列表</a>
+    </li>
+    
+    
+    <li class="">
+    <a href="/posts/AboutPhoto/">關於攝影</a>
+    </li>
+    
+    
+    <li class="">
+    <a href="/posts/Coffee/">食譜：水果風味氣泡手沖咖啡</a>
+    </li>
+    
+    
+    <li class="">
+    <a href="/posts/Origin/">本站起源</a>
+    </li>
+    
+    
+    <li class="">
+    <a href="/posts/Taipower/">簡評台電通知單改版</a>
+    </li>
+    
+    
+    <li class="">
+    <a href="/posts/post1/">本站第一篇文章</a>
+    </li>
+    
+    
+    <li class="">
+    <a href="/posts/Rewind2025/">年度總結：2025</a>
+    </li>
+    
+    
+    <li class="">
+    <a href="/posts/2026_0731_CangjieTaigi2/">倉頡輸入法：我為何選倉頡？</a>
+    </li>
+    
+    
+    <li class="">
+    <a href="/posts/Rewind2023/">年度總結：2023</a>
+    </li>
+    
+  </ul>
+  </aside>
+  -->
+
+</article>
+</div>
+
+    </main>
+  </div>
+
+  <!-- 底部導覽列 -->
+  <footer class="bottom-nav">
+    <nav class="bottom-nav-content">
+      <a href="/" class="">錨點</a>
+      <a href="/works/" class="">編曲</a>
+      <a href="/gallery/" class="">寫真</a>
+      <a href="/posts/" class="">雜談</a>
+      <a href="/links/" class="">連結</a>
+      <button class="theme-toggle" type="button" aria-label="切換夜間主題" aria-pressed="false" title="切換夜間主題">
+        <img src="/images/Dark_off.webp" alt="切換主題圖示">
+      </button>
+    </nav>
+  </footer>
+
+  <script>
+    (function () {
+      const body = document.body;
+      const toggleButton = document.querySelector('.theme-toggle');
+      const toggleIcon = document.querySelector('.theme-toggle img');
+
+      const savedTheme = localStorage.getItem('theme');
+      const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      const theme = savedTheme || systemTheme;
+
+      function applyTheme(nextTheme) {
+        body.setAttribute('data-theme', nextTheme);
+        localStorage.setItem('theme', nextTheme);
+
+        if (toggleButton) {
+          toggleButton.setAttribute('aria-pressed', String(nextTheme === 'dark'));
+          toggleButton.setAttribute('title', nextTheme === 'dark' ? '切換至淺色模式' : '切換至夜間模式');
+        }
+
+        if (toggleIcon) {
+          toggleIcon.src = nextTheme === 'dark' ? '/images/Dark_on.webp' : '/images/Dark_off.webp';
+        }
+      }
+
+      applyTheme(theme);
+
+      if (toggleButton) {
+        toggleButton.addEventListener('click', () => {
+          const nextTheme = body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+          applyTheme(nextTheme);
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

@@ -2,6 +2,8 @@
 title: 簡評台電通知單改版
 date: 2026-01-28
 layout: post.njk
+hashtags: 
+ - 設計
 ---
 這篇在臉書上的貼文，轉到這邊來充一下版面。
 

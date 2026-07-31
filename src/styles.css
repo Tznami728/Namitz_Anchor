@@ -170,9 +170,31 @@ article {
   text-justify: inter-ideograph;
 }
 
+.content strong {
+  font-weight: 800;
+  /*color: var(--accent-hover-color);*/
+  font-family: "Yu Gothic", "Noto Sans TC", "Noto Sans JP", "PingFang", "Arial", sans-serif;
+}
+
 .content p {
   margin-bottom: 40px;
   color: var(--text-color);
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  /*margin: 1rem 0 1.5rem;*/
+}
+
+.hashtag {
+  font-size: 0.8rem;
+  /*display: inline-block;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  background: var(--panel-strong-color);*/
 }
 
 .content ul, .content ol {

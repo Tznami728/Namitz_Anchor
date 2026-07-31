@@ -2,6 +2,8 @@
 title: 本站起源
 date: 2026-06-08
 layout: post.njk
+hashtags: 
+ - 電腦
 ---
 
 來寫寫關於這個網站的一些事好了。  
@@ -29,6 +31,10 @@ layout: post.njk
 ***靜態網站***（Static Website）是指網站中的每個頁面都是預先製作好的 HTML、CSS、JavaScript 檔案，使用者瀏覽時，伺服器直接傳送檔案，不需要即時從資料庫產生內容。它的優點是載入速度快、安全性高、成本低，適合公司形象網站、作品集、活動頁面或部落格等內容不常變動的網站。若需要會員登入、購物車、留言或即時更新等功能，通常會搭配外部服務，或改用動態網站。  
 
 **Eleventy**（11ty） 是一套開源的***靜態網站產生器***（Static Site Generator）。它可以把 Markdown、HTML 或其他模板檔案，自動轉換成靜態網站，不需要複雜的後端程式或資料庫。特色是簡單、速度快、彈性高，支援多種模板語言（如 Nunjucks、Liquid、Handlebars），常用於建立部落格、公司官網、文件網站和作品集。產生的網站可部署到 GitHub Pages、Netlify、Vercel 等平台，兼具高效能、安全性與低維護成本。  
+
+[光輝咖碼｜11ty 初體驗，靜態網頁快速入門](https://kamadiam.com/11ty-generator/)  
+<span class= "meta"> https://kamadiam.com/11ty-generator/ </span>  
+這裡有基礎的架設流程。  
 
 **JavaScript** 是一種事件驅動、物件導向的直譯式***程式語言***，為全球資訊網的核心技術之一。它主要用於為靜態網頁增添動態效果、控制多媒體與處理使用者互動，現今也廣泛應用於伺服器端（如 Node.js）等非瀏覽器環境。  
 
