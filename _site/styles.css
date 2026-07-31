@@ -35,7 +35,7 @@ body[data-theme="dark"] {
 /*Global styles*/
 body {
   margin: 0;
-  font-family: "Yu Mincho", "Noto Serif TC", "Noto Serif JP", "LiSong", "Times New Roman", serif;
+  font-family: "Noto Serif TC", "Noto Serif JP", "LiSong", "Times New Roman", serif;
   line-height: 1.8;
   min-height: 100vh;
   padding-bottom: 40px;
@@ -82,7 +82,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  font-family: "Yu Gothic", "Noto Sans TC", "Noto Sans JP", "PingFang", "Arial", sans-serif;
+  font-family: "Noto Sans TC", "Noto Sans JP", "PingFang", "Arial", sans-serif;
   font-weight: 100;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
@@ -92,6 +92,13 @@ h3 {
   font-size: 1rem;
   font-weight: 1000;
 }
+
+strong {
+  font-weight: 500;
+  /*color: var(--accent-hover-color);*/
+  font-family: "Noto Sans TC", "Noto Sans JP", "PingFang", "Arial", sans-serif;
+}
+
 
 /* 超連結 */
 a {
@@ -109,7 +116,7 @@ a:hover {
 
 /* 文章列表 */
 aside {
-  font-family: "Yu Gothic", "Noto Sans TC", "Noto Sans JP", "PingFang", "Arial", sans-serif;
+  font-family: "Noto Sans TC", "Noto Sans JP", "PingFang", "Arial", sans-serif;
   width: 180px;
   flex-shrink: 0;
   flex-direction: row;
@@ -142,14 +149,14 @@ aside li.active a {
 /*Blog的文章*/
 .meta {
   color: var(--muted-color);
-  font-family: "Yu Gothic", "Noto Sans TC", "Noto Sans JP", "PingFang", "Arial", sans-serif;
+  font-family: "Noto Sans TC", "Noto Sans JP", "PingFang", "Arial", sans-serif;
   font-size: 0.8rem;
   /*margin-bottom: 1rem;*/
 }
 
 .footnotes, .footnote-item, .footnote-ref {
   color: var(--muted-color);
-  font-family: "Yu Gothic", "Noto Sans TC", "Noto Sans JP", "PingFang", "Arial", sans-serif;
+  font-family: "Noto Sans TC", "Noto Sans JP", "PingFang", "Arial", sans-serif;
   font-size: 0.8rem;
 }
 
@@ -168,12 +175,6 @@ article {
 .content {
   text-align: justify;
   text-justify: inter-ideograph;
-}
-
-.content strong {
-  font-weight: 800;
-  /*color: var(--accent-hover-color);*/
-  font-family: "Yu Gothic", "Noto Sans TC", "Noto Sans JP", "PingFang", "Arial", sans-serif;
 }
 
 .content p {
@@ -207,7 +208,7 @@ article {
   border: 1px solid var(--table-border-color);
   padding: 10px;
   font-size: 0.9rem;
-  font-family: "Yu Gothic", "Noto Sans TC", "Noto Sans JP", "PingFang", "Arial", sans-serif;
+  font-family: "Noto Sans TC", "Noto Sans JP", "PingFang", "Arial", sans-serif;
 }
 
 .content th, .content td {
@@ -223,7 +224,7 @@ article {
 
 .content blockquote {
   color: var(--blockquote-color);
-  font-family: "Yu Gothic", "Noto Sans TC", "Noto Sans JP", "PingFang", "Arial", sans-serif;
+  font-family: "Noto Sans TC", "Noto Sans JP", "PingFang", "Arial", sans-serif;
   font-weight: 500;
   font-size: 0.9rem;
   border-left: 1px solid var(--border-color);
@@ -259,7 +260,7 @@ article {
 .after-content {
   text-align: center;
   font-size: 0.8rem;
-  font-family: "Yu Gothic", "Noto Sans TC", "Noto Sans JP", "PingFang", "Arial", sans-serif;
+  font-family: "Noto Sans TC", "Noto Sans JP", "PingFang", "Arial", sans-serif;
   color: var(--muted-color);
 }
 
