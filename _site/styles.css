@@ -258,7 +258,7 @@ article {
 }
 
 .after-content {
-  text-align: center;
+  /*text-align: center;*/
   font-size: 0.8rem;
   font-family: "Noto Sans TC", "Noto Sans JP", "PingFang", "Arial", sans-serif;
   color: var(--muted-color);
