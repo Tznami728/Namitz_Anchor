@@ -2,9 +2,8 @@
   color-scheme: light;
   --bg-color: #fff;
   --text-color: #333;
-  --muted-color: #6b6b6b;
+  --muted-color: #888;
   --accent-color: #6b8aad;
-  --accent-hover-color: #000;
   --border-color: #ddd;
   --panel-color: #fff;
   --panel-strong-color: #eee;
@@ -21,7 +20,6 @@ body[data-theme="dark"] {
   --text-color: #aaa;
   --muted-color: #a3a3a3;
   --accent-color: #9db8d6;
-  --accent-hover-color: #fff;
   --border-color: #333;
   --panel-color: #1b1b1b;
   --panel-strong-color: #2a2a2a;
@@ -95,7 +93,6 @@ h3 {
 
 strong {
   font-weight: 500;
-  /*color: var(--accent-hover-color);*/
   font-family: "Noto Sans TC", "Noto Sans JP", "PingFang", "Arial", sans-serif;
 }
 
@@ -104,14 +101,15 @@ strong {
 a {
   text-decoration: none;
   color: var(--accent-color);
-  padding: 2px 3px;
-  transition-duration: 500ms;
+  /*padding: 2px 0px;*/
+  transition-duration: 300ms;
 }
 
 a:hover {
-  background: var(--panel-strong-color);
-  color: var(--accent-hover-color);
-  border-radius: 3px;
+  text-shadow: 0 4px 1px var(--border-color);
+  color: var(--text-color);
+  /*background: var(--panel-strong-color);
+  border-radius: 3px;*/
 }
 
 /* 文章列表 */
@@ -179,7 +177,7 @@ article {
 
 .content p {
   margin-bottom: 40px;
-  color: var(--text-color);
+  /*color: var(--text-color);*/
 }
 
 .tag-list {
@@ -191,6 +189,7 @@ article {
 
 .hashtag {
   font-size: 0.8rem;
+  font-family: "Noto Sans TC", "Noto Sans JP", "PingFang", "Arial", sans-serif;
   /*display: inline-block;
   padding: 0.2rem 0.5rem;
   border: 1px solid var(--border-color);
@@ -304,6 +303,7 @@ article {
 }
 
 /* 底部固定導覽列 */
+
 .bottom-nav {
   position: fixed;
   bottom: 0;
@@ -328,20 +328,19 @@ article {
 .bottom-nav a {
   color: var(--muted-color);
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: 0 0.5rem;
   transition: all 500ms;
 }
 
 .bottom-nav a:hover {
-  background: var(--panel-strong-color);
-  color: var(--accent-hover-color);
+  color: var(--text-color);
   border-radius: 3px;
 }
 
 .bottom-nav a.active {
   font-weight: bold;
-  color: var(--accent-hover-color);
-  border-bottom: 1px solid var(--accent-hover-color);
+  color: var(--text-color);
+  border-bottom: 1px solid var(--text-color);
 }
 
 .theme-toggle {
