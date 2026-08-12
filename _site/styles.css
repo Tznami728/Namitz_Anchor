@@ -33,13 +33,13 @@ body[data-theme="dark"] {
 /*Global styles*/
 body {
   margin: 0;
-  font-family: "Noto Serif TC", "Noto Serif JP", "LiSong", "Times New Roman", serif;
+  font-family: "Noto Serif TC", "Noto Serif JP", "LiSong", "Songti TC", "Times New Roman", serif;
   line-height: 1.8;
   min-height: 100vh;
   padding-bottom: 40px;
   background: var(--bg-color);
   color: var(--text-color);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 500ms ease, color 500ms ease;
 }
 
 main {
