@@ -259,6 +259,9 @@
       <button class="theme-toggle" type="button" aria-label="切換夜間主題" aria-pressed="false" title="切換夜間主題">
         <img src="/images/Dark_off.webp" alt="切換主題圖示">
       </button>
+      <button onclick="copyUrl()" class="theme-toggle" type="button" aria-label="RSS訂閱" title="RSS feed訂閱">
+        <img src="/images/RSS.webp" alt="訂閱圖示">
+      </button>
     </nav>
   </footer>
 
@@ -296,5 +299,21 @@
       }
     })();
   </script>
+
+  <script>
+  function copyUrl() {
+      const url = "https://namitz.com/feed.xml";
+
+      navigator.clipboard.writeText(url)
+          .then(() => {
+              alert("網址已複製！");
+          })
+          .catch(err => {
+              console.error("複製失敗：", err);
+          });
+  }
+  </script>
+
+
 </body>
 </html>

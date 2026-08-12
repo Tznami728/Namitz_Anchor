@@ -5,6 +5,7 @@ const { addVideoContainerClass } = require("./src/utils/addVideoContainerClass")
 const markdownIt = require("markdown-it");
 const markdownItFootnote = require("markdown-it-footnote");
 const { normalizeTags, makeTagSlug } = require("./src/utils/tagUtils");
+const { feedPlugin } = require("@11ty/eleventy-plugin-rss");
 
 function extractPostTags(post) {
   const tagsFromData = [
@@ -274,10 +275,29 @@ eleventyConfig.addNunjucksAsyncShortcode("responsiveImage", async (src, alt, siz
   }
 });
 
+
 // Markdown-it 設定，啟用 HTML 與腳註功能
 eleventyConfig.setLibrary("md", markdownIt({ html: true }).use(markdownItFootnote));
 
-
+// RSS feed plugin configuration
+eleventyConfig.addPlugin(feedPlugin, {
+  type: "atom",
+  outputPath: "/feed.xml",
+  collection: {
+    name: "posts",
+    limit: 10,
+  },
+  metadata: {
+    language: "zh-Hant",
+    title: "Namitz's Anchor",
+    subtitle: "一些雜言雜語",
+    base: "https://namitz.com/",
+    author: {
+      name: "奈米子 Namitz",
+      email: "namitzmusic@gmail.com",
+    }
+  }
+});
 
   return {
     dir: {

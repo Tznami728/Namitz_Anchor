@@ -129,7 +129,7 @@ aside ul {
 }
 
 aside li.active a {
-  font-weight: bold;
+  font-weight: 1000;
   text-decoration: none;
   background: var(--muted-color);
   padding: 2px 5px;
@@ -327,18 +327,16 @@ article {
 
 .bottom-nav a {
   color: var(--muted-color);
-  text-decoration: none;
-  padding: 0 0.5rem;
-  transition: all 500ms;
+  padding: 0.5rem 1rem;
+
 }
 
 .bottom-nav a:hover {
   color: var(--text-color);
-  border-radius: 3px;
 }
 
 .bottom-nav a.active {
-  font-weight: bold;
+  font-weight: 1000;
   color: var(--text-color);
   border-bottom: 1px solid var(--text-color);
 }
@@ -347,13 +345,13 @@ article {
   margin-left: 0.5rem; /*設auto可以讓按鈕變向右對齊*/
   border: none;
   background: transparent;
-  padding: 0.3rem;
+  padding: 0.2rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: right;
+  justify-content: right;
   cursor: pointer;
   border-radius: 999px;
-  transition: background-color 0.3s ease;
+  transition: background-color 500ms ease;
 }
 
 .theme-toggle:hover {
