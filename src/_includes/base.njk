@@ -17,17 +17,22 @@
   <!-- 底部導覽列 -->
   <footer class="bottom-nav">
     <nav class="bottom-nav-content">
-      <a href="/" class="{% if page.url == '/' %}active{% endif %}">錨點</a>
+    <div class="bottom-nav-links">
+      <a href="/" class="{% if page.url == '/' %}active{% endif %}">Namitz's<br>anchor</a>
       <a href="/works/" class="{% if page.url == '/works/' or page.url.startsWith('/works/') %}active{% endif %}">編曲</a>
       <a href="/gallery/" class="{% if page.url == '/gallery/' or page.url.startsWith('/gallery/') %}active{% endif %}">寫真</a>
       <a href="/posts/" class="{% if page.url == '/posts/' or page.url.startsWith('/posts/') %}active{% endif %}">雜談</a>
       <a href="/links/" class="{% if page.url == '/links/' or page.url.startsWith('/links/') %}active{% endif %}">連結</a>
+    </div>
+
+    <div class="bottom-nav-button">
       <button class="theme-toggle" type="button" aria-label="切換夜間主題" aria-pressed="false" title="切換夜間主題">
         <img src="/images/Dark_off.webp" alt="切換主題圖示">
       </button>
       <button onclick="copyUrl()" class="theme-toggle" type="button" aria-label="RSS訂閱" title="RSS feed訂閱">
         <img src="/images/RSS.webp" alt="訂閱圖示">
       </button>
+    </div>
     </nav>
   </footer>
 
@@ -72,7 +77,7 @@
 
       navigator.clipboard.writeText(url)
           .then(() => {
-              alert("網址已複製！");
+              alert("已複製XML網址！接下來貼到閱讀器即完成訂閱。\n感謝你的訂閱！也隨時歡迎Email跟我交流。");
           })
           .catch(err => {
               console.error("複製失敗：", err);
