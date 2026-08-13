@@ -591,4 +591,777 @@ wiwi官大為做了不少整理，不只軟體，還有書籍、電影、音樂.
 &lt;p&gt;我們&lt;a href=&quot;https://namitz.com/posts/Opensource2&quot;&gt;下一篇&lt;/a&gt;再來逐一檢視，對這些使用了一陣子的軟體分享心得。&lt;/p&gt;
 </content>
   </entry>
+  <entry>
+    <title>作伙來用開源軟體 (下) 未完成</title>
+    <link href="https://namitz.com/posts/Opensource2/" />
+    <updated>2026-06-30T00:00:00Z</updated>
+    <id>https://namitz.com/posts/Opensource2/</id>
+    <content type="html">&lt;p&gt;OK事不宜遲，我們就來做個開源軟體星等評比。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;免責聲明&lt;/strong&gt;：以下評論僅為個人經驗分享，非常主觀也不權威，建議作為輔助參考。&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://namitz.com/posts/Opensource&quot;&gt;承上篇文章，請點這&lt;/a&gt;。以下列表中的軟體都是我目前正在使用中的，行有餘力的話，未來會試試別的備案，但目前的這些軟體是用過覺得還OK的。&lt;/p&gt;
+&lt;p&gt;之後再補上文字心得，你可以先看星星數猜個大概。&lt;/p&gt;
+&lt;hr&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;軟體用途&lt;/th&gt;
+&lt;th&gt;原先使用&lt;/th&gt;
+&lt;th&gt;開源選擇&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;向量設計&lt;/td&gt;
+&lt;td&gt;Illustrator&lt;/td&gt;
+&lt;td&gt;Inkscape&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;相片修圖&lt;/td&gt;
+&lt;td&gt;Photoshop&lt;/td&gt;
+&lt;td&gt;GIMP&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;數位繪圖&lt;/td&gt;
+&lt;td&gt;Procreate(iPad)&lt;/td&gt;
+&lt;td&gt;Krita&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;影片剪輯&lt;/td&gt;
+&lt;td&gt;Premiere Pro&lt;/td&gt;
+&lt;td&gt;Kdenlive&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;音訊編輯&lt;/td&gt;
+&lt;td&gt;Audition&lt;/td&gt;
+&lt;td&gt;Audacity&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3D建模&lt;/td&gt;
+&lt;td&gt;3DS MAX&lt;/td&gt;
+&lt;td&gt;Blender&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;筆記同步&lt;/td&gt;
+&lt;td&gt;(無)&lt;/td&gt;
+&lt;td&gt;Joplin&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;密碼管理&lt;/td&gt;
+&lt;td&gt;(無)&lt;/td&gt;
+&lt;td&gt;KeepassXC&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;音樂打譜&lt;/td&gt;
+&lt;td&gt;(無)&lt;/td&gt;
+&lt;td&gt;Musescore&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;編曲軟體&lt;/td&gt;
+&lt;td&gt;GarageBand(iPad)&lt;/td&gt;
+&lt;td&gt;Ardour&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;Inkscape&lt;/strong&gt;&lt;br&gt;
+介面體驗 ★★★★★&lt;br&gt;
+功能選擇 ★★★★★&lt;br&gt;
+系統穩定 ★★☆☆☆&lt;br&gt;
+總推薦度 ★★★★☆&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;GIMP&lt;/strong&gt;&lt;br&gt;
+介面體驗 ★★★★☆&lt;br&gt;
+功能選擇 ★★★★★&lt;br&gt;
+系統穩定 ★★★★☆&lt;br&gt;
+總推薦度 ★★★★★&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Krita&lt;/strong&gt;&lt;br&gt;
+介面體驗 ★★★★☆&lt;br&gt;
+功能選擇 ★★★★★&lt;br&gt;
+系統穩定 ★★★★☆&lt;br&gt;
+總推薦度 ★★★★★&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Kdenlive&lt;/strong&gt;&lt;br&gt;
+介面體驗 ★★★★☆&lt;br&gt;
+功能選擇 ★★★☆☆&lt;br&gt;
+系統穩定 ★★★☆☆&lt;br&gt;
+總推薦度 ★★★☆☆&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Audacity&lt;/strong&gt;&lt;br&gt;
+介面體驗 ★★☆☆☆&lt;br&gt;
+功能選擇 ★★☆☆☆&lt;br&gt;
+系統穩定 ★★★★☆&lt;br&gt;
+總推薦度 ★★★☆☆&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Blender&lt;/strong&gt;&lt;br&gt;
+介面體驗 ★★★★★&lt;br&gt;
+功能選擇 ★★★★★&lt;br&gt;
+系統穩定 ★★★★★&lt;br&gt;
+總推薦度 ★★★★★&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Joplin&lt;/strong&gt;&lt;br&gt;
+介面體驗 ★★★★★&lt;br&gt;
+功能選擇 ★★★★★&lt;br&gt;
+系統穩定 ★★★★☆&lt;br&gt;
+總推薦度 ★★★★★&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;KeepassXC&lt;/strong&gt;&lt;br&gt;
+介面體驗 ★★★★☆&lt;br&gt;
+功能選擇 ★★★★★&lt;br&gt;
+系統穩定 ★★★★☆&lt;br&gt;
+總推薦度 ★★★★★&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Musescore&lt;/strong&gt;&lt;br&gt;
+介面體驗 ★★★★★&lt;br&gt;
+功能選擇 ★★★★☆&lt;br&gt;
+系統穩定 ★★★★☆&lt;br&gt;
+總推薦度 ★★★★★&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ardour&lt;/strong&gt;&lt;br&gt;
+介面體驗 ★★★☆☆&lt;br&gt;
+功能選擇 ★★★★☆&lt;br&gt;
+系統穩定 ★★★★☆&lt;br&gt;
+總推薦度 ★★★★☆&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>有趣的小知識：台灣專屬</title>
+    <link href="https://namitz.com/posts/ALilTip/" />
+    <updated>2026-07-01T00:00:00Z</updated>
+    <id>https://namitz.com/posts/ALilTip/</id>
+    <content type="html">&lt;blockquote&gt;
+&lt;p&gt;這是我的「&lt;a href=&quot;https://blogblog.club/party/&quot;&gt;BlogBlog 同樂會 - 2026 年 7 月&lt;/a&gt;」的投稿文章。本月主題是「&lt;a href=&quot;https://shuaixin.cc/Fun-Fact/&quot;&gt;有趣的小知識或冷門概念&lt;/a&gt;」，由&lt;a href=&quot;https://shuaixin.cc/&quot;&gt;劉昕&lt;/a&gt;主持。如果你有自己的部落格，歡迎一起來參加！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;終於上線自己的部落格，可以來加入同樂會了！灑花🎉&lt;br&gt;
+但這個月的主題實在有點難發想，對我來說，小知識通常是要在遇到的時候才會想起來，我又是那種沒想到事情前，腦子絕對處在待機狀態沒在運轉的類型。&lt;/p&gt;
+&lt;p&gt;Anyway 還是來試著寫寫看啦。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;專屬於台灣的食物：愛玉&lt;/h2&gt;
+&lt;p&gt;講到台灣特色美食，你可能會想到豬血糕、蚵仔煎、臭豆腐等，這些食物的特別之處在調理方式。但有一款食物，它不但做法特別，連原料作物也只有台灣生長得出來。&lt;/p&gt;
+&lt;p&gt;那就是&lt;em&gt;&lt;strong&gt;愛玉&lt;/strong&gt;&lt;/em&gt;。&lt;/p&gt;
+&lt;h3&gt;專屬的共生關係&lt;/h3&gt;
+&lt;p&gt;愛玉其實是台灣特有種，分類上屬桑科榕屬的藤本植物。與榕樹、無花果、薜荔是近親。&lt;/p&gt;
+&lt;p&gt;這個屬的特色是&lt;strong&gt;隱頭花序&lt;/strong&gt;：花托膨大化，將花序包起來，花就在花托形成的空間內生長，與常見的花都不同。可想而知，花長成這樣，要授粉並非易事。於是這個屬的植物，各找了特定的昆蟲簽立「專屬契約」。與他們配合授粉程序的昆蟲們，也因契約簽太久，演化成獨立的物種。像是無花果配榕小蜂，愛玉也有專屬的愛玉小蜂為其授粉，而愛玉與小蜂皆演化為台灣特有種。&lt;/p&gt;
+&lt;p&gt;愛玉與愛玉小蜂演化出高度專一的共生關係，愛玉單靠愛玉小蜂授粉，而小蜂也只能在愛玉果內繁衍。這是真正的唇亡齒寒，若哪天氣候變遷，造成任一方滅絕，那麼這對組合會同時消失。&lt;/p&gt;
+&lt;h3&gt;專屬女兒的名字&lt;/h3&gt;
+&lt;p&gt;愛玉怎麼在台灣被發現的？背後也有段可愛的小故事。&lt;/p&gt;
+&lt;p&gt;以下為《台灣通史》農業志果之屬記載：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;愛玉子：產於嘉義山中。舊志未載其名。道光初，有同安人某居於郡治之媽祖樓街，每往來嘉義，採辦土宜。一日，過後大埔，天熱渴甚，赴溪飲，見水面成凍，掬而飲之，涼沁心脾，自念此間暑，何得有冰？細視水上，樹子錯落，揉之有漿，以為此物化之也。拾而歸家，以水洗之，頃刻成凍，和以糖，風味殊佳，或合以兒茶少許，則色如瑪瑙。某有女曰愛玉，年十五，楚楚可人，長日無事，出凍以賣，飲者甘之，遂呼為愛玉凍。自是傳遍市上，採者日多，配售閩、粵。按愛玉子，即薜荔，性清涼，可解暑。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;翻譯蒟蒻：有位商人常來往嘉義山區，一天氣溫炎熱，這人便到溪邊喝水解渴。他看到水面浮著結塊的果凍，便將其捧起來喝，沒想到喝起來透心涼，清爽清爽的。一陣搜索之後，發現是附近植物掉落的種子產生，他取了一些種子回家洗，果然洗出了一樣的凍。於是商人便讓他女兒閒著沒事時，將這些果實收集起來洗成凍，並擺攤兜售。後來人們便依女兒的名字，將這個凍取名為愛玉凍。&lt;/p&gt;
+&lt;p&gt;這是個有趣的小故事，讓愛玉多了幾分背景。&lt;/p&gt;
+&lt;h3&gt;好啦其實不只台灣有&lt;/h3&gt;
+&lt;p&gt;一開始聽到這個資訊的時候我超級驚訝，畢竟愛玉雖不是每天吃，也還算常見。在郊區爬山時也常有機會在路邊攤販買到生的愛玉子，可以回家搓洗、自己做愛玉。沒想到這麼稀鬆平常的景象，居然在台灣才看得到。&lt;/p&gt;
+&lt;p&gt;但在查資料的過程發現，其實附近的中國沿海、東南亞一帶，也會拿愛玉的近親——薜荔來做成類似的凍、涼粉來吃，好像就沒有這麼唯一了。但愛玉這個種類、這個名字仍是獨一無二的台灣特產，也只有台灣將愛玉育種，讓它的種子數量、果膠的產生量都更多。真的很佩服台灣農業啊！&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;延伸閱讀&lt;/h2&gt;
+&lt;p&gt;在補充資料的過程中，也發現一些有趣的文章：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://homeruntaiwan.com/detail/article/2919&quot;&gt;玉子日記 ｜愛玉小蜂與秘密花海國&lt;/a&gt;&lt;br&gt;
+&lt;span class=&quot;meta&quot;&gt; https://homeruntaiwan.com/detail/article/2919 &lt;/span&gt;&lt;br&gt;
+本來想偷圖過來的(當然要問授權)，但想想還是請大家直接過去造訪好了。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://scitechvista.nat.gov.tw/Article/c000003/detail?ID=60dde4fa-4cd2-414e-8b2b-3c2b6d750325&quot;&gt;愛玉的營養科學（二）：親手做愛玉凍的方法和科學原理&lt;/a&gt;&lt;br&gt;
+&lt;span class=&quot;meta&quot;&gt; https://scitechvista.nat.gov.tw/Article/c000003/detail?ID=60dde4fa-4cd2-414e-8b2b-3c2b6d750325 &lt;/span&gt;&lt;br&gt;
+這篇有一些科學上的原理，為什麼會成凍？相信大家都很好奇。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.maybow.com.tw/news/33.html&quot;&gt;愛玉小知識｜天然果膠的奇蹟來自台灣山林&lt;/a&gt;&lt;br&gt;
+&lt;span class=&quot;meta&quot;&gt; https://www.maybow.com.tw/news/33.html &lt;/span&gt;&lt;br&gt;
+食品廠商寫的知識文，配圖很精美，希望不是AI製圖。&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>食譜：我流手沖咖啡</title>
+    <link href="https://namitz.com/posts/Coffee2/" />
+    <updated>2026-07-09T00:00:00Z</updated>
+    <id>https://namitz.com/posts/Coffee2/</id>
+    <content type="html">&lt;p&gt;每個人都有自己習慣的一套沖法，這邊簡單分享我平常是怎麼沖咖啡的。&lt;br&gt;
+目標是&lt;em&gt;&lt;strong&gt;甜&lt;/strong&gt;&lt;/em&gt;，就是要把咖啡豆中的甜感全數榨出來。&lt;/p&gt;
+&lt;h2&gt;參數：&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;咖啡豆：20克重，淺中焙~中焙。最近在喝哥倫比亞、耶加雪非。&lt;/li&gt;
+&lt;li&gt;粉水比：1比16，兌320克重的水。&lt;/li&gt;
+&lt;li&gt;水溫：約90~93度。為求低調，我是用辦公室的開飲機。先裝1/3杯、暖杯後再倒掉重裝，會比較好保持水溫。&lt;/li&gt;
+&lt;li&gt;粒徑：Epro磨豆機的刻度，手沖在3.5~4.5，而我通常選擇3.5。&lt;/li&gt;
+&lt;li&gt;濾紙：號稱日本製的未漂白濾紙。我會依照濾紙的流通性，微調磨豆機的刻度。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;作法：&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;準備
+&lt;ol&gt;
+&lt;li&gt;咖啡豆20克重，磨至偏細粒徑&lt;/li&gt;
+&lt;li&gt;手沖壺備熱水，約93攝氏度、320克重&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;開始沖煮
+&lt;ol&gt;
+&lt;li&gt;注水40克重，做悶蒸45秒&lt;/li&gt;
+&lt;li&gt;注小水，於1分20秒達160克重&lt;/li&gt;
+&lt;li&gt;於1分30秒做第二次注水，達320克重&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;沖煮結束
+&lt;ol&gt;
+&lt;li&gt;倒一杯份至小杯中&lt;/li&gt;
+&lt;li&gt;再倒回下壺，讓壺中咖啡液流動拌勻&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;沖煮圖解：&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;計時&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;秤重&lt;/th&gt;
+&lt;th style=&quot;text-align:left&quot;&gt;動作&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;0:00&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;0g&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;注水40克重，做悶蒸&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;0:45&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;40g&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;開始注小水至160克重&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;1:20&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;120g&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;斷水約10秒&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;1:30&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;120g&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;開始注大水至320克重&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;2:20&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;180g&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;待水流畢&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2&gt;甜感先決&lt;/h2&gt;
+&lt;p&gt;我平常都是上班日下午，午休結束時沖一壺喝到下班。不在上午沖是因為中午我想睡午覺，若上午有喝會影響到睡眠品質。&lt;/p&gt;
+&lt;p&gt;最近想減少熱量攝取，所以把咖啡視為無糖飲料看待，想讓其喝起來有在喝飲料的感覺。該如何把咖啡豆中的甜感榨出，便成為我手沖的首要目標。&lt;/p&gt;
+&lt;p&gt;我選擇了斗六國秀食品烘焙的單品豆，產地時常會更換，但焙度都在淺中焙~中焙。我認為這區間的焙度，最能引出咖啡的甜感。這跟手沖過程中做出甜感的時間也相仿，都在中間區段。國秀食品是一間食品材料行，但也有自家烘焙咖啡豆，有單品也有配方豆，方便雲林地區餐廳使用。我個人感受既新鮮又穩定，可能因為烘的量大、流動又快吧。&lt;/p&gt;
+&lt;p&gt;我選的豆種也都偏基本的日曬、水洗處理法，一些特殊的處理法反而喝不太慣。像是音O家系列，爆棚的各式香味實在招架不住。&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>我的咖啡器具</title>
+    <link href="https://namitz.com/posts/Coffee3/" />
+    <updated>2026-07-10T00:00:00Z</updated>
+    <id>https://namitz.com/posts/Coffee3/</id>
+    <content type="html">&lt;p&gt;簡述一下我目前擁有的咖啡器具。&lt;br&gt;
+目前有的不多，辦公室空間有限，我也不好囤一堆。另外就是覺得現在的沖煮沒有什麼問題，平常都用&lt;a href=&quot;https://namitz.com/posts/Coffee2&quot;&gt;我流咖啡沖法&lt;/a&gt;沒遇上什麼狀況。啊，不過下壺或濾杯是滿想換的，想要換成深藍色陶瓷材質，最好能跟我現有的茶杯有相同的表面處理。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;共通器具&lt;/h2&gt;
+&lt;h3&gt;磨豆機 (1Zpresso E-pro)&lt;/h3&gt;
+&lt;p&gt;大家都說磨豆機是咖啡器具中，最值得投資的一項。這也不是空穴來風，一個好的磨豆機，磨出來的粉粒徑相近，而不會有粗有細。這樣的好處是，沖煮時咖啡粉接觸水的表面積都相近。若細粉量過多，就會有沖煮過程中，細粉提早過萃、粗粉卻還沒萃取出來的狀況發生，得到一杯既苦又沒味的咖啡。不過全無細粉，「太乾淨」似乎也不是好事就是。&lt;/p&gt;
+&lt;p&gt;在用這支磨豆機前，我是使用Hario的磨豆機。只能說Hario磨豆機真的就是圖個樂的，再怎麼有品牌情結也吃不下去。&lt;/p&gt;
+&lt;h3&gt;下壺 (Hario XGS-36TB 大便下壺)&lt;/h3&gt;
+&lt;p&gt;也算是有名的型號了。全玻璃設計包含壺蓋，矽膠圈好拆好洗，對重視清潔的用家來說是加分向。只是大便外型，還是有點見仁見智。我是看膩了有點想換，但反正好用、沒壞，就繼續使用。&lt;/p&gt;
+&lt;h3&gt;電子秤&lt;/h3&gt;
+&lt;p&gt;普通的料理電子秤，也是換到第三個了。第一個有蜂鳴器超吵，第二個秤面比下壺還小，感覺很不穩。推薦咖啡用的秤，可以選有碼表計時功能的，就不用像我，還要匆忙拿手機出來計時。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;手沖&lt;/h2&gt;
+&lt;h3&gt;手沖壺 (Hario VKA-35 嘴鳥輕量細口壺)&lt;/h3&gt;
+&lt;p&gt;便宜、輕巧、耐摔。特色是「開放式」的壺口，不像大多手沖壺會延伸出長長的壺頸，這款壺的頸口與大壺口連成整個平面。所以可以輕易倒很大的水量，想要把壺裡的水快速清空的話，可以像倒水一樣用它。缺點也很明顯，沒有限制出水，控水能力不好的話很容易會忽大忽小。有些網站介紹它適合新手用，我覺得......用這個練是能變成控水大師啦。&lt;/p&gt;
+&lt;p&gt;另外有個最大缺點：樹脂材質(其實就是塑膠)讓我再決定購買前也是猶豫再三。希望這款壺能推出金屬或玻璃材質。說了這麼多缺點，我其實還是很喜歡這款細口壺，也完全不後悔買它。&lt;/p&gt;
+&lt;h3&gt;濾杯 (Hario V60 01 玻璃濾杯)&lt;/h3&gt;
+&lt;p&gt;經典中的經典。這款濾杯最容易買到的有三種材質：玻璃、陶瓷與樹脂(塑膠)，後來也響應需求推出銅製的。據說因為開模與材質製程的關係，雖然都是一樣的V60、一樣的設計，但不同材質會因為肋骨深度&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://namitz.com/posts/Coffee3/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt;而有不同效果。其中樹酯材質的肋骨是最明顯的、玻璃次之、最後才是陶瓷。&lt;/p&gt;
+&lt;p&gt;而我選擇了玻璃，易於清潔、沒有安全疑慮的同時，質感也比塑膠好。我將玻璃濾杯附帶的黑色塑膠底座拔除，改用自己從蝦皮上買來的木製通用底座。雖然因為這樣，底座與濾杯變成獨立的兩個物件，稍微有點麻煩，但視覺上的質感大大提升。沖的過程看著心情就很好，我覺得很值得。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;其他沖煮方式&lt;/h2&gt;
+&lt;p&gt;手沖之外，有時也會用用法壓壺與虹吸壺來煮，各有風味。&lt;/p&gt;
+&lt;h3&gt;法壓壺 (Tiamo 新歐風濾壓壺350ml)&lt;/h3&gt;
+&lt;p&gt;可愛的小法壓。我參考名人 James Hoffmann 的「&lt;a href=&quot;https://youtu.be/st571DYYTR8?si=WQQqZo_tmliQcpT7&quot;&gt;終極法壓壺技巧&lt;/a&gt;」，把兩階段的靜待時間改為各5分鐘。法壓壺在原先的使用方式，在過濾咖啡液時會下壓濾網，使濾網穿過整個咖啡液體。但這方式等於相當劇烈地攪拌液體，揚起其中的細粉混入液體中。Hoffmann 的煮法讓濾網僅保持在液面高度，整個沖煮過程都沒有下壓動作。這樣的好處在讓細粉在浸泡的過程中保持沉澱，沖煮出來的咖啡會清澈許多。&lt;/p&gt;
+&lt;p&gt;是說法壓不壓的話，那好像也沒必要拿法壓壺來做耶。&lt;/p&gt;
+&lt;h3&gt;虹吸壺 (Tiamo)&lt;/h3&gt;
+&lt;p&gt;忘記型號了，從朋友那邊收來的。已經很久沒用了，畢竟在辦公室煮太招搖；在家裡的話，我又懶得把磨豆機和其他器具帶來帶去的。以後有閒錢買磨豆機在家裡，到時候會比較常煮吧。我很喜歡虹吸壺的感覺：沖煮時的儀式感、既有香氣又有厚度、保留更多油脂口感等等。出門在外有遇到使用虹吸壺的咖啡店，我也都會點上一杯。&lt;/p&gt;
+&lt;p&gt;由於沖煮過程中都在爐子上加熱，剛出杯的成品也非常燙，沒有辦法喝。等待其冷卻的過程也是吊足了胃口。&lt;/p&gt;
+&lt;hr class=&quot;footnotes-sep&quot;&gt;
+&lt;section class=&quot;footnotes&quot;&gt;
+&lt;ol class=&quot;footnotes-list&quot;&gt;
+&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;濾杯的設計重點之一，在於內側肋骨的安排。這些突出的肋骨在濾紙與濾杯壁之間撐出空隙，讓從濾紙滲透出來的液體能藉由這些空隙流出。V60濾杯的特色就是這些明顯的肋骨安排，讓液體快速流至下壺，而不與咖啡粉接觸太久，可以做出過去手沖咖啡未被強調的萃取效果。當然V60的較陡角度與圓錐設計也是幫助咖啡液快速流掉的關鍵。 &lt;a href=&quot;https://namitz.com/posts/Coffee3/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+  </entry>
+  <entry>
+    <title>嘗試把滑鼠的速度調慢</title>
+    <link href="https://namitz.com/posts/2026_0721_Mousespeed/" />
+    <updated>2026-07-21T00:00:00Z</updated>
+    <id>https://namitz.com/posts/2026_0721_Mousespeed/</id>
+    <content type="html">&lt;p&gt;先破個梗，我試了一下後，覺得還是調回快速度好了。&lt;/p&gt;
+&lt;h2&gt;快就是kín，kín就是快&lt;/h2&gt;
+&lt;p&gt;很多高階滑鼠都會強調滑動的速度很快(aka.靈敏度，如5000dpi以上)、在高速的狀態下還能十分準確且低延遲。大學時常玩LOL等線上遊戲，也習慣於追求中階以上的滑鼠。而且一定要至少有兩個側鍵，可以把道具欄位的快速鍵設在上面，把需要點擊使用的物品用滑鼠側鍵來操作，可以減輕左手工作量。&lt;/p&gt;
+&lt;p&gt;這樣的習慣也跟著我進到職場。我自用的電腦，也將滑鼠速度調得頗高。高到同事借我電腦操作的時候，會不自覺抱怨滑鼠太快；相對地我在用別人的電腦或公用電腦，也常常覺得很難用 (但這更多是因為不用滑鼠墊，鼠腳邊緣常常卡灰塵所致，不能怪我吧)。&lt;/p&gt;
+&lt;p&gt;最近意識到，如果不是為了打LOL，會需要頻繁移動游標到螢幕角落，那我把滑鼠設定這麼快還有其他實質上的意義嗎？&lt;/p&gt;
+&lt;h2&gt;有必要嗎？&lt;/h2&gt;
+&lt;p&gt;於是開始嘗試將滑鼠速度調慢。怕一次調太多會很不習慣，於是我每次只調整一個單位，逐步調慢讓手部適應。順帶一提，我調整的地方是Windows本身設定中的「滑鼠指標速度」。據說只調整這個參數的話不是這麼準確 &lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://namitz.com/posts/2026_0721_Mousespeed/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt; ，但我也懶得再去動其他設定了。另外我有把「增強指標的準確性」給打開，雖然我覺得這個設定看起來有點可疑就是了，也不確定它實際運作的機制&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://namitz.com/posts/2026_0721_Mousespeed/#fn2&quot; id=&quot;fnref2&quot;&gt;[2]&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;
+&lt;p&gt;然而，在這樣操作了大概兩個禮拜之後，我還是決定調回平常習慣的速度了 (可能甚至比先前還快)。&lt;/p&gt;
+&lt;h2&gt;手部肌肉的微操作&lt;/h2&gt;
+&lt;p&gt;速度調快有一個根本性的好處：游標在螢幕上移動相同的距離，速度越快，手部移動的距離就越短。&lt;/p&gt;
+&lt;p&gt;而這個手部移動的距離越短，意謂著我不需要啟動手腕的大肌肉，就能完成一些精細操作。在將滑鼠速度調慢的過程，有發現手腕開始感到&lt;em&gt;&lt;strong&gt;緊緊的&lt;/strong&gt;&lt;/em&gt;。起初我以為這只是剛調整，還不習慣而已。確實也是因為不習慣所致，但我原本使用滑鼠的速度，在很多細微的操作上並不需要使用到手腕。只要用拇指、無名指與小指輕推，靠這三根負責抓握滑鼠的手指，就可以做到許多小動作。&lt;/p&gt;
+&lt;p&gt;像是查找列表時，讓游標順著列表移動下來；或是按視窗右上角的X時，會先移動整隻手腕、再靠手指把游標推到準確的位置。這些小動作在高速移動的滑鼠上，只要用手指推動即可；但將滑鼠速度調慢以後，需要&lt;strong&gt;動用&lt;/strong&gt;到手腕的場合就變多了。我發現這才是讓我感到手腕緊的原因。&lt;/p&gt;
+&lt;p&gt;於是我再度將滑鼠速度調快了。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;寫在最後&lt;/h3&gt;
+&lt;p&gt;這篇文僅描述了我這次將滑鼠速度的個人經驗，這個結論也只適用於我個人。也祝大家都能找到讓自己舒服的使用方式。&lt;/p&gt;
+&lt;hr class=&quot;footnotes-sep&quot;&gt;
+&lt;section class=&quot;footnotes&quot;&gt;
+&lt;ol class=&quot;footnotes-list&quot;&gt;
+&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;Windows內的滑鼠指標速度是軟體層面上的調整，越偏離預設值越多，誤差就越大。 &lt;a href=&quot;https://namitz.com/posts/2026_0721_Mousespeed/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn2&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;後來查了一下，這就是類似移動加速的功能，滑鼠移動的距離越長，速度也會相對加速。查完之後我就把這個選項關閉了，讓滑鼠動多少就是多少，比較能培養手部肌肉記憶。 &lt;a href=&quot;https://namitz.com/posts/2026_0721_Mousespeed/#fnref2&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+  </entry>
+  <entry>
+    <title>食譜：鮭魚舞菇味噌湯</title>
+    <link href="https://namitz.com/posts/2026_0727_Misoshiru/" />
+    <updated>2026-07-27T00:00:00Z</updated>
+    <id>https://namitz.com/posts/2026_0727_Misoshiru/</id>
+    <content type="html">&lt;p&gt;做了自認為很成功的鮭魚舞菇味噌湯，在這邊簡單紀錄。&lt;/p&gt;
+&lt;h2&gt;作法&lt;/h2&gt;
+&lt;h3&gt;材料&lt;/h3&gt;
+&lt;p&gt;份量可以做四碗，或我是裝三大碗，當三天晚餐。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;食材&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;鮭魚丁(一盒約200克重)&lt;/li&gt;
+&lt;li&gt;洋蔥(一顆)&lt;/li&gt;
+&lt;li&gt;好菇道舞菇(一包)&lt;/li&gt;
+&lt;li&gt;白蘿蔔(1/3條)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;調味料&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;鰹魚味噌(兩大匙)&lt;/li&gt;
+&lt;li&gt;蔥末(適量)&lt;/li&gt;
+&lt;li&gt;油(適量，我使用橄欖油)&lt;/li&gt;
+&lt;li&gt;水(約700毫升)&lt;/li&gt;
+&lt;li&gt;蒜(約3瓣，可不加)&lt;/li&gt;
+&lt;li&gt;薑(約一個拇指甲大小，可不加)&lt;/li&gt;
+&lt;li&gt;味醂(一大匙，可不加)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;開煮&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;將洋蔥切絲、蒜頭與薑切片，用平底鍋炒香&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://namitz.com/posts/2026_0727_Misoshiru/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;倒入湯鍋，加入水、舞菇、白蘿蔔&lt;/li&gt;
+&lt;li&gt;中大火煮滾，待白蘿蔔煮軟&lt;/li&gt;
+&lt;li&gt;加入鮭魚，待鮭魚熟透&lt;/li&gt;
+&lt;li&gt;加入蔥末、味醂，之後&lt;strong&gt;關火&lt;/strong&gt;&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://namitz.com/posts/2026_0727_Misoshiru/#fn2&quot; id=&quot;fnref2&quot;&gt;[2]&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;加入味噌&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2&gt;後記&lt;/h2&gt;
+&lt;h3&gt;什麼料理用什麼鍋&lt;/h3&gt;
+&lt;p&gt;我的鍋具目前有一個平底不沾鍋、跟從家裡撿來的中型傳統湯鍋。這次做湯，我因為想少洗一個鍋子，打算直接用湯鍋炒洋蔥。結果因為傳統湯鍋的鍋壁很薄，炒一炒砰地一聲，鍋底居然受熱變形了！而且沒有不沾塗層，馬上就開始有焦痕了。還好趕緊補救之後，順利地轉換到平底鍋上繼續炒，並快速將湯鍋的焦痕刷洗掉。&lt;/p&gt;
+&lt;h3&gt;味噌真香&lt;/h3&gt;
+&lt;p&gt;為了保留味噌的味道，需要在關火後才加入味噌，避免味噌過度受熱走味。我這次用的是小包裝的鰹魚味噌，想不到也有出這種幫你調理好的味噌，這樣就不再另外買柴魚片或魚粉，非常方便。&lt;/p&gt;
+&lt;h3&gt;白蘿蔔與舞菇&lt;/h3&gt;
+&lt;p&gt;其實就是想到什麼加什麼。都不加也是可以，日本料理賣的也不一定會加。舞菇的口感滿特別的，而用其他的菇類應該也會很搭。追求道地日本風味的人，可以考慮看看用滑菇，風味相當特殊，但可能不適合再用鮭魚。&lt;/p&gt;
+&lt;hr class=&quot;footnotes-sep&quot;&gt;
+&lt;section class=&quot;footnotes&quot;&gt;
+&lt;ol class=&quot;footnotes-list&quot;&gt;
+&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;我喜歡炒至微焦。 &lt;a href=&quot;https://namitz.com/posts/2026_0727_Misoshiru/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn2&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;最好是關火後過陣子再加入味噌，保留味噌的味道。 &lt;a href=&quot;https://namitz.com/posts/2026_0727_Misoshiru/#fnref2&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+  </entry>
+  <entry>
+    <title>一期一會</title>
+    <link href="https://namitz.com/posts/2026_0728_IchigoIchie/" />
+    <updated>2026-07-28T00:00:00Z</updated>
+    <id>https://namitz.com/posts/2026_0728_IchigoIchie/</id>
+    <content type="html">&lt;blockquote&gt;
+&lt;p&gt;這是我的「&lt;a href=&quot;https://blogblog.club/party/&quot;&gt;BlogBlog 同樂會 – 2026 年 8 月&lt;/a&gt; 」的投稿文章。本月主題是「&lt;a href=&quot;https://blog.ikukaroom.com/ichigo-ichie/&quot;&gt;一期一會&lt;/a&gt;」，由 &lt;a href=&quot;https://blog.ikukaroom.com/&quot;&gt;ikuka&lt;/a&gt; 主持。如果你有自己的部落格，歡迎一起來參加！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;這感覺是個會邊寫邊哭的主題啊......是說，哭出來也無妨吧。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;一期一會&lt;/h2&gt;
+&lt;p&gt;這個日本熟語，我很久以前就非常喜歡，現在有機會看到它成為我部落格的標題，心裡有股謎樣的滿足感。&lt;/p&gt;
+&lt;p&gt;原本是日本茶道上的精神，來自茶聖千利休：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;其中的「一期」為佛語，指代人的一生；「一會」則指代意味著眼前僅有一次的相逢。「一期一會」核心內涵是表達茶席之上的相聚獨一無二、無法復現，應以全部的真誠對待每一次的茶會。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;後來成為不少人的人生哲學。若要對著它大書特書，講很多大道理，我可能辦不到。對我來說，這句是需要用心去體會的，唯有個人自身的經驗，接觸過的人事物，才能帶起對這句話、對時間、對生命的感觸。多說無益。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;人生無常&lt;/h2&gt;
+&lt;p&gt;有時候事情就這麼發生了，而我們一點辦法也沒有。&lt;/p&gt;
+&lt;p&gt;今年遇到了兩次，認識的人很突然的離世，讓我印象深刻。
+一位是我的舅舅、一位是管樂圈內受人愛戴的 &lt;a href=&quot;https://tcph.org.tw/blog/chen-yi-fu/&quot;&gt;陳一夫&lt;/a&gt;老師。&lt;/p&gt;
+&lt;h3&gt;久別的舅舅&lt;/h3&gt;
+&lt;p&gt;今年初過年，是我暌違多年，再次踏進阿媽&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://namitz.com/posts/2026_0728_IchigoIchie/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt;家吃飯。&lt;/p&gt;
+&lt;p&gt;父母的家計打理得不好，早些年與內外兩邊的親戚出了不少糾紛，之後就漸漸不再有來往。過年的時候更是，看著大家年前趕著回家打掃準備，心中一點惆悵之餘，也存在一點僥倖。不用再和親戚們相處，沒有打掃、沒有準備、沒有包紅包也沒有吉祥話，對現代人來說倒是樂得輕鬆。&lt;/p&gt;
+&lt;p&gt;後來，家裡發生接二連三的事故，現在家裡剩我一個能走能動的正常人。也是這樣讓我覺得，是不是該找回之前的聯繫了呢？於是從今年開始，我決定回阿媽家吃頓飯。&lt;/p&gt;
+&lt;p&gt;絞鏈咿壓&lt;br&gt;
+木門的防水漆略褪&lt;br&gt;
+吸了口氣、推開&lt;/p&gt;
+&lt;p&gt;近十年未回的阿媽家&lt;br&gt;
+浴室的抿馬賽克、客廳的淡色花磚&lt;br&gt;
+與記憶重疊的那層陌生&lt;br&gt;
+閃爍著、淌動著&lt;br&gt;
+成脆弱的一滴永恆&lt;br&gt;
+在眼角積著&lt;br&gt;
+忠告、閒聊、叮囑&lt;br&gt;
+「唉呀、我做阿伯啦。」&lt;/p&gt;
+&lt;p&gt;短暫的滯在&lt;br&gt;
+總記著添碗飯&lt;br&gt;
+風隨著日落漸冷&lt;br&gt;
+也再添件外套吧&lt;/p&gt;
+&lt;p&gt;這是那時候寫的詩，就一起貼出來吧。那天約中午時分到達，外婆備了一鍋火鍋，還有我小時候最喜歡吃的蝦子。阿姨、姨丈、阿公、阿媽和舅舅，我們圍坐在老圓桌旁，長輩們一邊閒聊一邊挾食。「吃不吃烏魚子啊？」話還沒說完就先塞到我碗裡。舅舅簡單吃完就起身，進旁邊的房間休息。我想，他是怕空間狹小，想騰出多一點空間給我們吧。而這是他在我印象中的最後一個畫面。&lt;/p&gt;
+&lt;p&gt;回到小時候，最怕的就是舅舅。他不主動與我們這輩交談，過年時回家，他也總是都待在自己房間。現在想想，多少也是為了保持住傳統對男性角色的期待吧，畢竟他是那輩唯一的男性。直到他驟然離世，我才知道他從事著大貨車駕駛的工作。&lt;/p&gt;
+&lt;p&gt;他是我的舅舅，我卻未曾了解過他。&lt;/p&gt;
+&lt;h3&gt;未能熟識的一夫老師&lt;/h3&gt;
+&lt;p&gt;我其實從未與一夫老師互相認識，頂多是參與了共通友人的對話，碰巧在同一個場合會面而已。但我清楚知道，他真的是管樂/音樂的愛好者。你三不五時可以在各大演出場合看到他，有時候是來聽、有時候是來敘舊。如果有人說是管樂愛好者卻從未見過他，有個可能是這個人太少聽演出了。&lt;/p&gt;
+&lt;p&gt;講得有些誇張，但他的活躍與熱情是眾所周知的。應該很少能見到一個音樂總監，還能整天出現在南北大小的音樂會上。還有個有趣的一點是他很喜歡找人合影自拍，那如出一轍&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://namitz.com/posts/2026_0728_IchigoIchie/#fn2&quot; id=&quot;fnref2&quot;&gt;[2]&lt;/a&gt;&lt;/sup&gt;的自拍角度，成為他的金字招牌。臉書上好友貼文，也常出現他熟悉的身影。&lt;/p&gt;
+&lt;p&gt;我們都以為他還能這樣到處出現。我也一直覺得，留在這圈子裡總有一天能當面認識他、給他指導。&lt;/p&gt;
+&lt;p&gt;可惜這個心念，成我一個無解的憾。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;社群平台記得你生日&lt;/h2&gt;
+&lt;p&gt;OK傷感的話題就說到這好了，可能逐漸脫離青年，對&lt;strong&gt;失去&lt;/strong&gt;也敏感了起來。&lt;/p&gt;
+&lt;p&gt;今天我生日喔！也因為這樣，親朋好友從&lt;em&gt;四面八方&lt;/em&gt; 捎來了祝福。&lt;/p&gt;
+&lt;p&gt;感謝是感謝，但不知道是不是I人性格作祟，總覺得有點......麻煩。這樣講實在是有點過分，但要一一回應這些人，多少是要花心思的吧。我不想留個罐頭回應了事，可能的話還能順道敘敘舊、了解對方的近況，知道對方安在，也是美事一樁。相對地，就要花很多時間構思文字，當面回的話，就算只是笑著說謝謝，對我來說也是要花心力完成的事。&lt;/p&gt;
+&lt;p&gt;而這種矛盾感又讓我有點陷入自我毀滅迴圈裡，並不是很舒服。不是說這些朋友的祝福讓我不舒服，而是對陷入自毀迴圈的自己感到不舒服。&lt;/p&gt;
+&lt;p&gt;先從關掉LINE的生日設定開始好了，反正LINE上的聯絡人，大多是來祝福不會讓我感到開心的人。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;雖然接在這話題後很怪，但還是要在這邊祝主持人 Ikuka 生日快樂！&lt;br&gt;
+這是個不需要回應的祝福。&lt;/p&gt;
+&lt;hr class=&quot;footnotes-sep&quot;&gt;
+&lt;section class=&quot;footnotes&quot;&gt;
+&lt;ol class=&quot;footnotes-list&quot;&gt;
+&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;此處指外婆，但因我稱呼外婆，都是直接叫阿媽，這邊就直接用這個稱呼了。 &lt;a href=&quot;https://namitz.com/posts/2026_0728_IchigoIchie/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn2&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;嗯，這裡用這個成語好像有點怪，但我還是想用。也歡迎你mail建議我更好的用法！ &lt;a href=&quot;https://namitz.com/posts/2026_0728_IchigoIchie/#fnref2&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+  </entry>
+  <entry>
+    <title>倉頡輸入法：你受夠新注音了嗎？</title>
+    <link href="https://namitz.com/posts/2026_0729_CangjieTaigi/" />
+    <updated>2026-07-29T00:00:00Z</updated>
+    <id>https://namitz.com/posts/2026_0729_CangjieTaigi/</id>
+    <content type="html">&lt;p&gt;這篇文描述了我學習新的中文輸入法的過往。
+幾年前吃飽沒事幹，覺得 Windows 內建的新注音輸入法實在太容易打錯字，第三方的自然輸入法、超注音等，又在相容性等遇到一些障礙。於是決定來學習不同的輸入法，看能不能改善注音輸入法的問題。&lt;/p&gt;
+&lt;p&gt;結果意外也解決了台文輸入的困擾。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;注音輸入的難點&lt;/h2&gt;
+&lt;p&gt;先說明為何用&lt;strong&gt;難點&lt;/strong&gt;這個字。我並非要否定注音這套系統，事實上我自己在使用電腦輸入法也還是以注音輸入為主。只是對 Windows 上不太智慧的輸入法來，注音輸入在效率方面略顯不足。&lt;/p&gt;
+&lt;h3&gt;重碼率高&lt;/h3&gt;
+&lt;p&gt;中文輸入法主要有兩大思維：字音、字形。前者有注音、拼音，後者包括倉頡、速成、大易、筆畫等，另外也有既依賴字形、又參考字音的輸入法：嘸蝦米。&lt;/p&gt;
+&lt;p&gt;字音輸入的最大優勢在於，它的&lt;strong&gt;學習成本&lt;/strong&gt;相對低很多。在台灣，學中文的人都是從注音系統開始學習的。因此我們早就知道每一個字的注音怎麼寫，在輸入法上，我們只需要記憶注音符號在鍵盤上的相對位置，不需要再另外背額外內容，很快就能上手。而對其他地區的中文使用者來說，拼音系統也是如此。&lt;/p&gt;
+&lt;p&gt;但中文是一個&lt;strong&gt;同音率&lt;/strong&gt;很高的語言。如果你在手機上打了「ㄕㄕ」兩個字元，下面的建議詞會有：事實、事事、世事、逝世、試試、誓師、時事、史詩、史實、適時、失事、師事....我還沒列舉完。也因此，在輸入法上我們很常會需要&lt;strong&gt;選字&lt;/strong&gt;。手機上的注音輸入，會依上下文以及個人使用詞彙的頻率來微調建議詞的順序，但偶而也是會出現預測失誤的尷尬狀況。更不用說電腦上的注音輸入了，微軟官方的新注音輸入法被大家嘲笑多年，但看起來也沒有太多改進&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://namitz.com/posts/2026_0729_CangjieTaigi/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;
+&lt;p&gt;這個現象在輸入法上有個專有名詞，叫做&lt;strong&gt;重碼率&lt;/strong&gt;。意思是在按下同一組按鍵編碼時，會出現兩個以上的構詞，該現象發生機率稱為重碼率。而純字音輸入中文同音率高的特點，也會同步造就重碼率高。相對來說，從字形特徵出發取碼的一眾字形輸入法，便具有重碼率低的優勢&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://namitz.com/posts/2026_0729_CangjieTaigi/#fn2&quot; id=&quot;fnref2&quot;&gt;[2]&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;
+&lt;h3&gt;佔用按鍵多&lt;/h3&gt;
+&lt;p&gt;注音系統的另一個特點是&lt;strong&gt;字母數量多&lt;/strong&gt;，加上聲調符號 (二聲、三聲、四聲、輕聲) 總數來到41個。因此注音鍵盤最上排的數字區也全部都要拿來輸入注音。你問這會影響嗎？如果你是用108鍵的全尺寸鍵盤、有一整塊獨立出來的數字鍵區，影響是還好。而對用TKL、甚至是60%等精簡布局的人來說，主鍵區上排不能直接輸入數字就是一件麻煩。其實就算有獨立數字鍵，主鍵區上排的數字離手指擺放的距離也是更近的，還可以用FJ定位點來盲打，我個人很推薦把主鍵區的數字鍵習慣起來。&lt;/p&gt;
+&lt;p&gt;那麼，注音有辦法減少使用鍵數嗎？其實是有的，像&lt;strong&gt;許氏鍵盤&lt;/strong&gt;、&lt;strong&gt;倚天26鍵&lt;/strong&gt;，就藉由將單個字內不會重複的符號整合起來，達到在鍵盤上佔用到的按鍵，都在英文的26鍵內。這樣的好處是主鍵區上排的數字得以解放出來，不需要再切換中英文；主鍵區右邊的符號區也是，完全和英文相同邏輯。不過因為中文的標點符號是全形，與英文不同，所以在輸入逗號、句號時，還是得加按 Ctrl 鍵&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://namitz.com/posts/2026_0729_CangjieTaigi/#fn3&quot; id=&quot;fnref3&quot;&gt;[3]&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;
+&lt;p&gt;許氏鍵盤或倚天26鍵的另一個好處是，它們的排列參考了英文鍵盤。很多符號的位置都能跟該處的英文字母相互連想，如
+A對應到ㄚ、B對應到ㄅ、K對應到ㄎ等等。另外重複對應的部份，如N對應到做為聲母的ㄋ及做為韻母的ㄣ，真的滿有創意的。這樣互相連想的好處是，練習26鍵排列，同時也綑綁練習了英打，或是你本來已很熟練英打，能反過來加快這類佈局的上手速度。&lt;/p&gt;
+&lt;p&gt;許氏鍵盤或倚天26鍵設計原理相同，但滿多鍵位設計是不一樣的，建議要學的話挑其中一個學。我自己是決定學習倉頡，因此這兩種都沒學過，但在撰文當下比較，我會比較偏好學習許氏鍵盤。若你想加強中文的輸入效率，又不想學倉頡或嘸蝦米這類需要另外記憶字碼的輸入法，學習這類較少鍵數的佈局不失為一種選擇。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;小結&lt;/h2&gt;
+&lt;h3&gt;下集待續&lt;/h3&gt;
+&lt;p&gt;看來篇幅可以拉到兩篇，在下篇文章中，我將回顧我為何選擇倉頡，以及接下來的後續。&lt;br&gt;
+&lt;a href=&quot;https://namitz.com/posts/2026_0731_CangjieTaigi2&quot;&gt;&lt;strong&gt;下篇寫好了在這&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;hr class=&quot;footnotes-sep&quot;&gt;
+&lt;section class=&quot;footnotes&quot;&gt;
+&lt;ol class=&quot;footnotes-list&quot;&gt;
+&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;其實還是有改進的。另外在大量建置自定義的造詞之後，這種亂選字的狀況改善非常多。所以如果你還在使用微軟新注音，卻還未使用過使用者造詞的功能，推薦你現在開始建立！ &lt;a href=&quot;https://namitz.com/posts/2026_0729_CangjieTaigi/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn2&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;事實上重碼率低，不代表完全不用選字。還是有些字有重碼現象，只是發生機率少得多。像是倉頡碼的「女戈木」碼，在常用漢字集就對應到&lt;strong&gt;槳&lt;/strong&gt;和&lt;strong&gt;樂&lt;/strong&gt;兩字，需要在鍵入碼後另外選字。 &lt;a href=&quot;https://namitz.com/posts/2026_0729_CangjieTaigi/#fnref2&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn3&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;一些第三方輸入法，可以設定在中文模式下，按符號會直接出全形標點符號。但佔用了41鍵的注音通常就無法享有這功能。 &lt;a href=&quot;https://namitz.com/posts/2026_0729_CangjieTaigi/#fnref3&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+  </entry>
+  <entry>
+    <title>倉頡輸入法：我為何選倉頡？</title>
+    <link href="https://namitz.com/posts/2026_0731_CangjieTaigi2/" />
+    <updated>2026-08-02T00:00:00Z</updated>
+    <id>https://namitz.com/posts/2026_0731_CangjieTaigi2/</id>
+    <content type="html">&lt;blockquote&gt;
+&lt;p&gt;這是&lt;a href=&quot;https://namitz.com/posts/2026_0729_CangjieTaigi&quot;&gt;&lt;strong&gt;倉頡輸入法&lt;/strong&gt;&lt;/a&gt;系列的第二篇文章，若你還未看過前面，歡迎你先去看看喔！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在上一篇，我敘述了注音輸入法在 Windows 平台上的難點。這也促使我去接觸新的中文字輸入方式。這篇就來講講我看了什麼、選了什麼。&lt;/p&gt;
+&lt;p&gt;還是要再說一次，注音很棒，我不管是電腦還是手機，都仍留有注音輸入法，也經常以注音輸入為主。只是對效率的追求是無止盡的，又或是說我只是吃飽了沒事幹，想搞點事自我折磨，如此而已。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;還有什麼選擇？&lt;/h2&gt;
+&lt;p&gt;拉回到我選擇的當下，那時我考慮了幾種方案：&lt;/p&gt;
+&lt;h3&gt;26鍵注音&lt;/h3&gt;
+&lt;p&gt;一樣是注音輸入法，但使用與英文字母相同位置的按鍵佈局。&lt;br&gt;
+優點：保留注音使用習慣、快速鍵入符號數字&lt;br&gt;
+缺點：重碼率高，還是有選字問題，需要一點學習成本&lt;/p&gt;
+&lt;h3&gt;雙拼&lt;/h3&gt;
+&lt;p&gt;從拼音輸入的基礎發展，將韻母分開為另外一層的邏輯。&lt;br&gt;
+優點：直接使用英文鍵盤、一字兩碼更快&lt;br&gt;
+缺點：學習成本高、比注音更高的重碼率&lt;/p&gt;
+&lt;p&gt;拼音因為使用26個英文字母，也是一個減少按鍵數的方案。但全拼有兩大缺點：一是單個字需要的碼數很多，如「床」字用拼音就是 &lt;strong&gt;Chuang&lt;/strong&gt; 用到了6碼；另一點是拼音沒有聲調，導致選字的現象更為頻繁，更仰賴智慧選字。&lt;/p&gt;
+&lt;p&gt;對台灣人來說，拼音也不是我們熟悉的方案。但有鑑於英文的普及，學習拼音其實也不是難事，頂多幾個音要額外記憶。如X對應到注音ㄒ、Q對應到注音ㄑ、V對應到注音ㄩ&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://namitz.com/posts/2026_0731_CangjieTaigi2/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt;等等。我也曾經在某代手機上學習並使用全拼輸入法，目前在平板上偶而也仍會使用。&lt;/p&gt;
+&lt;p&gt;雙拼是我覺得滿有趣的方案，捨棄了把韻母全部拼出來的想法。藉由一碼聲母、一碼韻母，大幅度減少打每個字需要按的按鍵 (如Y鍵同時代表聲母Y- 以及韻母-ing 和-uai) 。只是就需要另外記憶一層韻母排列，學習成本略高了點。&lt;/p&gt;
+&lt;h3&gt;倉頡/速成&lt;/h3&gt;
+&lt;p&gt;字形輸入法中的代表，取漢字的外型部件，拆解、歸類為各種字根而成。&lt;br&gt;
+優點：重碼率低&lt;br&gt;
+缺點：一個字用到的碼數較多&lt;/p&gt;
+&lt;p&gt;對於數以萬計的中文字，我們該如何快速分類、挑選出來？倉頡輸入法就是個滿有趣的方案。它一共有26個字根，這些字根都是很常出現在漢字裡的部件。除了本身形狀外，另外延伸不少輔根，讓我們得以用少少的按鍵繕打出需要的字。&lt;/p&gt;
+&lt;p&gt;其他的字形輸入法也形成不同的取碼規則，如&lt;em&gt;速成&lt;/em&gt; 原則和倉頡相同，但只取首尾兩碼；&lt;em&gt;大新倉頡&lt;/em&gt; 介兩者之間，取最多四碼；&lt;em&gt;大易&lt;/em&gt; 最多取三碼&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://namitz.com/posts/2026_0731_CangjieTaigi2/#fn2&quot; id=&quot;fnref2&quot;&gt;[2]&lt;/a&gt;&lt;/sup&gt;，且字根與倉頡截然不同，更偏向傳統漢字構字的部首筆晝，在鍵盤上佔用的鍵位也較多。&lt;/p&gt;
+&lt;p&gt;發明人朱邦復先生，在發明倉頡後不久即登報，公開宣佈放棄倉頡輸入法的專利權。也因如此，倉頡才有目前的普及度，所有平台上，幾乎只要有中文的地方就能用倉頡輸入法。&lt;/p&gt;
+&lt;h3&gt;嘸蝦米&lt;/h3&gt;
+&lt;p&gt;採用形音義三者合一的選碼策略，並將選碼邏輯整合進英文鍵盤。&lt;br&gt;
+優點：重碼率低、單個字的碼數少、使用英文碼&lt;br&gt;
+缺點：學習成本高、邏輯特殊&lt;/p&gt;
+&lt;p&gt;嘸蝦米輸入法是個特別的存在，它既參考了字音也參考了字形，這樣的混合概念讓它理論上會變成極為高效的輸入法。不過始終握有專利這點，在普及度上就吃了虧。因為我後來決定學習倉頡，請恕我對嘸蝦米沒有太多了解。&lt;/p&gt;
+&lt;p&gt;寫到這邊，我來統整一下目前的看法。&lt;br&gt;
+我是以一個注音/拼音的使用者出發，還是很主觀的想法，若有意見歡迎提出討論。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;text-align:left&quot;&gt;輸入法&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;佔用鍵位&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;重碼率&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;每字碼數*&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;上手難度&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;注音(標準大千式)&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;41&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;高&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;2~4&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;注音(許氏/倚天26鍵)&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;25/26&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;高&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;2~4&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;全拼(標準拼音)&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;26&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;極高&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;2~6&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;雙拼&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;26&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;極高&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;2&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;倉頡&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;26&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;低&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;2~6&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;速成&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;26&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;中~高&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;2&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;大易&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;41&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;低&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;4/5&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;嘸蝦米&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;26&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;低&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;3~5&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;*&lt;em&gt;每字碼數包含注音的聲調、倉頡的空白輸入鍵，而不包括選字步驟的動作，所以建議把重碼率一併納入參考。&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;我選了什麼？&lt;/h2&gt;
+&lt;p&gt;我選擇了倉頡為我手機的主要輸入法。&lt;/p&gt;
+&lt;h3&gt;為什麼是倉頡？&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;選字率低&lt;/li&gt;
+&lt;li&gt;純字形輸入法，邏輯單純&lt;/li&gt;
+&lt;li&gt;主鍵區上排數字鍵可以騰出來用&lt;/li&gt;
+&lt;li&gt;帥&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;但我後來發現，我在手機上使用比在電腦上要來得更順。於是倉頡變成我手機上的主要輸入法。反而是電腦這邊，花了很長時間還是沒能順暢輸入，即使碼都背起來了。&lt;/p&gt;
+&lt;h3&gt;為什麼是手機？&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;鍵數少很多，在手機上的差距更大了，少了一排按鍵，大幅降低誤觸機率
+&lt;img src=&quot;https://namitz.com/images/inputLayout.jpg&quot; alt=&quot;手機佈局比較&quot;&gt;&lt;/li&gt;
+&lt;li&gt;手機不需盲打，對記憶字根較好上手&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;目前進度到這裡，手機上基本完全取代注音輸入法；電腦上則還要再一陣子，可以正常打字，但還不是很順。前後大概花了三個月學習吧，之後在電腦上就沒怎麼用了，我想這也是電腦目前還不是很順的原因之一。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;台文嘛會通&lt;/h2&gt;
+&lt;p&gt;學寫台文的人，應該攏會拄著欲安怎用電腦拍字的問題。&lt;/p&gt;
+&lt;p&gt;我嘛有下載教育部開發的「教育部臺灣閩南語漢字輸入法」來做使用，毋過對聲調較無熟似，使用起來實在是足礙虐。佇這時雄雄想起來，我會曉用單純靠字形的拍字法，就是倉頡拍字法，用這就會使直接拍字矣！&lt;/p&gt;
+&lt;p&gt;這款情形就親像港澳的使用者，怹攏用倉頡較濟，所以會使用倉頡來拍粵語，無感覺怪怪。猶毋過若是欲拍拼音，抑是用專門的拼音拍字法較對路。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;小結&lt;/h2&gt;
+&lt;p&gt;這篇交代了我為何從眾多輸入法中選擇倉頡。但在實際運用到電腦上時，其實一直都不怎麼上手。這也讓我意外發現，自己在輸入中文字會有的特別現象。&lt;/p&gt;
+&lt;p&gt;這方面待我整理成篇後再發佈好了，目前就先寫到這裡。&lt;/p&gt;
+&lt;hr class=&quot;footnotes-sep&quot;&gt;
+&lt;section class=&quot;footnotes&quot;&gt;
+&lt;ol class=&quot;footnotes-list&quot;&gt;
+&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;在漢語拼音中，注音ㄩ實際是拼寫成ü，u上面加兩點，與德語發音相仿。在輸入法上則使用了空閒下來的v鍵。 &lt;a href=&quot;https://namitz.com/posts/2026_0731_CangjieTaigi2/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn2&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;不同版本的大易，取碼數不同。最初版本取四碼、現今 Windows 內建則取三碼。曾經也有取兩碼的大易二碼，相對更仰賴智慧選字，目前已停止更新。 &lt;a href=&quot;https://namitz.com/posts/2026_0731_CangjieTaigi2/#fnref2&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+  </entry>
+  <entry>
+    <title>食譜：腐竹炒秀珍菇</title>
+    <link href="https://namitz.com/posts/2026_0804_Recipe/" />
+    <updated>2026-08-04T00:00:00Z</updated>
+    <id>https://namitz.com/posts/2026_0804_Recipe/</id>
+    <content type="html">&lt;p&gt;以後都來記錄好了。&lt;/p&gt;
+&lt;h2&gt;作法&lt;/h2&gt;
+&lt;h3&gt;材料&lt;/h3&gt;
+&lt;p&gt;約三餐份。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;食材
+&lt;ol&gt;
+&lt;li&gt;腐竹(一包，約125克重)&lt;/li&gt;
+&lt;li&gt;洋蔥(一顆)&lt;/li&gt;
+&lt;li&gt;秀珍菇(一包，約150克重)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;調味料
+&lt;ol&gt;
+&lt;li&gt;橄欖油(約兩大匙)&lt;/li&gt;
+&lt;li&gt;蒜(三瓣)&lt;/li&gt;
+&lt;li&gt;薑(約中指指甲份量)&lt;/li&gt;
+&lt;li&gt;白胡椒鹽(適量)&lt;/li&gt;
+&lt;li&gt;奶油(提香用，適量)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;開煮&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;蒜薑切末，與油入鍋，開中大火爆香&lt;/li&gt;
+&lt;li&gt;加入洋蔥，炒軟&lt;/li&gt;
+&lt;li&gt;加入秀珍菇，炒軟&lt;/li&gt;
+&lt;li&gt;加入奶油&lt;/li&gt;
+&lt;li&gt;待洋蔥與秀珍菇上色&lt;/li&gt;
+&lt;li&gt;加入腐竹&lt;/li&gt;
+&lt;li&gt;試吃，並加入胡椒鹽調味&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2&gt;後記&lt;/h2&gt;
+&lt;h3&gt;腐竹容易焦&lt;/h3&gt;
+&lt;p&gt;因為是薄片組成的材料，腐竹比起菇和洋蔥較容易焦，可以等前兩者上色後再下鍋。&lt;/p&gt;
+&lt;h3&gt;奶油提菇香&lt;/h3&gt;
+&lt;p&gt;菇類的香氣有一大部份為脂溶性，所以這次除了稍微用多一點油之外，還加了一小塊奶油來配合秀珍菇。效果還算不錯！&lt;/p&gt;
+&lt;p&gt;這次除了這道菜，還有簡單炒油菜和煎雞胸肉，但都不算很成功。下次試試用溫度計測量肉的內部溫度，應該能更提升口感。&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>AI時代下的媒體識讀</title>
+    <link href="https://namitz.com/posts/2026_0807_AINews/" />
+    <updated>2026-08-07T00:00:00Z</updated>
+    <id>https://namitz.com/posts/2026_0807_AINews/</id>
+    <content type="html">&lt;p&gt;突然發現標題下得有點命題太大了，看起來好像要長篇大論一樣。這篇其實就是臉書發文的規格而已啦，只是發到自己的部落格，可以再多寫點東西。契機是看到認識的KOL截取了一張新聞附圖，針對該時事發表一些社論。&lt;/p&gt;
+&lt;p&gt;但這張圖我一看，心中的警鐘瞬間就發動了。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://namitz.com/images/AINews1.webp&quot; alt=&quot;誇張的生成附圖&quot;&gt;&lt;/p&gt;
+&lt;p class=&quot;meta&quot;&gt;來源：台中國一特教生持掃把攻擊老師 女師右眼虹膜裂恐失明/ 壹蘋新聞網&lt;/p&gt;
+&lt;p&gt;當下對時事本身的興趣都沒了。覺得版上朋友們可以一同來增進媒體識讀，在AI時代有些觀念值得我們去注意。我整理了一些應該警覺的部份，供參考。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;AI新聞警鐘&lt;/h2&gt;
+&lt;p&gt;來講講AI使用的部份，我想到三個地雷，看到的時候可以多加留意：&lt;/p&gt;
+&lt;h3&gt;⚠️警戒：AI抽象示意圖&lt;/h3&gt;
+&lt;p&gt;這代表該媒體缺乏視覺資源採集的能力，可能沒有預算編列攝影師及外線記者，也沒有自家的照片資料庫。小家媒體無可厚非，但來源可信度要相對地保留。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://namitz.com/images/AINews2.webp&quot; alt=&quot;好一點的生成附圖&quot;&gt;&lt;/p&gt;
+&lt;p class=&quot;meta&quot;&gt;來源：伊朗欲禁船過荷莫茲海峽 油價狂飆美股應聲重挫/ 商傳媒&lt;/p&gt;
+&lt;h3&gt;⚠️警戒：AI標題&lt;/h3&gt;
+&lt;p&gt;標題通常是一則新聞最講求邏輯、最有內容的地方。連這裡都直接用AI生成了，內文可想而知。不過現今LLM技術成熟，光看標題生成感或許也不這麼明顯。&lt;/p&gt;
+&lt;h3&gt;❌遠離：AI生成事件畫面&lt;/h3&gt;
+&lt;p&gt;前面兩者有時候迫於時效性不得已，還可能說得過去。但直接請AI還原事件現場，這已違悖職業道德。無論AI多注重細節，生成者給的prompt有多多，這樣的還原終究存在生成引擎的加油添醋。會這樣用的媒體，內容也不用看下去了，不會有水準到哪去。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;為什麼要防？&lt;/h2&gt;
+&lt;p&gt;對呀，為什麼要防AI生成新聞呢，現在技術發達，依靠科技有什麼不對？&lt;/p&gt;
+&lt;p&gt;確實我們必須承認，大型語言模型和圖片生成的擴散模型實在太強大好用了，在爭效率的職場上可說非用不可，掀起了一個新的時代。但你我也知道，AI生成還是有它的極限。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;當人人都能用AI生成內容、內容的生產成本趨近於零時，此刻最昂貴的資產，變成了人與人之間的「信任」。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p class=&quot;meta&quot;&gt;來源：信任效應：AI時代駕馭演算法的勝出關鍵/ 作者：陳顯立&lt;/p&gt;
+&lt;p&gt;大公司孕育出來的大型語言模型，資料來源多是已存在於網路上的片段文字。所以它不能、也不會替你評價、判斷一件事的真偽。而這正是一則新聞最看重的事，我們會計較，就是因為這些是真實存在的事件，在這個宇宙的某個時間點曾經發生過的事。&lt;/p&gt;
+&lt;p&gt;當然，你也可以覺得這沒什麼，然後繼續看聳動新聞。但我會建議你不如直接點開 Netflix，那些專
+為多巴胺促進分泌的影劇內容還比較好看。&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>台語需要文字</title>
+    <link href="https://namitz.com/posts/2026_0811_TaigiNeedWords/" />
+    <updated>2026-08-11T00:00:00Z</updated>
+    <id>https://namitz.com/posts/2026_0811_TaigiNeedWords/</id>
+    <content type="html">&lt;p&gt;&lt;img src=&quot;https://namitz.com/images/Taigi.webp&quot; alt=&quot;台文教學範例&quot;&gt;&lt;/p&gt;
+&lt;p&gt;來聊聊台語文吧。&lt;/p&gt;
+&lt;p&gt;現在台語文也被拿來做政治攻防的話題，我發自內心感到可惜。若你認同台語是一個完整的語言，那它就該有一套自己的文字，我想這是天經地義的事。同為漢語族，廣東話就有相當完整的表記方式，也沒有人覺得莫名其妙，怎麼換成台語就不行了？&lt;/p&gt;
+&lt;p&gt;僅憑統獨立場就想看透這個世界，視角未免過於狹隘。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;我不說台語&lt;/h2&gt;
+&lt;p&gt;我就是「不講台語」的受害人。&lt;/p&gt;
+&lt;p&gt;事實上，我不是國語&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://namitz.com/posts/2026_0811_TaigiNeedWords/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt;運動那個世代的人，也沒看過真正的狗牌&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://namitz.com/posts/2026_0811_TaigiNeedWords/#fn2&quot; id=&quot;fnref2&quot;&gt;[2]&lt;/a&gt;&lt;/sup&gt;。早在1980年代末期，不說方言的政策就撤銷了，那並不是我的年代。但這不代表從此台語就不再受迫害，實際上台語的觀感從此沒再好過。&lt;/p&gt;
+&lt;p&gt;從小，我媽媽在家裡就只跟我講國語。我可以清楚感覺到，他對台語的印象就是低俗，不該掛在嘴上說。我並不怪他，我們的政府過去推行了幾十年的政策，國語運動非常成功地營造出台語的方言形象，它讓不只一整代的台灣人或多或少都覺得，台語是粗俗的、不值得花心思去學習的。&lt;/p&gt;
+&lt;p&gt;我們這一代，已經不能講好台語了。因此，對有心要學習台語、身邊又缺乏資源的人來說，系統化的文字及拼音系統是必須的。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;學這可以幹嘛&lt;/h2&gt;
+&lt;h3&gt;先說拼音&lt;/h3&gt;
+&lt;p&gt;台語本來就有很多國語沒有的音，必定需要一套可以完整描述的系統。我就是學了台羅，才知道台語很多讀音到底該怎麼讀：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;我&lt;/strong&gt;guá、&lt;strong&gt;牛&lt;/strong&gt;gû的濁音，在拼音上直觀易懂&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;這个&lt;/strong&gt;tsit-ê、&lt;strong&gt;拔仔&lt;/strong&gt;pa̍t-á因為有連音，才會念成咧、辣&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;遊覽車&lt;/strong&gt;iû-lám-tshia的&lt;strong&gt;遊&lt;/strong&gt;、&lt;strong&gt;覽&lt;/strong&gt;，變調怎麼變的&lt;/li&gt;
+&lt;li&gt;諸如此類&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;沒有拼音，或許也可以照母語方式學習，但有了拼音顯然更明確、更有條理吧。就像學國語會學注音符號、日語背五十音一樣。對一個並非從小學台語的人來說，沒有拼音，單靠聽的是很難學會這些「&lt;strong&gt;眉角&lt;/strong&gt;」的。&lt;/p&gt;
+&lt;p&gt;要用注音？當然也是可以，若要完整描述還是得對注音系統做調整。我國政府提供了&lt;strong&gt;方音符號&lt;/strong&gt;做為配套方案，也是有人拿出來推廣使用。但不論是寫還是顯示，都需要再安裝補充字集，這很顯著提高了該套方案普及的門檻。所以我個人還是推薦用拉丁字母來拼音。至於白話字和台羅系統要選什麼，我是都有學啦，這兩套的邏輯是一樣的，要看懂、轉換也不難。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://namitz.com/images/TaigiSymbols.webp&quot; alt=&quot;台語拼音系統&quot;&gt;&lt;/p&gt;
+&lt;p class=&quot;meta&quot;&gt;來源：spman/ wikipedia&lt;/p&gt;
+&lt;h3&gt;再說文字&lt;/h3&gt;
+&lt;p&gt;再來講到台文 (上面附圖中這種文字)，有了台文，內容才能紀錄、才能傳承。同時有了台文，能幫助你更了解，你講的台語到底是什麼內容：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;東西的台語mi̍h-kiānn就是&lt;strong&gt;物件&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;歸剛的正字為&lt;strong&gt;規工&lt;/strong&gt;。整唸kui，規整同義；天念kang，做一天工。&lt;/li&gt;
+&lt;li&gt;母湯當時紅極一時，也是那時開始，較多人跳出來正字為&lt;strong&gt;毋通&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;諸如此類&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;你可以不學台文，但對有學過的人來說，這樣的文字才能正確記載台語，因為漢字是表意文字，每個字都有它的意涵。不該從國語的角度去拼湊，用不屬於台語原本唸法的字詞去紀錄。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;沒人強制你說&lt;/h2&gt;
+&lt;p&gt;最後我要說，沒有人規定從現在開始，台語都必須用這種文字寫。你愛講母湯歸剛，寫火星文也沒有人會管你 (嘴你是另一回事)。這裡是台灣，更不是過去國語運動的年代，我們很包容各種想法、說話方式存在。但這套台文、台羅拼音，無疑就是學習台語最有效率、最不具歧義、最用得久的方案，而不是過了幾年就連自己都可能看不懂、字義都對不上的中文轉寫。&lt;/p&gt;
+&lt;p&gt;再者，教育者也知道只靠文字拼音是不夠的，不會只有看課本。除了台語師資外，也會有多媒體教材輔助。你可以不學，但去指責別人推廣學習台語的苦心，就有點過了。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;莫等到咱的下一代真正完全袂曉說𠢕早矣，才閣來怨嘆講台語無人傳承&lt;/strong&gt;。其實也沒很看懂，對吧？&lt;/p&gt;
+&lt;hr class=&quot;footnotes-sep&quot;&gt;
+&lt;section class=&quot;footnotes&quot;&gt;
+&lt;ol class=&quot;footnotes-list&quot;&gt;
+&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;即華語、普通話。本文為推廣台語文，避免觸到特定派系支持者敏感神經，故採用國語一詞，日常較廣泛使用。 &lt;a href=&quot;https://namitz.com/posts/2026_0811_TaigiNeedWords/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn2&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;臺灣歷史上曾經有段時期，若不小心在校園內講了台語，要掛一塊寫著「我不說方言」的大塊木牌在身上，作為懲罰。 &lt;a href=&quot;https://namitz.com/posts/2026_0811_TaigiNeedWords/#fnref2&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+  </entry>
 </feed>

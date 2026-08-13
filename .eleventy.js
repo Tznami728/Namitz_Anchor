@@ -285,7 +285,8 @@ eleventyConfig.addPlugin(feedPlugin, {
   outputPath: "/feed.xml",
   collection: {
     name: "posts",
-    limit: 10,
+      // 增加上限以包含更多文章；若要不限制可改為一個很大的數字或移除此欄
+      limit: 1000,
   },
   metadata: {
     language: "zh-Hant",
