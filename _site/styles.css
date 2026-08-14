@@ -132,13 +132,6 @@ aside li.active a {
   color: var(--panel-color);
 }
 
-/* 響應式：當視窗寬度小於等於 800px 時隱藏側邊欄 */
-@media (max-width: 800px) {
-  aside {
-    display: none;
-  }
-}
-
 /*Blog的文章*/
 .meta {
   color: var(--muted-color);
@@ -312,13 +305,35 @@ aside li.active a {
   padding: 1rem;
 }
 
+.bottom-nav-title {
+  display: flex;
+  font-size: 1rem;
+  font-weight: 1000;
+  color: var(--text-color);
+  margin-right: 1rem;
+}
+
+label {
+  display: flex;
+  align-items: center; /*縱向對齊*/
+  justify-content: flex-start; /*橫向對齊*/
+  flex: 1 1 auto;
+  gap: 0.5rem;
+  margin: 0;
+  display: none;
+}
+
+input {
+  display: none;
+}
+
 .bottom-nav-links {
   display: flex;
   align-items: center; /*縱向對齊*/
   justify-content: flex-start; /*橫向對齊*/
+  flex: 1 1 auto;
   gap: 0.5rem;
   margin: 0;
-  line-height: 1;
 }
 
 .bottom-nav-button {
@@ -386,22 +401,49 @@ aside li.active a {
 }
  */
 
-/* 手機設備 (480px 以下) */
+/* 手機設備 */
 @media (max-width: 600px) {
   main {
     padding: 4rem 1rem;
   }
 
   .bottom-nav-content {
-    padding: 0.3rem 1rem;
+    padding: 0.7rem 1rem;
+  }
+
+  .bottom-nav-title {
+    max-width: 100px;
+    line-height: 1;
+  }
+
+  label {
+    display: flex;
+    img {
+      width: 19px;
+      height: 19px;
+    }
+  }
+
+  input:checked ~ .bottom-nav-content {
+    max-height: 300px;
+    align-items: flex-start;
+  }
+
+  input:checked ~ .bottom-nav-links {
+    max-height: 300px;
   }
 
   .bottom-nav-links {
+    max-height: 0px;
+    overflow: hidden;
+    flex-direction: column;
     gap: 0;
+    transition: 1000ms ease-out ;
   }
 
   .bottom-nav-button {
-    flex-wrap: wrap;
+    flex-direction: column;
+    /*flex-wrap: wrap;*/
     gap: 0.1rem;
   }
 
@@ -414,6 +456,7 @@ aside li.active a {
   .theme-toggle {
     margin-left: 0.1rem;
   }
+
 }
 /*
   body {

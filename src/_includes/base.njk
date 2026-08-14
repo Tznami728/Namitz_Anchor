@@ -17,8 +17,12 @@
   <!-- 底部導覽列 -->
   <footer class="bottom-nav">
     <nav class="bottom-nav-content">
+    <div class="bottom-nav-title">
+      <a href="/" class="{% if page.url == '/' %}active{% endif %}">Namitz's anchor</a>    
+    </div>
+    <label for="burger"><img src="/images/MenuOff.webp" alt="選單"></label>
+    <input type="checkbox" id="burger">
     <div class="bottom-nav-links">
-      <a href="/" class="{% if page.url == '/' %}active{% endif %}">Namitz's anchor</a>
       <a href="/works/" class="{% if page.url == '/works/' or page.url.startsWith('/works/') %}active{% endif %}">編曲</a>
       <a href="/gallery/" class="{% if page.url == '/gallery/' or page.url.startsWith('/gallery/') %}active{% endif %}">寫真</a>
       <a href="/posts/" class="{% if page.url == '/posts/' or page.url.startsWith('/posts/') %}active{% endif %}">雜談</a>
@@ -27,10 +31,10 @@
 
     <div class="bottom-nav-button">
       <button class="theme-toggle" type="button" aria-label="切換夜間主題" aria-pressed="false" title="切換夜間主題">
-        <img src="/images/Dark_off.webp" alt="切換主題圖示">
+        <img src="/images/DarkOff.webp" alt="切換主題">
       </button>
       <button onclick="copyUrl()" class="theme-toggle" type="button" aria-label="RSS訂閱" title="RSS feed訂閱">
-        <img src="/images/RSS.webp" alt="訂閱圖示">
+        <img src="/images/RSSFeed.webp" alt="訂閱">
       </button>
     </div>
     </nav>
@@ -56,7 +60,7 @@
         }
 
         if (toggleIcon) {
-          toggleIcon.src = nextTheme === 'dark' ? '/images/Dark_on.webp' : '/images/Dark_off.webp';
+          toggleIcon.src = nextTheme === 'dark' ? '/images/DarkOn.webp' : '/images/DarkOff.webp';
         }
       }
 
