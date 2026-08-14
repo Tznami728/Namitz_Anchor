@@ -5,13 +5,10 @@
   --muted-color: #888;
   --accent-color: #6b8aad;
   --border-color: #ddd;
-  --panel-color: #fff;
+  --panel-color: rgba(256, 256, 256, 0.8);
   --panel-strong-color: #eee;
   --shadow-color: rgba(143, 143, 143, 0.1);
   --table-border-color: #999;
-  --blockquote-color: #888;
-  --pre-bg: #eee;
-  --pre-color: #666;
 }
 
 body[data-theme="dark"] {
@@ -21,25 +18,23 @@ body[data-theme="dark"] {
   --muted-color: #a3a3a3;
   --accent-color: #9db8d6;
   --border-color: #333;
-  --panel-color: #1b1b1b;
+  --panel-color: rgba(50, 50, 50, 0.7);
   --panel-strong-color: #2a2a2a;
   --shadow-color: rgba(333, 333, 333, 0.1);
   --table-border-color: #4f4f4f;
-  --blockquote-color: #b5b5b5;
-  --pre-bg: #2a2a2a;
-  --pre-color: #d8d8d8;
 }
 
 /*Global styles*/
 body {
   margin: 0;
   font-family: "Noto Serif TC", "Noto Serif JP", "LiSong", "Songti TC", "Times New Roman", serif;
+  letter-spacing: 0.025rem;
   line-height: 1.8;
   min-height: 100vh;
   padding-bottom: 40px;
   background: var(--bg-color);
   color: var(--text-color);
-  transition: background-color 1000ms ease, color 3000ms ease-out;
+  transition: background-color 1000ms ease, color 5000ms ease;
 }
 
 main {
@@ -83,7 +78,7 @@ h2 {
   font-family: "Noto Sans TC", "Noto Sans JP", "PingFang", "Arial", sans-serif;
   font-weight: 100;
   margin-top: 1rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 2rem;
 }
 
 h3 {
@@ -106,7 +101,7 @@ a {
 }
 
 a:hover {
-  text-shadow: 0 4px 1px var(--border-color);
+  text-shadow: 0 5px 2px var(--border-color);
   color: var(--text-color);
   /*background: var(--panel-strong-color);
   border-radius: 3px;*/
@@ -222,22 +217,22 @@ aside li.active a {
 }
 
 .content blockquote {
-  color: var(--blockquote-color);
+  color: var(--text-color);
+  border-left: 1px solid var(--border-color);
+  padding: 0 1rem 0 1rem;
+  margin: 1rem 0 2rem 0;
   font-family: "Noto Sans TC", "Noto Sans JP", "PingFang", "Arial", sans-serif;
   font-weight: 500;
   font-size: 0.9rem;
-  border-left: 1px solid var(--border-color);
-  padding-left: 1rem;
-  margin-left: 0;
 }
 
 .content pre {
-  background-color: var(--pre-bg);
+  background-color: var(--border-color);
   border-radius: 3px;
   padding: 16px;
   overflow-x: auto;
   font-family: monospace;
-  color: var(--pre-color);
+  color: var(--table-border-color);
 }
 
 .content img {
@@ -301,6 +296,8 @@ aside li.active a {
   left: 0;
   right: 0;
   background: var(--panel-color);
+   backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
   border-top: 1px solid var(--border-color);
   box-shadow: 0 -10px 20px var(--shadow-color);
   z-index: 100;
@@ -312,15 +309,15 @@ aside li.active a {
   justify-content: space-between; /*橫向對齊*/
   max-width: 712px;
   margin: 0 auto;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 
 .bottom-nav-links {
   display: flex;
   align-items: center; /*縱向對齊*/
   justify-content: flex-start; /*橫向對齊*/
-  gap: 2rem;
-  margin: 0 0;
+  gap: 0.5rem;
+  margin: 0;
   line-height: 1;
 }
 
@@ -344,7 +341,7 @@ aside li.active a {
 .bottom-nav a.active {
   font-weight: 1000;
   color: var(--text-color);
-  border-bottom: 1px solid var(--text-color);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .theme-toggle {
