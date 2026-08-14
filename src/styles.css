@@ -289,8 +289,8 @@ aside li.active a {
   left: 0;
   right: 0;
   background: var(--panel-color);
-   backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
+   backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
   border-top: 1px solid var(--border-color);
   box-shadow: 0 -10px 20px var(--shadow-color);
   z-index: 100;
@@ -404,7 +404,7 @@ input {
 /* 手機設備 */
 @media (max-width: 600px) {
   main {
-    padding: 4rem 1rem;
+    padding: 4rem 1.5rem;
   }
 
   .bottom-nav-content {
@@ -431,6 +431,7 @@ input {
 
   input:checked ~ .bottom-nav-links {
     max-height: 300px;
+    opacity: 1;
   }
 
   .bottom-nav-links {
@@ -438,13 +439,14 @@ input {
     overflow: hidden;
     flex-direction: column;
     gap: 0;
-    transition: 1000ms ease-out ;
+    opacity: 0;
+    transition: 300ms ;
   }
 
   .bottom-nav-button {
     flex-direction: column;
     /*flex-wrap: wrap;*/
-    gap: 0.1rem;
+    gap: 0;
   }
 
 
