@@ -145,23 +145,23 @@ eleventyConfig.addCollection("posts", function (collectionApi) {
 });
 
 eleventyConfig.addCollection("tagList", function (collectionApi) {
-  const posts = collectionApi.getFilteredByGlob("src/posts/*.md");
-  const map = new Map();
+  const posts = collectionApi.getFilteredByGlob("src/posts/*.md"); // 列出所有文章
+  const map = new Map(); // 用 Map 來儲存 tag 與對應的文章
 
-  posts.forEach((post) => {
-    const tags = extractPostTags(post);
+  posts.forEach((post) => { // 遍歷每篇文章
+    const tags = extractPostTags(post); // 取得文章的所有 tag
 
     tags.forEach((tag) => {
-      const slug = makeTagSlug(tag);
-      if (!map.has(slug)) {
+      const slug = makeTagSlug(tag); // 將 tag 轉為 slug
+      if (!map.has(slug)) { // 如果 Map 中還沒有這個 slug，則新增一個 entry
         map.set(slug, { slug, label: tag, posts: [] });
       }
 
-      map.get(slug).posts.push(post);
+      map.get(slug).posts.push(post); // 將文章加入對應的 tag entry 中
     });
   });
 
-  return Array.from(map.values()).sort((a, b) => a.label.localeCompare(b.label, "zh-Hant"));
+  return Array.from(map.values()).sort((a, b) => a.label.localeCompare(b.label, "zh-Hant")); // 將 tag 按 label 排序，使用 zh-Hant locale 以符合中文排序規則
 });
 
 // works collection，按日期倒序排列

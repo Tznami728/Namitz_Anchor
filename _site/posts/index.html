@@ -23,21 +23,74 @@
 </header>
 
 <body>
+<div class="flex-parent">
   <!-- 最新文章部分 -->
   
     
-    <section>
+    <section class="flex-child-left">
       <article>
-        <b>最新文章👉 &nbsp;<a href="/posts/2026_0813_Recipe2/">食譜：親子丼</a></b>
-        <p>這次不算太成功，剛好記錄下來避免日後踩雷。 作法 材料 約三餐份。粗體為檢討後建議量 食材 雞胸肉去皮(一包，約300克重) 洋蔥(一顆) 雪白菇(一包，約150克重) 蛋(四顆)(六顆) 調味料 橄欖油(約一大匙) 醬油(兩大匙)(三大匙) 味醂(...</p>
+        <h2>最新 &nbsp;</h2>
+        <h3><a href="/posts/2026_0813_Recipe2/">食譜：親子丼</a></h3>
+        <p>這次耍了點小聰明，效果卻沒那麼好，剛好記錄下來做為日後參考。 作法 材料 約三餐份。粗體為檢討後建議量 食材 雞胸肉去皮(一包，約300克重) 洋蔥(...</p>
         <p class="meta">2026-08-13
-        <a href="/posts/2026_0813_Recipe2/">查看更多</a>
+        <a href="/posts/2026_0813_Recipe2/">→查看更多</a>
         </p>
       </article>
-      <hr>
     </section>
   
 
+  <!-- Hashtag列表部分 -->
+  
+    <section class="flex-child-right">
+      <h2>標籤</h2>
+      <p  class="hashtag">
+        
+          <a href="/tags/咖啡/">#咖啡(3)</a>
+          <!--<span class="meta">(3)&nbsp;&nbsp;</span>-->
+          &nbsp;&nbsp;<wbr>
+        
+          <a href="/tags/食譜/">#食譜(5)</a>
+          <!--<span class="meta">(5)&nbsp;&nbsp;</span>-->
+          &nbsp;&nbsp;<wbr>
+        
+          <a href="/tags/設計/">#設計(1)</a>
+          <!--<span class="meta">(1)&nbsp;&nbsp;</span>-->
+          &nbsp;&nbsp;<wbr>
+        
+          <a href="/tags/媒體識讀/">#媒體識讀(1)</a>
+          <!--<span class="meta">(1)&nbsp;&nbsp;</span>-->
+          &nbsp;&nbsp;<wbr>
+        
+          <a href="/tags/開源軟體/">#開源軟體(2)</a>
+          <!--<span class="meta">(2)&nbsp;&nbsp;</span>-->
+          &nbsp;&nbsp;<wbr>
+        
+          <a href="/tags/電腦/">#電腦(6)</a>
+          <!--<span class="meta">(6)&nbsp;&nbsp;</span>-->
+          &nbsp;&nbsp;<wbr>
+        
+          <a href="/tags/語言/">#語言(1)</a>
+          <!--<span class="meta">(1)&nbsp;&nbsp;</span>-->
+          &nbsp;&nbsp;<wbr>
+        
+          <a href="/tags/樂團/">#樂團(3)</a>
+          <!--<span class="meta">(3)&nbsp;&nbsp;</span>-->
+          &nbsp;&nbsp;<wbr>
+        
+          <a href="/tags/輸入法/">#輸入法(2)</a>
+          <!--<span class="meta">(2)&nbsp;&nbsp;</span>-->
+          &nbsp;&nbsp;<wbr>
+        
+          <a href="/tags/blogblog同樂會/">#Blogblog同樂會(2)</a>
+          <!--<span class="meta">(2)&nbsp;&nbsp;</span>-->
+          &nbsp;&nbsp;<wbr>
+        
+      </p>
+      <p class="meta"><a href="/tags/index.html">→標籤分類頁面</a></p>
+    </section>
+  
+</div>
+<hr>
   <!-- 所有文章列表 -->
   
   
@@ -374,26 +427,29 @@
   <!-- 底部導覽列 -->
   <footer class="bottom-nav">
     <nav class="bottom-nav-content">
-    <div class="bottom-nav-title">
-      <a href="/" class="">Namitz's anchor</a>    
-    </div>
-    <label for="burger"><img src="/images/MenuOff.webp" alt="選單"></label>
-    <input type="checkbox" id="burger">
-    <div class="bottom-nav-links">
-      <a href="/works/" class="">編曲</a>
-      <a href="/gallery/" class="">寫真</a>
-      <a href="/posts/" class="active">雜談</a>
-      <a href="/links/" class="">連結</a>
-    </div>
+      <div class="bottom-nav-title">
+        <a href="/" class="">Namitz's anchor</a>    
+      </div>
 
-    <div class="bottom-nav-button">
-      <button class="theme-toggle" type="button" aria-label="切換夜間主題" aria-pressed="false" title="切換夜間主題">
-        <img src="/images/DarkOff.webp" alt="切換主題">
-      </button>
-      <button onclick="copyUrl()" class="theme-toggle" type="button" aria-label="RSS訂閱" title="RSS feed訂閱">
-        <img src="/images/RSSFeed.webp" alt="訂閱">
-      </button>
-    </div>
+      <input type="checkbox" id="burger">
+      <div class="bottom-nav-links">
+        <a href="/works/" class="">編曲</a>
+        <a href="/gallery/" class="">寫真</a>
+        <a href="/posts/" class="active">雜談</a>
+        <a href="/links/" class="">連結</a>
+      </div>
+
+      <div class="bottom-nav-button">
+        <button class="theme-toggle" type="button" aria-label="切換夜間主題" aria-pressed="false" title="切換夜間主題">
+          <img src="/images/DarkOff.webp" alt="切換主題">
+        </button>
+        <button onclick="copyUrl()" class="theme-toggle" type="button" aria-label="RSS訂閱" title="RSS feed訂閱">
+          <img src="/images/RSSFeed.webp" alt="訂閱">
+        </button>
+      </div>
+
+      <label for="burger"><img src="/images/MenuOff.webp" alt="選單"></label>
+
     </nav>
   </footer>
 

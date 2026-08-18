@@ -17,21 +17,40 @@ title: 部落格
 </header>
 
 <body>
+<div class="flex-parent">
   <!-- 最新文章部分 -->
   {% if collections.posts.length > 0 %}
     {% set latestPost = collections.posts[0] %}
-    <section>
+    <section class="flex-child-left">
       <article>
-        <b>最新文章👉 &nbsp;<a href="{{ latestPost.url }}">{{ latestPost.data.title }}</a></b>
-        <p>{{ latestPost.templateContent | striptags | truncate(125, true, '...') }}</p>
+        <h2>最新 &nbsp;</h2>
+        <h3><a href="{{ latestPost.url }}">{{ latestPost.data.title }}</a></h3>
+        <p>{{ latestPost.templateContent | striptags | truncate(75, true, '...') }}</p>
         <p class="meta">{{ latestPost.data.date | strftime("%Y-%m-%d") }}
-        <a href="{{ latestPost.url }}">查看更多</a>
+        <a href="{{ latestPost.url }}">→查看更多</a>
         </p>
       </article>
-      <hr>
     </section>
   {% endif %}
 
+  <!-- Hashtag列表部分 -->
+  {% if collections.tagList.length > 0 %}
+    <section class="flex-child-right">
+      <h2>標籤</h2>
+      <p  class="hashtag">
+        {% for tag in collections.tagList %}
+          <a href="/tags/{{ tag.slug }}/">#{{ tag.label }}({{ tag.posts.length }})</a>
+          <!--<span class="meta">({{ tag.posts.length }})&nbsp;&nbsp;</span>-->
+          &nbsp;&nbsp;<wbr>
+        {% endfor %}
+      </p>
+      <p class="meta"><a href="/tags/index.html">→標籤分類頁面</a></p>
+    </section>
+  {% else %}
+    <p>目前還沒有任何 hashtag。</p>
+  {% endif %}
+</div>
+<hr>
   <!-- 所有文章列表 -->
   {% set currentYear = null %}
   

@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hashtag 列表</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+  <div class="layout">
+    <main>
+      
+<header>
+  <h2>Hashtag 列表</h2>
+  <p>這裡整理我目前所有的標籤與相關文章數。</p>
+  <div class="meta">
+    <a href="/posts/">←返回文章列表</a>
+  </div>
+  <hr>
+</header>
+
+
+  <ul>
+    
+      <li>
+        <a href="/tags/咖啡/" class="hashtag">#咖啡</a>
+        <span class="meta">（3 篇）</span>
+      </li>
+    
+      <li>
+        <a href="/tags/食譜/" class="hashtag">#食譜</a>
+        <span class="meta">（5 篇）</span>
+      </li>
+    
+      <li>
+        <a href="/tags/設計/" class="hashtag">#設計</a>
+        <span class="meta">（1 篇）</span>
+      </li>
+    
+      <li>
+        <a href="/tags/媒體識讀/" class="hashtag">#媒體識讀</a>
+        <span class="meta">（1 篇）</span>
+      </li>
+    
+      <li>
+        <a href="/tags/開源軟體/" class="hashtag">#開源軟體</a>
+        <span class="meta">（2 篇）</span>
+      </li>
+    
+      <li>
+        <a href="/tags/電腦/" class="hashtag">#電腦</a>
+        <span class="meta">（6 篇）</span>
+      </li>
+    
+      <li>
+        <a href="/tags/語言/" class="hashtag">#語言</a>
+        <span class="meta">（1 篇）</span>
+      </li>
+    
+      <li>
+        <a href="/tags/樂團/" class="hashtag">#樂團</a>
+        <span class="meta">（3 篇）</span>
+      </li>
+    
+      <li>
+        <a href="/tags/輸入法/" class="hashtag">#輸入法</a>
+        <span class="meta">（2 篇）</span>
+      </li>
+    
+      <li>
+        <a href="/tags/blogblog同樂會/" class="hashtag">#Blogblog同樂會</a>
+        <span class="meta">（2 篇）</span>
+      </li>
+    
+  </ul>
+
+
+
+    </main>
+  </div>
+
+  <!-- 底部導覽列 -->
+  <footer class="bottom-nav">
+    <nav class="bottom-nav-content">
+    <div class="bottom-nav-title">
+      <a href="/" class="">Namitz's anchor</a>    
+    </div>
+    <label for="burger"><img src="/images/MenuOff.webp" alt="選單"></label>
+    <input type="checkbox" id="burger">
+    <div class="bottom-nav-links">
+      <a href="/works/" class="">編曲</a>
+      <a href="/gallery/" class="">寫真</a>
+      <a href="/posts/" class="">雜談</a>
+      <a href="/tags/" class="">Hashtag</a>
+      <a href="/links/" class="">連結</a>
+    </div>
+
+    <div class="bottom-nav-button">
+      <button class="theme-toggle" type="button" aria-label="切換夜間主題" aria-pressed="false" title="切換夜間主題">
+        <img src="/images/DarkOff.webp" alt="切換主題">
+      </button>
+      <button onclick="copyUrl()" class="theme-toggle" type="button" aria-label="RSS訂閱" title="RSS feed訂閱">
+        <img src="/images/RSSFeed.webp" alt="訂閱">
+      </button>
+    </div>
+    </nav>
+  </footer>
+
+  <script>
+    (function () {
+      const body = document.body;
+      const toggleButton = document.querySelector('.theme-toggle');
+      const toggleIcon = document.querySelector('.theme-toggle img');
+
+      const savedTheme = localStorage.getItem('theme');
+      const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      const theme = savedTheme || systemTheme;
+
+      function applyTheme(nextTheme) {
+        body.setAttribute('data-theme', nextTheme);
+        localStorage.setItem('theme', nextTheme);
+
+        if (toggleButton) {
+          toggleButton.setAttribute('aria-pressed', String(nextTheme === 'dark'));
+          toggleButton.setAttribute('title', nextTheme === 'dark' ? '切換至淺色模式' : '切換至夜間模式');
+        }
+
+        if (toggleIcon) {
+          toggleIcon.src = nextTheme === 'dark' ? '/images/DarkOn.webp' : '/images/DarkOff.webp';
+        }
+      }
+
+      applyTheme(theme);
+
+      if (toggleButton) {
+        toggleButton.addEventListener('click', () => {
+          const nextTheme = body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+          applyTheme(nextTheme);
+        });
+      }
+    })();
+  </script>
+
+  <script>
+  function copyUrl() {
+      const url = "https://namitz.com/feed.xml";
+
+      navigator.clipboard.writeText(url)
+          .then(() => {
+              alert("已複製XML網址！接下來貼到閱讀器即完成訂閱。\n感謝你的訂閱！也隨時歡迎Email跟我交流。");
+          })
+          .catch(err => {
+              console.error("複製失敗：", err);
+          });
+  }
+  </script>
+
+
+</body>
+</html>

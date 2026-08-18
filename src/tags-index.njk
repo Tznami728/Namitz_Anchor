@@ -1,0 +1,31 @@
+---
+title: Hashtag 列表
+permalink: /tags/index.html
+---
+
+{% extends "base.njk" %}
+
+{% block content %}
+<header>
+  <h2>Hashtag 列表</h2>
+  <p>這裡整理我目前所有的標籤與相關文章數。</p>
+  <div class="meta">
+    <a href="/posts/">←返回文章列表</a>
+  </div>
+  <hr>
+</header>
+
+{% if collections.tagList.length > 0 %}
+  <ul>
+    {% for tag in collections.tagList %}
+      <li>
+        <a href="/tags/{{ tag.slug }}/">#{{ tag.label }}</a>
+        <span class="meta">（{{ tag.posts.length }} 篇）</span>
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>目前還沒有任何 hashtag。</p>
+{% endif %}
+
+{% endblock %}

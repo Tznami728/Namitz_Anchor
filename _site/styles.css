@@ -97,15 +97,17 @@ a {
   text-decoration: none;
   color: var(--accent-color);
   /*padding: 2px 0px;*/
-  transition-duration: 300ms;
+  transition: color 300ms, text-shadow 300ms ease;
 }
 
 a:hover {
-  text-shadow: 0 5px 2px var(--border-color);
+  text-shadow: 0 4px 2px var(--border-color);
   color: var(--text-color);
+  transition: color 300ms, text-shadow 300ms ease 100ms;
   /*background: var(--panel-strong-color);
   border-radius: 3px;*/
 }
+
 
 /* 文章列表 */
 aside {
@@ -130,6 +132,26 @@ aside li.active a {
   padding: 2px 5px;
   border-radius: 3px;
   color: var(--panel-color);
+}
+
+.flex-parent {
+  display: flex;
+  /*flex-wrap: wrap;*/
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.flex-child-left {
+  /*max-width: 350px;*/
+  padding: 1rem 3rem 0 0; /*top right bottom left*/
+  border-right: var(--border-color) 1px solid;
+}
+
+
+.flex-child-right {
+  /*max-width: 350px;*/
+  padding: 1rem 1rem;
 }
 
 /*Blog的文章*/
@@ -178,6 +200,8 @@ aside li.active a {
 .hashtag {
   font-size: 0.8rem;
   font-family: "Noto Sans TC", "Noto Sans JP", "PingFang", "Arial", sans-serif;
+  word-wrap: break-word;
+  word-break: keep-all;
   /*display: inline-block;
   padding: 0.2rem 0.5rem;
   border: 1px solid var(--border-color);
@@ -316,8 +340,8 @@ aside li.active a {
 label {
   display: flex;
   align-items: center; /*縱向對齊*/
-  justify-content: flex-start; /*橫向對齊*/
-  margin: 0 0.5rem;
+  justify-content: flex-end; /*橫向對齊*/
+  margin: 0 0.5rem 0 2rem;  /*top right bottom left*/
   display: none;
 }
 
@@ -339,7 +363,7 @@ input {
   align-items: center; /*縱向對齊*/
   justify-content: flex-end; /*橫向對齊*/
   gap: 1rem;
-  margin: 0 0;
+  margin: 0 0;  /*top right bottom left*/
 }
 
 .bottom-nav a {
@@ -406,7 +430,7 @@ input {
   }
 
   .bottom-nav-content {
-    padding: 0.7rem 1rem;
+    padding: 0.75rem 1rem;
   }
 
   .bottom-nav-title {
@@ -432,26 +456,36 @@ input {
     opacity: 1;
   }
 
+  input:checked ~ .bottom-nav-button {
+    gap: 1.5rem;
+    opacity: 1;
+    transition: 300ms;
+    visibility: visible;
+  }
+
   .bottom-nav-links {
     max-height: 0px;
+    opacity: 0;
+    transition: 300ms;
     overflow: hidden;
     flex-direction: column;
-    justify-content: flex-start; /*橫向對齊*/
-    align-items: flex-start; /*縱向對齊*/
+    flex: 1 1 auto;
+    justify-content: space-between; /*縱向對齊，記得direction變column之後，軸向也會變*/
+    align-items: flex-end; /*橫向對齊*/
     gap: 0;
-    opacity: 0;
-    transition: 300ms ;
   }
 
   .bottom-nav-button {
     flex-direction: column;
     /*flex-wrap: wrap;*/
     gap: 0;
+    opacity: 0;
+    transition: 600ms;
+    visibility: hidden;
+    margin: 0 0 0 2rem; /*top right bottom left*/
   }
 
-
   .bottom-nav a.active {
-    
     border-bottom: none;
   }
 
