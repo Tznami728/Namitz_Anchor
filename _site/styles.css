@@ -61,6 +61,10 @@ ul {
   list-style-type: "- ";
 }
 
+ol {
+  padding-left: 1.2rem;
+}
+
 li {
   margin-top: 0.1rem;
   margin-bottom: 0.3rem;
@@ -137,21 +141,20 @@ aside li.active a {
 .flex-parent {
   display: flex;
   /*flex-wrap: wrap;*/
-  justify-content: flex-start;
   align-items: flex-start;
   gap: 2rem;
 }
 
 .flex-child-left {
   /*max-width: 350px;*/
-  padding: 1rem 3rem 0 0; /*top right bottom left*/
+  padding: 0 1.5rem 0 0; /*top right bottom left*/
   border-right: var(--border-color) 1px solid;
 }
 
 
 .flex-child-right {
-  /*max-width: 350px;*/
-  padding: 1rem 1rem;
+  width: 500px;
+  padding: 0 0 0 0; /*top right bottom left*/
 }
 
 /*Blog的文章*/
@@ -200,9 +203,10 @@ aside li.active a {
 .hashtag {
   font-size: 0.8rem;
   font-family: "Noto Sans TC", "Noto Sans JP", "PingFang", "Arial", sans-serif;
-  word-wrap: break-word;
-  word-break: keep-all;
-  /*display: inline-block;
+  white-space: nowrap;
+  /*word-break: keep-all;
+  word-wrap: normal;
+  display: inline-block;
   padding: 0.2rem 0.5rem;
   border: 1px solid var(--border-color);
   border-radius: 999px;
@@ -427,6 +431,23 @@ input {
 @media (max-width: 600px) {
   main {
     padding: 4rem 1.5rem;
+  }
+
+  .flex-parent {
+    flex-direction: column;
+  }
+
+  .flex-child-left {
+    flex: 1 1 auto;
+    border-right: none;
+    border-bottom: var(--border-color) 1px solid;
+    padding: 0 0 2rem 0; /*top right bottom left*/
+  }
+
+
+  .flex-child-right {
+    flex: 1 1 auto;
+    padding: 0 0 0 0; /*top right bottom left*/
   }
 
   .bottom-nav-content {
