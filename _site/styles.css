@@ -147,14 +147,14 @@ aside li.active a {
 
 .flex-child-left {
   /*max-width: 350px;*/
-  padding: 0 1.5rem 0 0; /*top right bottom left*/
-  border-right: var(--border-color) 1px solid;
+  padding: 0 0 0 0; /*top right bottom left*/
 }
 
 
 .flex-child-right {
-  width: 400px;
-  padding: 0 0 0 0; /*top right bottom left*/
+  width: 500px;
+  padding: 0 0 0 1.5rem; /*top right bottom left*/
+  border-left: var(--border-color) 1px solid;
 }
 
 /*Blog的文章*/
@@ -439,7 +439,6 @@ input {
 
   .flex-child-left {
     flex: 1 1 auto;
-    border-right: none;
     border-bottom: var(--border-color) 1px solid;
     padding: 0 0 2rem 0; /*top right bottom left*/
   }
@@ -448,6 +447,7 @@ input {
   .flex-child-right {
     flex: 1 1 auto;
     padding: 0 0 0 0; /*top right bottom left*/
+    border-left: none;
   }
 
   .bottom-nav-content {

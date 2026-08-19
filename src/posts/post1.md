@@ -2,6 +2,9 @@
 title: 本站第一篇文章
 date: 2026-01-20
 layout: post.njk
+hashtags: 
+ - 部落格
+ - 電腦
 ---
 
 這是一篇測試文章。
