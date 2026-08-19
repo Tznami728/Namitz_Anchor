@@ -37,12 +37,12 @@ title: 部落格
   {% if collections.tagList.length > 0 %}
     <section class="flex-child-right">
       <h2>標籤</h2>
-      <p  class="hashtag">
+      <p>
         {% for tag in collections.tagList %}
-          <a href="/tags/{{ tag.slug }}/">#{{ tag.label }}({{ tag.posts.length }})</a>
+          <a href="/tags/{{ tag.slug }}/"  class="hashtag">#{{ tag.label }}({{ tag.posts.length }})</a>
           <!--<span class="meta">({{ tag.posts.length }})&nbsp;&nbsp;</span>-->
-          &nbsp;&nbsp;<wbr>
         {% endfor %}
+        &nbsp;&nbsp;<wbr>
       </p>
       <p class="meta"><a href="/tags/index.html">→標籤分類頁面</a></p>
     </section>

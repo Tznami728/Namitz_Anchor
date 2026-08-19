@@ -153,7 +153,7 @@ aside li.active a {
 
 
 .flex-child-right {
-  width: 500px;
+  width: 400px;
   padding: 0 0 0 0; /*top right bottom left*/
 }
 
@@ -205,8 +205,8 @@ aside li.active a {
   font-family: "Noto Sans TC", "Noto Sans JP", "PingFang", "Arial", sans-serif;
   white-space: nowrap;
   /*word-break: keep-all;
-  word-wrap: normal;
-  display: inline-block;
+  word-wrap: normal;*/
+  /*display: inline-block;
   padding: 0.2rem 0.5rem;
   border: 1px solid var(--border-color);
   border-radius: 999px;
