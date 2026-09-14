@@ -1,6 +1,7 @@
 :root {
   color-scheme: light;
   --bg-color: #fff;
+  --bg-dot-color: #eee;
   --text-color: #333;
   --muted-color: #888;
   --accent-color: #6b8aad;
@@ -14,6 +15,7 @@
 body[data-theme="dark"] {
   color-scheme: dark;
   --bg-color: #000;
+    --bg-dot-color: #111;
   --text-color: #aaa;
   --muted-color: #a3a3a3;
   --accent-color: #9db8d6;
@@ -35,8 +37,8 @@ body {
   background: var(--bg-color);
   color: var(--text-color);
   transition: background-color 1000ms ease, color 5000ms ease;
-  background-image: radial-gradient(var(--panel-strong-color) 10%, transparent 0);
-  background-size: 16px 16px;
+  background-image: radial-gradient(var(--bg-dot-color) 10%, transparent 0);
+  background-size: 18px 18px;
   background-attachment: fixed;
 }
 
