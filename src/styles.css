@@ -26,10 +26,29 @@ body[data-theme="dark"] {
   --table-border-color: #4f4f4f;
 }
 
+@font-face {
+  font-family: Sans-font;
+  src: local("Noto Sans TC"),
+  local("Noto Sans JP"),
+  local("Noto Sans SC"),
+  local("PingFang"),
+  url(\utils\NotoSansTC-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Serif-font;
+  src: local("Noto Serif TC"),
+  local("Noto Serif JP"),
+  local("Noto Serif SC"),
+  local("LiSong"),
+  local("Songti TC"),
+  url(\utils\NotoSerifTC-VariableFont_wght.ttf);
+}
+
 /*Global styles*/
 body {
   margin: 0;
-  font-family: "Noto Serif TC", "Noto Serif JP", "LiSong", "Songti TC", "Times New Roman", serif;
+  font-family: Serif-font, serif;
   letter-spacing: 0.025rem;
   line-height: 1.8;
   min-height: 100vh;
@@ -84,7 +103,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  font-family: "Noto Sans TC", "Noto Sans JP", "PingFang", sans-serif;
+  font-family: Sans-font, sans-serif;
   font-weight: 100;
   margin-top: 1rem;
   margin-bottom: 2rem;
@@ -97,7 +116,7 @@ h3 {
 
 strong {
   font-weight: 500;
-  font-family: "Noto Sans TC", "Noto Sans JP", "PingFang", sans-serif;
+  font-family: Sans-font, sans-serif;
 }
 
 
@@ -120,7 +139,7 @@ a:hover {
 
 /* 文章列表 */
 aside {
-  font-family: "Noto Sans TC", "Noto Sans JP", "PingFang", sans-serif;
+  font-family: Sans-font, sans-serif;
   width: 180px;
   flex-shrink: 0;
   flex-direction: row;
@@ -165,14 +184,14 @@ aside li.active a {
 /*Blog的文章*/
 .meta {
   color: var(--muted-color);
-  font-family: "Noto Sans TC", "Noto Sans JP", "PingFang", sans-serif;
+  font-family: Sans-font, sans-serif;
   font-size: 0.8rem;
   /*margin-bottom: 1rem;*/
 }
 
 .footnotes, .footnote-item, .footnote-ref {
   color: var(--muted-color);
-  font-family: "Noto Sans TC", "Noto Sans JP", "PingFang", sans-serif;
+  font-family: Sans-font, sans-serif;
   font-size: 0.8rem;
 }
 
@@ -207,7 +226,7 @@ aside li.active a {
 
 .hashtag {
   font-size: 0.8rem;
-  font-family: "Noto Sans TC", "Noto Sans JP", "PingFang", sans-serif;
+  font-family: Sans-font, sans-serif;
   white-space: nowrap;
   /*word-break: keep-all;
   word-wrap: normal;*/
@@ -228,7 +247,7 @@ aside li.active a {
   border: 1px solid var(--border-color);
   padding: 5px;
   /*font-size: 0.9rem;*/
-  font-family: "Noto Sans TC", "Noto Sans JP", "PingFang", sans-serif;
+  font-family: Sans-font, sans-serif;
 }
 
 .content th, .content td {
@@ -247,8 +266,8 @@ aside li.active a {
   border-left: 1px solid var(--border-color);
   padding: 0 1rem 0 1rem;
   margin: 1rem 0 2rem 0;
-  font-family: "Noto Sans TC", "Noto Sans JP", "PingFang", sans-serif;
-  font-weight: 500;
+  font-family: Sans-font, sans-serif;
+  font-weight: 400;
   /*font-size: 0.9rem;*/
 }
 
@@ -271,7 +290,7 @@ aside li.active a {
 .after-content {
   /*text-align: center;*/
   font-size: 0.8rem;
-  font-family: "Noto Sans TC", "Noto Sans JP", "PingFang", sans-serif;
+  font-family: Sans-font, sans-serif;
   color: var(--muted-color);
 }
 
