@@ -84,7 +84,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  font-family: "Noto Sans TC", "Noto Sans JP", "PingFang", "Arial", sans-serif;
+  font-family: "Noto Sans TC", "Noto Sans JP", "PingFang", sans-serif;
   font-weight: 100;
   margin-top: 1rem;
   margin-bottom: 2rem;
@@ -97,7 +97,7 @@ h3 {
 
 strong {
   font-weight: 500;
-  font-family: "Noto Sans TC", "Noto Sans JP", "PingFang", "Arial", sans-serif;
+  font-family: "Noto Sans TC", "Noto Sans JP", "PingFang", sans-serif;
 }
 
 
@@ -120,7 +120,7 @@ a:hover {
 
 /* 文章列表 */
 aside {
-  font-family: "Noto Sans TC", "Noto Sans JP", "PingFang", "Arial", sans-serif;
+  font-family: "Noto Sans TC", "Noto Sans JP", "PingFang", sans-serif;
   width: 180px;
   flex-shrink: 0;
   flex-direction: row;
@@ -165,14 +165,14 @@ aside li.active a {
 /*Blog的文章*/
 .meta {
   color: var(--muted-color);
-  font-family: "Noto Sans TC", "Noto Sans JP", "PingFang", "Arial", sans-serif;
+  font-family: "Noto Sans TC", "Noto Sans JP", "PingFang", sans-serif;
   font-size: 0.8rem;
   /*margin-bottom: 1rem;*/
 }
 
 .footnotes, .footnote-item, .footnote-ref {
   color: var(--muted-color);
-  font-family: "Noto Sans TC", "Noto Sans JP", "PingFang", "Arial", sans-serif;
+  font-family: "Noto Sans TC", "Noto Sans JP", "PingFang", sans-serif;
   font-size: 0.8rem;
 }
 
@@ -207,7 +207,7 @@ aside li.active a {
 
 .hashtag {
   font-size: 0.8rem;
-  font-family: "Noto Sans TC", "Noto Sans JP", "PingFang", "Arial", sans-serif;
+  font-family: "Noto Sans TC", "Noto Sans JP", "PingFang", sans-serif;
   white-space: nowrap;
   /*word-break: keep-all;
   word-wrap: normal;*/
@@ -227,8 +227,8 @@ aside li.active a {
   border-collapse: collapse;
   border: 1px solid var(--border-color);
   padding: 5px;
-  font-size: 0.9rem;
-  font-family: "Noto Sans TC", "Noto Sans JP", "PingFang", "Arial", sans-serif;
+  /*font-size: 0.9rem;*/
+  font-family: "Noto Sans TC", "Noto Sans JP", "PingFang", sans-serif;
 }
 
 .content th, .content td {
@@ -247,9 +247,9 @@ aside li.active a {
   border-left: 1px solid var(--border-color);
   padding: 0 1rem 0 1rem;
   margin: 1rem 0 2rem 0;
-  font-family: "Noto Sans TC", "Noto Sans JP", "PingFang", "Arial", sans-serif;
+  font-family: "Noto Sans TC", "Noto Sans JP", "PingFang", sans-serif;
   font-weight: 500;
-  font-size: 0.9rem;
+  /*font-size: 0.9rem;*/
 }
 
 .content pre {
@@ -271,7 +271,7 @@ aside li.active a {
 .after-content {
   /*text-align: center;*/
   font-size: 0.8rem;
-  font-family: "Noto Sans TC", "Noto Sans JP", "PingFang", "Arial", sans-serif;
+  font-family: "Noto Sans TC", "Noto Sans JP", "PingFang", sans-serif;
   color: var(--muted-color);
 }
 
