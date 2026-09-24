@@ -63,7 +63,7 @@ body {
 
 main {
   flex: 1;
-  max-width: 700px;
+  max-width: 650px;
   padding: 4rem 2rem;
   margin: 0 auto;
   /*writing-mode: vertical-rl;*/
@@ -168,13 +168,13 @@ aside li.active a {
 }
 
 .flex-child-left {
-  max-width: 800px;
+  max-width: 1000px;
   padding: 0 0 0 0; /*top right bottom left*/
 }
 
 
 .flex-child-right {
-  max-width: 300px;
+  max-width: 250px;
   padding: 0 0 0 1.5rem; /*top right bottom left*/
   border-left: var(--border-color) 1px solid;
 }
@@ -350,7 +350,7 @@ aside li.active a {
   display: flex;
   align-items: center; /*縱向對齊*/
   justify-content: space-between; /*橫向對齊*/
-  max-width: 712px;
+  max-width: 670px;
   margin: 0 auto;
   padding: 1rem;
 }
