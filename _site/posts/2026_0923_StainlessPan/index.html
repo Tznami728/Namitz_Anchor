@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>不鏽鋼鍋</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+  <div class="layout">
+    <main>
+      
+<div class="layout">
+<article>
+  <div class="meta">
+  <a href="/posts/">←返回文章列表</a>
+  </div>
+  
+  <h1>不鏽鋼鍋</h1>
+
+  <div class="meta">
+    <time>2026-09-23</time>
+    · 2 min read
+    · 491 count
+  </div>
+
+  
+  
+    
+  
+
+  
+    <div class="tag-list">
+      
+        <a href="/tags/廚房/" class="hashtag">#廚房</a>
+      
+    </div>
+  
+
+<hr>
+
+  <div class="content">
+    <p>最近在看廚具。</p>
+<p>大概是這陣子以來下廚做出興趣，想多升級一些體驗 (AKA換換病)，就開始亂看一些廚具。目前看得比較多的是廚刀以及鍋具，也就這兩項單價較高，有工藝提升空間。思考了很久要先升級哪一項，廚刀部分目前買了磨刀石，把現有的菜刀磨利之後就提升很多體驗了；鍋具部分則擔心操作起來會很麻煩，要養鍋、怕生鏽、不沾更是實用上的魔王關，我一個料理小白能不能掌握住，真的很難說。</p>
+<h2>用家裡的廚具</h2>
+<p>我很排斥用家裡的廚具。</p>
+<p>雖然我家的廚房目前只有我能下廚，但可能的話我都盡量用自己以前買的廚具與餐具。像是鍋子就是先前租套房時就在用的不沾平底鍋，鍋鏟、碗盤、密封盒也都是自己另外購入。 大概除了空間和冰箱、電磁爐這些家具外，其他都是額外購買的。我試著整理看看，自己為什麼會形成這種潔癖般的行為，可能還沒那麼簡單。</p>
+<h3>個人品味</h3>
+<p>走設計系的人應該都能認同，我們的品味會被養刁。除了內容外，我們也很重視形式、觀感、整體體驗帶來的價值。這跟設計系有何關係？品味養成又不是設計領域專屬的！你先別急，這點我超認同，我甚至覺得可以不用為了做設計來讀設計系。但設計系的培養過程，就是會很注重</p>
+<h3>我的東西</h3>
+<h3>不想碰他用過的</h3>
+
+  </div>
+
+  <nav class="post-nav">
+    
+
+    
+  </nav>
+  
+  <div class="after-content">
+  <hr>
+  感謝你看到這裡，歡迎傳Email與我交流！不用害羞，哪怕是個「已讀、閱」也沒問題。<br> 
+  namitzmusic@gmail.com<br>
+  <a href="/posts/">←返回文章列表</a> · 
+  <a href="mailto:namitzmusic@gmail.com">寄Email給我</a> · 
+  <a href="#" id="load-comments-link">用GitHub帳號留言</a><br>
+  </div>
+
+
+  
+  
+    
+  
+
+  
+    <div class="tag-list">
+      
+        <a href="/tags/廚房/" class="hashtag">#廚房</a>
+      
+    </div>
+  
+
+  <div id="comments-container"></div>
+  <script src="/defer.js"></script>
+
+
+</article>
+</div>
+
+    </main>
+  </div>
+
+  <!-- 底部導覽列 -->
+  <footer class="bottom-nav">
+    <nav class="bottom-nav-content">
+      <div class="bottom-nav-title">
+        <a href="/" class="">Namitz's anchor</a>    
+      </div>
+
+      <input type="checkbox" id="burger">
+      <div class="bottom-nav-links">
+        <a href="/works/" class="">編曲</a>
+        <a href="/gallery/" class="">寫真</a>
+        <a href="/posts/" class="active">雜談</a>
+        <a href="/links/" class="">連結</a>
+      </div>
+
+      <div class="bottom-nav-button">
+        <button class="theme-toggle" type="button" aria-label="切換夜間主題" aria-pressed="false" title="切換夜間主題">
+          <img src="/images/DarkOff.webp" alt="切換主題">
+        </button>
+        <button onclick="copyUrl()" class="theme-toggle" type="button" aria-label="RSS訂閱" title="RSS feed訂閱">
+          <img src="/images/RSSFeed.webp" alt="訂閱">
+        </button>
+      </div>
+
+      <label for="burger"><img src="/images/MenuOff.webp" alt="選單"></label>
+
+    </nav>
+  </footer>
+
+  <script>
+    (function () {
+      const body = document.body;
+      const toggleButton = document.querySelector('.theme-toggle');
+      const toggleIcon = document.querySelector('.theme-toggle img');
+
+      const savedTheme = localStorage.getItem('theme');
+      const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      const theme = savedTheme || systemTheme;
+
+      function applyTheme(nextTheme) {
+        body.setAttribute('data-theme', nextTheme);
+        localStorage.setItem('theme', nextTheme);
+
+        if (toggleButton) {
+          toggleButton.setAttribute('aria-pressed', String(nextTheme === 'dark'));
+          toggleButton.setAttribute('title', nextTheme === 'dark' ? '切換至淺色模式' : '切換至夜間模式');
+        }
+
+        if (toggleIcon) {
+          toggleIcon.src = nextTheme === 'dark' ? '/images/DarkOn.webp' : '/images/DarkOff.webp';
+        }
+      }
+
+      applyTheme(theme);
+
+      if (toggleButton) {
+        toggleButton.addEventListener('click', () => {
+          const nextTheme = body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+          applyTheme(nextTheme);
+        });
+      }
+    })();
+  </script>
+
+  <script>
+  function copyUrl() {
+      const url = "https://namitz.com/feed.xml";
+
+      navigator.clipboard.writeText(url)
+          .then(() => {
+              alert("已複製XML網址！接下來貼到閱讀器即完成訂閱。\n感謝你的訂閱！也隨時歡迎Email跟我交流。");
+          })
+          .catch(err => {
+              console.error("複製失敗：", err);
+          });
+  }
+  </script>
+
+
+</body>
+</html>
