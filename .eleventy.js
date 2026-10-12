@@ -1,6 +1,6 @@
 const fs = require("fs");
 const path = require("path");
-const Image = require("@11ty/eleventy-img");
+const { default: Image, generateHTML } = require("@11ty/eleventy-img");
 const { addVideoContainerClass } = require("./src/utils/addVideoContainerClass");
 const markdownIt = require("markdown-it");
 const markdownItFootnote = require("markdown-it-footnote");
@@ -245,7 +245,7 @@ eleventyConfig.addTransform("addVideoContainerClass", (content, outputPath) => {
 });
 
 // 圖片處理 Shortcode
-eleventyConfig.addNunjucksAsyncShortcode("responsiveImage", async (src, alt, sizes = "100vw") => {
+eleventyConfig.addNunjucksAsyncShortcode("responsiveImage", async (src, alt, sizes = "100vw", thumbnailOnly = false) => {
   const imagePath = path.join(__dirname, "src", src);
   
   try {
@@ -267,7 +267,11 @@ eleventyConfig.addNunjucksAsyncShortcode("responsiveImage", async (src, alt, siz
       decoding: "async",
     };
 
-    return Image.generateHTML(metadata, imageAttributes);
+    const outputMetadata = thumbnailOnly
+      ? { webp: metadata.webp.slice(0, 1) }
+      : metadata;
+
+    return generateHTML(outputMetadata, imageAttributes);
   } catch (error) {
     console.error(`Error processing image: ${src}`, error.message);
     // 如果圖片處理失敗，返回原始圖片
