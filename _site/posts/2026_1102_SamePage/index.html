@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>共通性</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+  <div class="layout">
+    <main>
+      
+<div class="layout">
+<article>
+  <div class="meta">
+  <a href="/posts/">←返回文章列表</a>
+  </div>
+  
+  <h1>共通性</h1>
+
+  <div class="meta">
+    <time>2026-11-02</time>
+    · 1 min read
+    · 218 count
+  </div>
+
+  
+  
+    
+  
+
+  
+    <div class="tag-list">
+      
+        <a href="/tags/心情/" class="hashtag">#心情</a>
+      
+    </div>
+  
+
+<hr>
+
+  <div class="content">
+    <p>我們的步伐並不一致。</p>
+<p>畢竟身體構造是不一樣的，每渡一步，我們就會有幾十公分的距離差。有時候一趕時間，我那急性子的個性夯 (giâ) 起來，就會快到他必須用小跑步才能跟上。</p>
+<p>心血來潮，我會想去對步頻。但頻率對了，走起路來卻也彆扭起來。</p>
+<p>後來才發現，其實保持著雙方都可以接受的速度行進就好。不需要什麼姿勢和步頻，我只要再放慢一點步調、他只要再動腿快一點，我們自然能走在一起。</p>
+<p>而「發現」本身並非易事。這可能也是正在並肩的我們，未能感受到的。</p>
+
+  </div>
+
+  <nav class="post-nav">
+    
+
+    
+  </nav>
+  
+  <div class="after-content">
+  <hr>
+  感謝你看到這裡，歡迎傳Email與我交流！不用害羞，哪怕是個「已讀、閱」也沒問題。<br> 
+  namitzmusic@gmail.com<br>
+  <a href="/posts/">←返回文章列表</a> · 
+  <a href="mailto:namitzmusic@gmail.com">寄Email給我</a> · 
+  <a href="#" id="load-comments-link">用GitHub帳號留言</a><br>
+  </div>
+
+
+  
+  
+    
+  
+
+  
+    <div class="tag-list">
+      
+        <a href="/tags/心情/" class="hashtag">#心情</a>
+      
+    </div>
+  
+
+  <div id="comments-container"></div>
+  <script src="/defer.js"></script>
+
+
+</article>
+</div>
+
+    </main>
+  </div>
+
+  <!-- 底部導覽列 -->
+  <footer class="bottom-nav">
+    <nav class="bottom-nav-content">
+      <div class="bottom-nav-title">
+        <a href="/" class="">Namitz's anchor</a>    
+      </div>
+
+      <input type="checkbox" id="burger">
+      <div class="bottom-nav-links">
+        <a href="/works/" class="">編曲</a>
+        <a href="/gallery/" class="">寫真</a>
+        <a href="/posts/" class="active">雜談</a>
+        <a href="/links/" class="">連結</a>
+      </div>
+
+      <div class="bottom-nav-button">
+        <button class="theme-toggle" type="button" aria-label="切換夜間主題" aria-pressed="false" title="切換夜間主題">
+          <img src="/images/DarkOff.webp" alt="切換主題">
+        </button>
+        <button onclick="copyUrl()" class="theme-toggle" type="button" aria-label="RSS訂閱" title="RSS feed訂閱">
+          <img src="/images/RSSFeed.webp" alt="訂閱">
+        </button>
+      </div>
+
+      <label for="burger"><img src="/images/MenuOff.webp" alt="選單"></label>
+
+    </nav>
+  </footer>
+
+  <script>
+    (function () {
+      const body = document.body;
+      const toggleButton = document.querySelector('.theme-toggle');
+      const toggleIcon = document.querySelector('.theme-toggle img');
+
+      const savedTheme = localStorage.getItem('theme');
+      const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      const theme = savedTheme || systemTheme;
+
+      function applyTheme(nextTheme) {
+        body.setAttribute('data-theme', nextTheme);
+        localStorage.setItem('theme', nextTheme);
+
+        if (toggleButton) {
+          toggleButton.setAttribute('aria-pressed', String(nextTheme === 'dark'));
+          toggleButton.setAttribute('title', nextTheme === 'dark' ? '切換至淺色模式' : '切換至夜間模式');
+        }
+
+        if (toggleIcon) {
+          toggleIcon.src = nextTheme === 'dark' ? '/images/DarkOn.webp' : '/images/DarkOff.webp';
+        }
+      }
+
+      applyTheme(theme);
+
+      if (toggleButton) {
+        toggleButton.addEventListener('click', () => {
+          const nextTheme = body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+          applyTheme(nextTheme);
+        });
+      }
+    })();
+  </script>
+
+  <script>
+  function copyUrl() {
+      const url = "https://namitz.com/feed.xml";
+
+      navigator.clipboard.writeText(url)
+          .then(() => {
+              alert("已複製XML網址！接下來貼到閱讀器即完成訂閱。\n感謝你的訂閱！也隨時歡迎Email跟我交流。");
+          })
+          .catch(err => {
+              console.error("複製失敗：", err);
+          });
+  }
+  </script>
+
+
+</body>
+</html>
