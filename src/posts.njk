@@ -25,7 +25,7 @@ title: 部落格
       <article>
         <h2>最新 &nbsp;</h2>
         <h3><a href="{{ latestPost.url }}">{{ latestPost.data.title }}</a></h3>
-        <p>{{ latestPost.templateContent | striptags | truncate(75, true, '...') }}</p>
+        <p>{{ latestPost.templateContent | striptags | truncate(30, true, '...') }}</p>
         <p class="meta">{{ latestPost.data.date | strftime("%Y-%m-%d") }}
         <a href="{{ latestPost.url }}">→查看更多</a>
         </p>

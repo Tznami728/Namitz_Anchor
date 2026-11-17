@@ -6,12 +6,12 @@ hashtags:
   - Blogblog同樂會
 ---
 
->這是我的「[BlogBlog 同樂會 - 2026 年 7 月](https://blogblog.club/party/)」的投稿文章。本月主題是「[有趣的小知識或冷門概念](https://shuaixin.cc/Fun-Fact/)」，由[劉昕](https://shuaixin.cc/)主持。如果你有自己的部落格，歡迎一起來參加！
-
 終於上線自己的部落格，可以來加入同樂會了！灑花🎉  
 但這個月的主題實在有點難發想，對我來說，小知識通常是要在遇到的時候才會想起來，我又是那種沒想到事情前，腦子絕對處在待機狀態沒在運轉的類型。  
 
 Anyway 還是來試著寫寫看啦。  
+
+>這是我的「[BlogBlog 同樂會 - 2026 年 7 月](https://blogblog.club/party/)」的投稿文章。本月主題是「[有趣的小知識或冷門概念](https://shuaixin.cc/Fun-Fact/)」，由[劉昕](https://shuaixin.cc/)主持。如果你有自己的部落格，歡迎一起來參加！
 
 ---
 ## 專屬於台灣的食物：愛玉  
